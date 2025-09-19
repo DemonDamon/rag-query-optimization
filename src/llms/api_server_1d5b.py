@@ -341,7 +341,9 @@ async def inference(request: RequestModel):
                                 top_p=request.top_p,
                                 repetition_penalty=1.0,
                                 max_tokens=request.max_new_token,
-                                use_beam_search=False
+                                seed=42,  # 确保可重现性
+                                stop=None,  # 停止词列表
+                                ignore_eos=False  # 是否忽略EOS token
                             )
                             
                             # 准备输入
@@ -526,13 +528,15 @@ async def inference(request: RequestModel):
                         logger.warning(f"Temperature must be positive, got {temperature}. Using 0.01 instead.")
                         temperature = 0.01
                     
-                    # 创建新的采样参数
+                    # 创建新的采样参数，遵循vllm最新API规范
                     sampling_params = SamplingParams(
                         temperature=temperature,
                         top_p=request.top_p,
                         repetition_penalty=1.0,
                         max_tokens=request.max_new_token,
-                        use_beam_search=False
+                        seed=42,  # 确保可重现性
+                        stop=None,  # 停止词列表
+                        ignore_eos=False  # 是否忽略EOS token
                     )
                     
                     # 调用模型处理请求
