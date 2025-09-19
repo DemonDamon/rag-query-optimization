@@ -99,14 +99,20 @@ class Qwen2Local(LLM):
             self.model = VLLM(model=model_name_or_path,
                               gpu_memory_utilization=self.vllm_gpu_mem_util,
                               dtype="half",  # 适合fp16；如果钥匙胚bf16，这里要改成"bfloat16"
+                              max_model_len=106624,  # 根据错误提示设置为可用的最大模型长度
                               enable_lora=True if self.lora_path else False, enable_prefix_caching=True)  # fp16
 
+            # 根据vllm官方文档设置SamplingParams参数
+            # 参考: https://docs.vllm.ai/en/latest/dev/sampling_params.html
             self.sampling_params = SamplingParams(
-                temperature=self.temperature,
-                top_p=self.top_p,
-                repetition_penalty=1.0,  # 原始设置：1.05。作用：对重复出现的词进行惩罚，防止生成重复内容。建议设置：repetition_penalty=1.0，表示不进行惩罚，保持确定性。
-                max_tokens=self.max_new_token,
-                use_beam_search=False  # 当temperature=0、top_p=1.0和top_k=-1已配置为确定性输出时，在SamplingParams中设置use_beam_search=False是多余的
+                temperature=self.temperature,  # 控制随机性，0表示贪婪采样
+                top_p=self.top_p,  # 核采样概率
+                top_k=self.top_k if self.top_k > 0 else -1,  # top-k采样，-1表示考虑所有token
+                repetition_penalty=1.0,  # 重复惩罚，1.0表示不惩罚
+                max_tokens=self.max_new_token,  # 最大生成token数
+                seed=self.seed,  # 随机种子，确保可重现性
+                stop=None,  # 停止词列表
+                ignore_eos=False  # 是否忽略EOS token
             )
             # minference_patch = MInference("vllm", "Qwen/Qwen2-7B-Instruct")
             # self.model = minference_patch(self.model)
@@ -273,13 +279,16 @@ class Qwen2Local(LLM):
                                                    skip_special_tokens=True)[0]
 
         else:
-            # 更新采样参数
+            # 更新采样参数，使用与初始化相同的参数结构
             self.sampling_params = SamplingParams(
                 temperature=actual_temperature,
                 top_p=actual_top_p,
+                top_k=self.top_k if self.top_k > 0 else -1,
                 repetition_penalty=1.0,
                 max_tokens=actual_max_new_tokens,
-                use_beam_search=False
+                seed=self.seed,
+                stop=None,
+                ignore_eos=False
             )
             
             lora_request = None
