@@ -1,0 +1,32 @@
+# 以下为service配置，如应用需要配置公网入口则需要写。若应用不需要被其他模块访问，如MQ消费模块、定时任务模块，可以移除以下内容
+---
+apiVersion: 1.1.0
+kind: Service
+metadata:
+  annotations: {}
+  labels:
+    # 修改应用名,若跟随节点部署要加上节点标识
+    app.name: query-rewrite
+  # 修改应用名,若跟随节点部署要加上节点标识
+  name: query-rewrite-svc
+  # 联调（研发）环境对应develop，测试环境对应test
+  namespace: test
+spec:
+  # 双栈且IPv4优先
+  ipFamilies:
+    - IPv4
+    - IPv6
+  ipFamilyPolicy: PreferDualStack
+  ports:
+    # 修改为应用名-port
+    - name: query-rewrite-port
+      # 修改为容器对外暴露的端口
+      port: 12330
+      protocol: TCP
+      # 修改为容器内服务实际使用的端口
+      targetPort: 12318
+  selector:
+    # 修改应用名,若跟随节点部署要加上节点标识
+    app.name: query-rewrite
+  sessionAffinity: None
+  type: ClusterIP

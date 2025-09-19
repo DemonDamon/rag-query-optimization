@@ -1,0 +1,22 @@
+kind: Ingress
+metadata:
+  annotations: {}
+  labels:
+    # 修改应用名,若跟随节点部署要加上节点标识
+    app.name: query-rewrite
+  # 修改应用名,若跟随节点部署要加上节点标识
+  name: query-rewrite-apisix
+  namespace: test
+spec:
+  ingressClassName: apisix
+  rules:
+  - host: yun-ai.test.com
+    http:
+      paths:
+      - backend:
+          # 修改为应用对应的svc名
+          serviceName: query-rewrite-svc
+          servicePort: 12330
+        # 服务路径
+        path: /yun/ai/text/query/rewrite
+        pathType: Prefix

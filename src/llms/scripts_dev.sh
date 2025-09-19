@@ -1,0 +1,1 @@
+ curl -X POST -H "Content-Type: application/json" -d '{"request_id":"test123", "input":"Hello, world!", "streaming":false}' http://192.168.32.119:12308/v1/llms

@@ -1,0 +1,64 @@
+{"requestId":"a7dd7cec-f308-4f66-a504-7c7073643348","query":"写一个数字峰会的个人参展总结","historyList":["帮我写一个数字峰会的个人参展总结","帮我写一个数字峰会的个人参展总结和说明。"]} 响应：{"requestId":"a7dd7cec-f308-4f66-a504-7c7073643348","result":"写一个数字峰会的个人参展总结和说明","needRewrite":true,"processTime":467}
+
+{"requestId":"912910b6-f2ff-4436-854a-e3dd338e7a76","query":"这部动画原著的写作风格和特点是什么？能不能附上几段原著内容？","historyList":["喝醉，然后捡到女高中生，这个动画有没有原著？整个动画剧情怎么样？","热门动画都有什么题材","你知道梦境为什么毫无逻辑吗？","讲个化学的冷门笑话","讲个冷门笑话"]} 响应：{"requestId":"912910b6-f2ff-4436-854a-e3dd338e7a76","result":"梦回剧场动画原著的写作风格和特点是什么？能不能附上几段原著内容？","needRewrite":true,"processTime":831}
+
+{"requestId":"3dd1416d-58b7-4035-8b60-a7c3b1dc82b9","query":"你知道梦境为什么毫无逻辑吗？","historyList":["讲个化学的冷门笑话","讲个冷门笑话"]} 响应：{"requestId":"3dd1416d-58b7-4035-8b60-a7c3b1dc82b9","result":"你知道梦境为什么毫无逻辑吗？（保持原样，因为当前查询与历史查询没有明确的语义关联）","needRewrite":true,"processTime":935}
+
+{"requestId":"313df6f1-45c9-40fc-81ed-c738aee93f9e","query":"再润色一下，并提供有效的措施","historyList":["帮我分析七年级6个班的语文考试情况，每个班都要有对比和分析，并且1班2班3为普通班分析，4班5班6班为重点班分析","看见 \n在成长的过程中，每一次对外部世界的“看见”，都可以引发我们的思考，触动我们的心灵。 \n春天来临，随着一场朦胧的春雨的悄然而至，万物开始苏醒。春笋从土里探出头来，尽管雨水怎样无情地冲刷，风怎样地拍打，它仍旧挺立在那里。雨越下越大，屋顶上传来“咚咚咚”","幸福就像一条小船只，总是牵引人们走上去，最后停靠在一个别样的码头。那里的花儿争奇斗艳，花香笼罩着整个码头；树木笔直地挺立在花儿周围，使到处焕发着生机。上码头的人们，都被这景象给吸引，时不时会有几只蝴蝶停靠在人们的手上，好像在说：“欢迎到来。”生活在这里的人","帮我批改","批改"]}
+ 响应：{"requestId":"313df6f1-45c9-40fc-81ed-c738aee93f9e","result":"再润色一下七年级6个班的语文考试情况分析，并提供有效的措施","needRewrite":true,"processTime":881}
+
+ {"requestId":"102c421e-5a18-4e60-8a0d-75cadfafc70f","query":"请根据我知识库中数字峰会相关内容，帮我生成一份个人参展总结。","historyList":["请根据我个人知识库内容，帮我生成一份数字峰会参展总结。","请根据我知识库内容，帮我生成一份个人参展总结。"]} 响应：{"requestId":"102c421e-5a18-4e60-8a0d-75cadfafc70f","result":"请根据我知识库中数字峰会相关内容，帮我生成一份数字峰会个人参展总结。","needRewrite":true,"processTime":727}
+
+ {"requestId":"26935c53-7ac9-44f3-8aa9-b9d397bd927a","query":"请根据我的知识库中数字峰会相关文档，帮我生成一份个人参展总结。","historyList":["请根据我知识库中的内容，帮我生成一份个人参展总结。"]} 响应：{"requestId":"26935c53-7ac9-44f3-8aa9-b9d397bd927a","result":"请根据我知识库中的数字峰会相关文档，帮我生成一份个人参展总结。","needRewrite":true,"processTime":740}
+
+ {"requestId":"ff1d1d69-e35f-4e00-bc69-11ea743ed5dc","query":"水气辐合与台风这种天气的关系以及它又为什么会导致海雾","historyList":["逆温层存在为什么会加强海雾","海雾形成的原因，思维导图"]} 响应：{"requestId":"ff1d1d69-e35f-4e00-bc69-11ea743ed5dc","result":"水气辐合与台风这种天气的关系以及它为什么会导致海雾，与逆温层存在有什么关系","needRewrite":true,"processTime":883}
+
+ {"requestId":"4ecbce73-5c9a-4607-b91d-763c2478f8ea","query":"测试","historyList":["如何开启手机自动备份"]} 响应：{"requestId":"4ecbce73-5c9a-4607-b91d-763c2478f8ea","result":"测试","needRewrite":true,"processTime":217}
+
+ {"requestId":"79bf0a90-fbe4-43fd-a9b5-e98d6b7a411b","query":"评改作文","historyList":["批改作文","帮我批改","帮我批改","评改作文","评改作文"]} 响应：{"requestId":"79bf0a90-fbe4-43fd-a9b5-e98d6b7a411b","result":"评改作文","needRewrite":true,"processTime":314}
+
+ {"requestId":"a1f6a7ac-8378-464c-a659-b3ec6bd874f4","query":"黑陶瓷五行属性","historyList":["白色陶瓷五行属性","草莓的热量大吗","翡翠五行属性","少年闰土出自哪里","骆驼祥子出自哪里"]} 响应：{"requestId":"a1f6a7ac-8378-464c-a659-b3ec6bd874f4","result":"黑色陶瓷五行属性","needRewrite":true,"processTime":445}
+
+ {"requestId":"734edc65-6a09-49c0-81e1-723a14327668","query":"数字1到100再抽一个数字","historyList":["数字1到100随机给我抽三个数字啊"]} 响应：{"requestId":"734edc65-6a09-49c0-81e1-723a14327668","result":"数字1到100再随机抽一个数字","needRewrite":true,"processTime":472}
+
+ {"requestId":"733f75e0-9409-4d20-80aa-f592a23a1b72","query":"天河区天气","historyList":["广州塔","海珠区天气"]} 响应：{"requestId":"733f75e0-9409-4d20-80aa-f592a23a1b72","result":"广州塔所在区域的天河区天气","needRewrite":true,"processTime":417}
+
+ {"requestId":"8ce81481-0226-4bef-89d0-151c3333365c","query":"按照学校简介加王牌专业进行介绍","historyList":["再介绍下北京工商大学，首都经济贸易大学，首都师范大学"]} 响应：{"requestId":"8ce81481-0226-4bef-89d0-151c3333365c","result":"北京工商大学，首都经济贸易大学，首都师范大学按照学校简介加王牌专业进行介绍","needRewrite":true,"processTime":764}
+
+ {"requestId":"ea3e39d7-95f9-4bfc-9ae3-862cf6b68279","query":"第二段的生产现场管理措施，你可以在知识库里多搜索几篇，进行总结归纳，这一次写的措施比较老，不新颖","historyList":["第二段布局防护棋这一段需要重新写，是写现场管理的措施，不是这设备维保的措施，这一段需要跟现场管理结合更紧密的措施","第二段布局防护棋这一段需要重新写，需要跟现场管理结合更紧密的措施","#角色定位：\n\n你是一个卷烟厂卷包车间新闻宣传稿件写作专家，能够精准把握组织语言风格，结构化呈现工作举措和成效。\n\n#知识储备：\n\n个人知识库\n\n#工作目的：\n\n根据我的知识库，以卷包车间三手棋推进现场管理工作，写一篇新闻宣传稿件，稿件格式参考知识库内的格","#角色定位：\n\n你是一个卷烟厂卷包车间新闻宣传稿件写作专家，能够精准把握组织语言风格，结构化呈现工作举措和成效。\n\n#知识储备：\n\n个人知识库\n\n#工作目的：\n\n以卷包车间三手棋推进现场管理工作，写一篇新闻宣传稿件，稿件格式参考知识库内的格式，一般第一段是","#角色定位：\n\n你是一个卷烟厂卷包车间新闻宣传稿件写作专家，能够精准把握组织语言风格，结构化呈现工作举措和成效。\n\n#知识储备：\n\n个人知识库\n\n#工作目的：\n\n以卷包车间三手棋推进现场管理工作，写一篇新闻宣传稿件，稿件格式参考知识库内的格式，一般第一段是"]}
+ 响应：{"requestId":"ea3e39d7-95f9-4bfc-9ae3-862cf6b68279","result":"第二段的生产现场管理措施，你可以在个人知识库中多搜索几篇，进行总结归纳，这一次写的措施比较老，不新颖","needRewrite":true,"processTime":1323}
+
+ {"requestId":"2ea9db82-9741-4934-8327-d3eab1a67ccf","query":"第二段布局防护棋这一段需要重新写，是写现场管理的措施，不是这设备维保的措施，这一段需要跟现场管理结合更紧密的措施","historyList":["第二段布局防护棋这一段需要重新写，需要跟现场管理结合更紧密的措施","#角色定位：\n\n你是一个卷烟厂卷包车间新闻宣传稿件写作专家，能够精准把握组织语言风格，结构化呈现工作举措和成效。\n\n#知识储备：\n\n个人知识库\n\n#工作目的：\n\n根据我的知识库，以卷包车间三手棋推进现场管理工作，写一篇新闻宣传稿件，稿件格式参考知识库内的格","#角色定位：\n\n你是一个卷烟厂卷包车间新闻宣传稿件写作专家，能够精准把握组织语言风格，结构化呈现工作举措和成效。\n\n#知识储备：\n\n个人知识库\n\n#工作目的：\n\n以卷包车间三手棋推进现场管理工作，写一篇新闻宣传稿件，稿件格式参考知识库内的格式，一般第一段是","#角色定位：\n\n你是一个卷烟厂卷包车间新闻宣传稿件写作专家，能够精准把握组织语言风格，结构化呈现工作举措和成效。\n\n#知识储备：\n\n个人知识库\n\n#工作目的：\n\n以卷包车间三手棋推进现场管理工作，写一篇新闻宣传稿件，稿件格式参考知识库内的格式，一般第一段是"]}
+ 响应：{"requestId":"2ea9db82-9741-4934-8327-d3eab1a67ccf","result":"第二段布局防护棋这一段需要重新写，是写现场管理的措施，不是设备维保的措施，这一段需要跟现场管理结合更紧密的措施","needRewrite":true,"processTime":1259}
+
+ {"requestId":"69bcad19-d2f4-42f9-8bc3-e24a3df87d35","query":"数字1~100随机给我三个数字。","historyList":["以世界读书日为主题，以地球日为背景，为中国移动云盘写一首五言绝句。","数字1-100随机抽3个幸运数字","数字1到100给我一个数字","数字1到100随机给我两个数字 没有任何含义的数字","庶"]} 响应：{"requestId":"69bcad19-d2f4-42f9-8bc3-e24a3df87d35","result":"数字1~100随机给我三个数字。","needRewrite":true,"processTime":545}
+
+ {"requestId":"6c5268ee-fe61-46ef-a5ed-cf6a24b510d7","query":"东坡肉","historyList":["英语回答","What is a dish you can cook?\nTell us how to make it.\n以一个大学生的视角"]} 响应：{"requestId":"6c5268ee-fe61-46ef-a5ed-cf6a24b510d7","result":"东坡肉的制作方法","needRewrite":true,"processTime":390}
+
+ {"requestId":"759f57dc-a9b3-4ee0-849d-a7398aaff6fb","query":"该网站提供哪些数据？","historyList":["http://www.cffex.com.cn/ccpm/?productid=IF"]} 响应：{"requestId":"759f57dc-a9b3-4ee0-849d-a7398aaff6fb","result":"cffex.com.cn/ccpm/?productid=IF提供哪些数据？","needRewrite":true,"processTime":603}
+
+ {"requestId":"8c4643d0-f65a-4aed-9cd3-4ccf3c5ec669","query":"按今天的股价，用市赚率给云南白药估值","historyList":["用市赚率给云南白药估值"]} 响应：{"requestId":"8c4643d0-f65a-4aed-9cd3-4ccf3c5ec669","result":"按今天的股价，用市赚率给云南白药估值","needRewrite":true,"processTime":588}
+
+ {"requestId":"abc807b9-4cd6-400f-ba8a-b160902c1b3d","query":"陈玉成的主要成就？","historyList":["陈玉成"]} 响应：{"requestId":"abc807b9-4cd6-400f-ba8a-b160902c1b3d","result":"陈玉成的主要成就？","needRewrite":true,"processTime":374}
+
+ {"requestId":"dcee794b-5b34-4996-8b63-3cd8d1ef7f8e","query":"个人电脑如何接入云？","historyList":["云计算个人电脑"]} 响应：{"requestId":"dcee794b-5b34-4996-8b63-3cd8d1ef7f8e","result":"云计算如何接入云？","needRewrite":true,"processTime":359}
+
+ {"requestId":"2badb7e1-5b2c-4637-86b6-88b51a9a0c3c","query":"如何表达真实感受？","historyList":["怎么跟游戏搭子不显得自己很自恋或者想太多地告诉他自己的想法，就是他是性格很温和，比我小了五六岁，纯玩游戏认识的，因为他经常跟我分享一些日常，还会很温柔耐心的对待我说的话，声音也好听等原因，我对他有了不该有的好感，我觉得不该有是因为我们年龄差的有点大，又是网"]} 响应：{"requestId":"2badb7e1-5b2c-4637-86b6-88b51a9a0c3c","result":"如何表达真实感受给性格温和、比我小五六岁的游戏搭子？","needRewrite":true,"processTime":692}
+
+ {"requestId":"75cb12e5-8ed3-4854-88bb-4b48f5fc11f4","query":"男生节能做什么活动？","historyList":["男生节是什么时候","埋点如何测试是否准确","埋点如何写","什么时候开始有优惠","埋点扣分的结果？"]} 响应：{"requestId":"75cb12e5-8ed3-4854-88bb-4b48f5fc11f4","result":"男生节能做什么活动？","needRewrite":true,"processTime":394}
+
+ {"requestId":"b693097b-7358-4166-816d-df211ff5249b","query":"埋点如何测试是否准确","historyList":["埋点如何写","什么时候开始有优惠","埋点扣分的结果？","埋点考核指标","你好"]} 响应：{"requestId":"b693097b-7358-4166-816d-df211ff5249b","result":"埋点如何测试是否准确","needRewrite":true,"processTime":402}
+
+ {"requestId":"dc065ca2-22d1-4978-88df-004778c6c675","query":"加边框有哪些方法？","historyList":["加边框","你好"]} 响应：{"requestId":"dc065ca2-22d1-4978-88df-004778c6c675","result":"你好，加边框有哪些方法？","needRewrite":true,"processTime":429}
+
+ {"requestId":"c9b4dea4-d114-421b-8d11-c28d12779166","query":"埋点如何写","historyList":["什么时候开始有优惠","埋点扣分的结果？","埋点考核指标","你好","如何取消圈子短信通知"]} 响应：{"requestId":"c9b4dea4-d114-421b-8d11-c28d12779166","result":"埋点考核指标如何写","needRewrite":true,"processTime":395}
+
+ {"requestId":"2ca30c02-3f59-41c4-807e-5f8cc5bd5403","query":"埋点扣分的结果？","historyList":["埋点考核指标","你好","如何取消圈子短信通知"]} 响应：{"requestId":"2ca30c02-3f59-41c4-807e-5f8cc5bd5403","result":"如何取消圈子短信通知的埋点考核指标的扣分结果？","needRewrite":true,"processTime":583}
+
+ {"requestId":"7ecf29d0-96cd-4679-90d1-16e68e253e74","query":"看得见山，望的见水，看得见乡愁","historyList":["普洱同心那柯里介绍"]} 响应：{"requestId":"7ecf29d0-96cd-4679-90d1-16e68e253e74","result":"普洱同心那柯里看得见山，望的见水，看得见乡愁","needRewrite":true,"processTime":781}
+
+ {"requestId":"4c06fc04-8a89-456f-bb78-0e3f88f9f164","query":"简单介绍中国科学院大学及其王牌专业","historyList":["同样要求介绍下中国科学院大学","内容需要口语化一些","请为我生成这30所院校对应的简易的介绍稿","将上面30所院校内容略微丰富一下","现在要有个开场白"]} 响应：{"requestId":"4c06fc04-8a89-456f-bb78-0e3f88f9f164","result":"简单介绍中国科学院大学及其王牌专业及其开场白","needRewrite":true,"processTime":557}
+
+ {"requestId":"739062d5-2b2c-42fc-8faa-bb5d1365aade","query":"我的意思就是我这是正常的吗，我害怕是有问题，正常人勾起舌尖也会舌头颤抖吗","historyList":["这会不会是张力型震颤啊","不是微小的，真的肉眼可见，我确定，这是不是运动时的正常表现","不是微小的，真的肉眼可见，我确定，这是不是运动时的正常表现","是震动，看的到的","我卷起或者勾起舌头时舌头一直抖，很大幅度，不是我看错了我肯定，想知道这种颤抖是不是正常的"]} 响应：{"requestId":"739062d5-2b2c-42fc-8faa-bb5d1365aade","result":"我的意思是我卷起或者勾起舌头时的颤抖是不是正常的，正常人勾起舌尖也会有这种颤抖吗","needRewrite":true,"processTime":1011}
+
+ {"requestId":"e203fc89-7138-46eb-827e-ac62778f67e8","query":"对于以上合同，甲方能否单方面违约","historyList":["以上车位转让情况，乙方是否能单方面违约","户外旅行"]} 响应：{"requestId":"e203fc89-7138-46eb-827e-ac62778f67e8","result":"对于以上车位转让合同，甲方能否单方面违约","needRewrite":true,"processTime":528}

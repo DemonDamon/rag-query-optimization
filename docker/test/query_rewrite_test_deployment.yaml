@@ -1,0 +1,94 @@
+kind: Deployment
+metadata:
+  annotations: {}
+  labels:
+    # 修改应用名
+    app.name: query-rewrite
+  # 修改应用名
+  name: query-rewrite
+  namespace: test
+spec:
+  progressDeadlineSeconds: 600
+  # 实例数量
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      # 修改应用名
+      app.name: query-rewrite
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        # 修改应用名
+        app.name: query-rewrite
+    spec:
+      containers:
+      - env:
+        - name: MCLOUD_AI_ENV
+          value: KCS_TEST
+        # 镜像，版本参数化
+        image: b66ypcgaicisp01-f8a759e8.ecis.guangzhou-2.cmecloud.cn/prod/query-rewrite:${imageversion}
+        imagePullPolicy: IfNotPresent
+        # 修改应用名
+        name: query-rewrite
+        # 修改资源
+        resources:
+          limits:
+            cpu: '4'
+            memory: 30Gi
+            nvidia.com/gpu: '1'
+          requests:
+            cpu: '4'
+            memory: 25Gi
+            nvidia.com/gpu: '1'
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /dev/shm
+          name: dshm
+        - mountPath: /logs
+          name: logs
+        - mountPath: /etc/localtime
+          name: time-localtime
+          readOnly: true
+        # 挂载共享存储，mountPath为内部路径
+        - mountPath: /app/query-rewrite/weights
+          name: volume-ai
+          subPath: query-rewrite/models
+      dnsConfig:
+        options:
+        - name: single-request-reopen
+        - name: timeout
+          value: '1'
+        - name: attempts
+          value: '3'
+        - name: ndots
+          value: '2'
+      dnsPolicy: ClusterFirst
+      imagePullSecrets:
+      - name: ai-cis-secret
+      # 显卡型号，t4或a100
+      nodeSelector:
+        gpu: t4
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 60
+      volumes:
+      - hostPath:
+          path: /var/lib/docker/logs
+          type: DirectoryOrCreate
+        name: logs
+      - hostPath:
+          path: /etc/localtime
+          type: ''
+        name: time-localtime
+      - emptyDir:
+          medium: Memory
+        name: dshm
+      - name: volume-ai
+        persistentVolumeClaim:
+          claimName: pvc-kcs-test-nas-gz3-ypcg-1
