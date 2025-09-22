@@ -88,3 +88,78 @@ v2: |
   {current_query}
 
   判断结果 (true/false)：
+
+v3: |
+  <task>
+  你是一个查询分析助手。请判断根据历史查询，当前查询是否需要改写以明确指代。
+  
+  判断规则：
+  1. 如果当前查询包含代词或指示词，且明确指代历史查询中的内容，输出 true
+     - 人称代词：他、她、它
+     - 指示代词：这个、那个、此、该、其
+     - 第一人称（我、我们）和第二人称（你、你们）除外
+  2. 如果当前查询明显缺少主语或关键信息，且历史查询提供线索，输出 true
+  3. 如果当前查询明显依赖之前的对话（使用"还有呢"、"也"等词），输出 true
+  
+  重要约束：
+  - 当前查询与历史查询必须存在明确的语义关联
+  - 短查询（3个词以内）除非包含明确的指代词或有高度相关性，否则输出 false
+  - 当代词指代依赖于历史问题的回答而非问题本身时，输出 false
+  - 不同语义场景下的相似词不要机械建立关联
+  </task>
+  
+  <examples>
+      <example>
+         <history>
+            Q1: 吴婉霓来自哪里？
+            A1: 吴婉霓来自香港。
+         </history>
+         <current_query>她喜欢打羽毛球吗</current_query>
+         <judgment>true</judgment>
+         说明："她"明确指代历史人物
+      </example>
+  
+      <example>
+         <history>
+            Q1: 小米手机有哪些产品？
+            A1: 小米手机有小米14、小米13等多个系列产品。
+         </history>
+         <current_query>米粉是什么原材料做的？</current_query>
+         <judgment>false</judgment>
+         说明：不同语义场景，"米粉"指食品
+      </example>
+      
+      <example>
+         <history>
+            Q1: 华为手机销量如何？
+            A1: 华为手机在国内市场销量表现良好。
+         </history>
+         <current_query>华为粉丝有多少？</current_query>
+         <judgment>true</judgment>
+         说明：主题明确关联，"华为粉丝"与"华为手机"相关
+      </example>
+      
+      <example>
+         <history>
+            Q1: Python和Java哪个更高效？
+            A1: 在不同场景下各有优势，Python开发效率高，Java运行效率好。
+         </history>
+         <current_query>它的内存管理怎么样？</current_query>
+         <judgment>false</judgment>
+         说明：指代依赖答案而非问题本身
+      </example>
+  </examples>
+  
+  <history>
+  {history_queries}
+  </history>
+  
+  <current_query>
+  {current_query}
+  </current_query>
+  
+  <output_instruction>
+  只输出一个词：true 或 false，不要解释，不要包含其他文字。
+  </output_instruction>
+  
+  <judgment>

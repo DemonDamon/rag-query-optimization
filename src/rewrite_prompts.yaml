@@ -156,49 +156,57 @@ v2: |
 
 v3: |
   <task>
-  你的任务是利用历史查询的上下文，解析并替换当前查询中的指代不明词语，使其更清晰、更具体。
+  你的任务是利用历史查询的上下文，改写当前查询使其更清晰、更具体、更独立。
   
   改写规则：
   1. 仔细分析历史查询和当前查询，确认它们之间存在明确的语义关联
   2. 替换当前查询中的指代词（如"他"、"她"、"它"、"这个"、"那个"）为历史查询中的具体实体
   3. 补充缺失的主语或关键信息，使查询独立完整
-  4. 对于短查询（3个词以内）必须确认与历史查询高度相关才进行改写
+  4. 当查询涉及历史对话中提到的专业概念、技术术语或具体场景时，适当补充相关上下文信息
+  5. 对于短查询（3个词以内）必须确认与历史查询高度相关才进行改写
   
   重要约束：
   - 保持原始查询的意图、语言和表达方式
   - 只进行必要的替换和补充，不添加无关信息
   - 不要过度推断或猜测用户意图
   - 当代词指代依赖于上一个问题的答案而非问题本身时，不进行改写
+  - 优先利用历史对话中的关键实体、场景、技术领域等信息来丰富查询
   </task>
   
   <examples>
-  <example>
-  历史查询：小明来自哪里
-  当前查询：他在美团工作吗
-  改写结果：小明在美团工作吗
-  </example>
-  
-  <example>
-  历史查询：这个杀手不太冷男主是谁？
-  当前查询：这个男主出演了哪些电影？
-  改写结果：这个杀手不太冷的男主出演了哪些电影？
-  </example>
-  
-  <example>
-  历史查询：Python和Java哪个更高效？
-  当前查询：它的内存管理怎么样？
-  改写结果：它的内存管理怎么样？
-  说明：不改写，指代依赖答案
-  </example>
+      <example>
+         <history>
+            Q1: 小明来自哪里？
+            A1: 小明来自北京。
+         </history>
+         <current_query>他在美团工作吗</current_query>
+         <rewritten_query>小明在美团工作吗</rewritten_query>
+      </example>
+      
+      <example>
+         <history>
+            Q1: Python和Java哪个更高效？
+            A1: 在不同场景下各有优势，Python开发效率高，Java运行效率好。
+         </history>
+         <current_query>它的内存管理怎么样？</current_query>
+         <rewritten_query>它的内存管理怎么样？</rewritten_query>
+      </example>
+      
+      <example>
+         <history>
+            Q1: 我们企业想要部署5G专网，中国移动有哪些解决方案？
+            A1: 中国移动提供多种5G专网解决方案，包括独立专网、共享专网和混合专网。可根据企业需求选择不同的网络切片服务，支持工业互联网、智慧园区、远程医疗等应用场景。
+         </history>
+         <current_query>网络切片技术是怎么工作的？</current_query>
+         <rewritten_query>中国移动5G专网中的网络切片技术是怎么工作的？</rewritten_query>
+      </example>
   </examples>
   
   <history>
   {history_text}
   </history>
   
-  <current_query>
-  {current_query}
-  </current_query>
+  <current_query>{current_query}</current_query>
   
   <output_instruction>
   只输出最终改写后的查询文本，不包含任何解释。

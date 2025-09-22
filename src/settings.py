@@ -76,7 +76,7 @@ else:
 settings.log_level_stdout = logging.DEBUG
 settings.logger_format_stdout = "{time} | {level} | {name}:{function}:{line} - {message}"
 
-settings.log_level_file = logging.INFO
+settings.log_level_file = logging.DEBUG
 settings.logger_format_file = "{time:YYYY-MM-DD HH:mm:ss.SSS}" + \
                              f"|{Computer.IP}|{Computer.NAME}|{settings.service_name}" + \
                               "|p{process}d|t{thread.name}d|{level}|API|||{message}|"
@@ -93,7 +93,7 @@ settings.EXTRACTION_PROMPTS_FILE = os.path.join(current_dir_path, "extraction_pr
 settings.PROMPT_VERSION = "v1"
 
 # 分别定义judge和rewrite的版本号
-settings.JUDGE_PROMPT_VERSION = "v2"
+settings.JUDGE_PROMPT_VERSION = "v3"
 settings.REWRITE_PROMPT_VERSION = "v3"
 settings.SUMMARY_PROMPT_VERSION = "v1"  # 使用v3版本提示词
 settings.CLASSIFY_PROMPT_VERSION = "v1"  # 查询分类提示词版本
