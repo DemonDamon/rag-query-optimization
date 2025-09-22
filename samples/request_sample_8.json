@@ -1,0 +1,71 @@
+{
+    "requestId": "quantum_computing_008",
+    "query": "量子纠错码的实现难度有多大？",
+    "historyList": [
+        {
+            "role": "user",
+            "content": "量子计算相比经典计算有什么根本优势？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "量子计算利用量子叠加和量子纠缠等量子力学现象，能够并行处理指数级的计算状态。在特定问题上具有指数级加速优势，如大数分解、数据库搜索、化学模拟等。但量子比特极易受环境干扰，需要量子纠错技术。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "量子比特为什么容易受环境干扰？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "量子比特的量子态非常脆弱，任何与环境的相互作用都会导致量子退相干。温度波动、电磁场、振动等都会破坏量子叠加态。这就是为什么量子计算机需要在接近绝对零度的环境中运行，并且需要精密的屏蔽和隔离。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "目前的量子计算机是如何实现低温环境的？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "主要使用稀释制冷机，能够达到10-15毫开尔文的超低温。制冷过程包括多级冷却，从室温逐步降到液氦温度，再通过稀释制冷达到毫开尔文级别。整个系统非常复杂昂贵，功耗也很大。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "除了低温，还有其他方法保护量子比特吗？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "是的，还有动态解耦、量子纠错码、拓扑保护等方法。动态解耦通过快速脉冲序列抵消环境噪声，量子纠错码使用多个物理量子比特编码一个逻辑量子比特，拓扑量子比特利用拓扑性质天然抗噪声。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "拓扑量子比特的工作原理是什么？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "拓扑量子比特基于任意子的拓扑性质，信息存储在全局拓扑态中而非局部状态。即使局部受到干扰，只要拓扑结构不变，量子信息就能保持。操作通过编织任意子轨迹实现，这种方式天然具有容错性。但实现拓扑量子比特需要特殊的材料和条件，技术难度极高。",
+            "reasoningContent": null
+        }
+    ],
+    "enableExtraction": true,
+    "extractionRules": [
+        {
+            "desc": "提取技术实现难度等级，1-10级。例如：'极高难度'、'中等难度'。",
+            "valueType": "int",
+            "keyName": "implementationDifficulty",
+            "defaultValue": -1
+        },
+        {
+            "desc": "提取研发周期，统一为年。例如：'5年'、'十年以上'。",
+            "valueType": "int",
+            "keyName": "developmentYears",
+            "defaultValue": -1
+        }
+    ]
+}

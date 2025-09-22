@@ -1,0 +1,71 @@
+{
+    "requestId": "metamaterials_013",
+    "query": "负折射率材料的色散特性如何控制？",
+    "historyList": [
+        {
+            "role": "user",
+            "content": "超材料技术在隐身应用中的原理是什么？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "超材料隐身基于电磁波的人工调控，通过设计亚波长结构单元实现异常的电磁响应。负折射率材料能使电磁波绕过物体传播，实现隐身效果。变换光学理论指导超材料的设计，将空间坐标变换映射为材料参数分布。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "变换光学理论的数学基础是什么？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "变换光学基于麦克斯韦方程的坐标变换不变性。通过坐标变换，可以将复杂几何中的电磁场问题转化为简单几何中的材料设计问题。雅可比矩阵描述坐标变换，对应的材料张量由变换矩阵确定。这为超材料的理性设计提供了数学框架。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "如何在实际中制备这种复杂的材料参数分布？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "实际制备采用分层近似和离散化方法。将连续的参数分布离散为有限个均匀层，每层用特定的超材料单元实现。微纳加工技术如电子束光刻、聚焦离子束等能制备精细结构。3D打印、自组装等新技术也在发展中。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "超材料单元的尺寸如何影响性能？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "单元尺寸需要远小于工作波长以满足有效介质理论。尺寸减小能提高均匀性，但加工难度增大。单元间耦合会影响整体响应，需要优化单元形状和排列。色散特性与单元的几何参数密切相关，通过调节尺寸可以控制频率响应。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "色散控制在超材料设计中为什么重要？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "色散控制决定了超材料的工作带宽和性能稳定性。强色散会导致脉冲展宽、相位失真等问题。负折射率材料通常具有强色散特性，限制了实际应用。通过多谐振结构、渐变设计等方法可以展宽工作频带，实现低色散的负折射率响应。这对于宽带隐身、超分辨成像等应用至关重要。",
+            "reasoningContent": null
+        }
+    ],
+    "enableExtraction": true,
+    "extractionRules": [
+        {
+            "desc": "提取工作频带宽度，统一为GHz。例如：'10GHz'、'宽频带'。",
+            "valueType": "int",
+            "keyName": "bandwidthGHz",
+            "defaultValue": -1
+        },
+        {
+            "desc": "提取色散系数大小，1-5级。例如：'低色散'、'强色散'。",
+            "valueType": "int",
+            "keyName": "dispersionLevel",
+            "defaultValue": -1
+        }
+    ]
+}

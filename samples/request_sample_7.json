@@ -1,0 +1,71 @@
+{
+    "requestId": "autonomous_driving_007",
+    "query": "激光雷达和毫米波雷达的融合算法复杂度如何？",
+    "historyList": [
+        {
+            "role": "user",
+            "content": "自动驾驶汽车的感知系统包括哪些传感器？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "自动驾驶感知系统主要包括摄像头、激光雷达、毫米波雷达、超声波传感器等。激光雷达提供高精度3D点云数据，毫米波雷达在恶劣天气下表现稳定，摄像头负责颜色和纹理识别。多传感器融合是关键技术。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "多传感器融合面临哪些技术挑战？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "主要挑战包括时间同步、空间标定、数据关联、冗余处理等。不同传感器的采样频率、精度、视野范围差异很大，需要复杂的融合算法来统一处理。还要考虑传感器故障时的降级策略。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "传感器故障的降级策略是怎样的？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "降级策略采用分层设计，当某个传感器失效时，系统会自动切换到备用方案。比如激光雷达故障时，增强摄像头和毫米波雷达的权重。系统会实时监测传感器状态，评估可靠性，动态调整融合权重。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "如何评估传感器的可靠性？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "可靠性评估包括硬件自检、数据一致性检查、环境适应性测试等。系统会比较不同传感器的检测结果，识别异常数据。还会根据环境条件（如雨雪、强光）调整可靠性权重。机器学习算法也用于预测传感器性能退化。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "机器学习算法在传感器性能预测中的具体应用？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "主要应用包括故障预测、性能建模、自适应校准等。通过分析历史数据，算法可以预测传感器何时可能出现性能下降。深度学习模型能够学习传感器在不同环境下的表现模式，实现动态补偿。融合算法的复杂度也会根据预测结果进行调整。",
+            "reasoningContent": null
+        }
+    ],
+    "enableExtraction": true,
+    "extractionRules": [
+        {
+            "desc": "提取算法复杂度等级，1-10级。例如：'高复杂度'、'中等复杂度'。",
+            "valueType": "int",
+            "keyName": "algorithmComplexity",
+            "defaultValue": -1
+        },
+        {
+            "desc": "提取计算延迟要求，统一为毫秒。例如：'100ms'、'实时处理'。",
+            "valueType": "int",
+            "keyName": "latencyMs",
+            "defaultValue": -1
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "requestId": "space_exploration_010",
+    "query": "离子推进器的比冲性能优化方案有哪些？",
+    "historyList": [
+        {
+            "role": "user",
+            "content": "火星探测任务面临哪些主要技术挑战？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "火星探测面临推进系统、生命支持、着陆技术、通信延迟等挑战。推进系统需要在长距离航行中保持高效率，传统化学推进燃料消耗大，离子推进器虽然推力小但比冲高，适合深空任务。着陆时的大气制动和精确导航也是难点。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "离子推进器相比化学推进有什么优势？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "离子推进器的比冲可达3000-10000秒，远高于化学推进的300-450秒。这意味着相同质量的推进剂能产生更大的速度增量。虽然推力较小，但在长期任务中燃料效率极高。缺点是推力密度低，无法用于发射阶段。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "如何解决离子推进器推力小的问题？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "主要方法包括多推进器并联、提高功率密度、优化离子束聚焦等。NASA的NEXT推进器通过改进栅极设计和磁场配置，将推力提升到236毫牛。还可以采用可变比冲推进器，根据任务阶段调整推力和比冲的平衡。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "可变比冲推进器是如何工作的？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "可变比冲推进器通过调节电压、磁场强度、推进剂流量等参数来改变工作模式。高比冲模式用于巡航阶段，高推力模式用于机动阶段。VASIMR推进器使用射频加热等离子体，可以在1000-30000秒比冲范围内调节。控制系统需要实时优化参数以适应不同任务需求。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "VASIMR推进器的射频加热系统复杂度如何？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "VASIMR的射频系统非常复杂，包括射频发生器、天线阵列、磁场线圈、等离子体诊断等子系统。需要精确控制射频功率和频率，维持稳定的等离子体状态。系统效率、热管理、电磁兼容性都是关键技术难点。比冲性能的进一步优化需要在材料科学、等离子体物理等多个领域取得突破。",
+            "reasoningContent": null
+        }
+    ],
+    "enableExtraction": true,
+    "extractionRules": [
+        {
+            "desc": "提取比冲性能数值，统一为秒。例如：'3000秒'、'高比冲'。",
+            "valueType": "int",
+            "keyName": "specificImpulseSeconds",
+            "defaultValue": -1
+        },
+        {
+            "desc": "提取系统复杂度等级，1-10级。例如：'极高复杂度'、'中等复杂度'。",
+            "valueType": "int",
+            "keyName": "systemComplexity",
+            "defaultValue": -1
+        }
+    ]
+}

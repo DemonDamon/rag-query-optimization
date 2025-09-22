@@ -1,0 +1,71 @@
+{
+    "requestId": "gene_editing_011",
+    "query": "CRISPR-Cas9系统的脱靶效应如何检测？",
+    "historyList": [
+        {
+            "role": "user",
+            "content": "基因编辑技术在治疗遗传疾病方面有什么进展？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "基因编辑技术在遗传疾病治疗方面取得重大进展，CRISPR-Cas9、碱基编辑、引导编辑等技术日趋成熟。已有多个临床试验针对镰状细胞病、β地中海贫血等疾病。但脱靶效应、递送效率、免疫反应等安全性问题仍需解决。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "不同基因编辑技术的精确度如何比较？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "CRISPR-Cas9适合大片段删除插入，但可能产生不可预测的插入缺失。碱基编辑器能实现单碱基替换，精确度更高但编辑范围有限。引导编辑结合了两者优势，能进行精确的小片段编辑。新一代工具如Cas12、CasX等也在不断改进精确度。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "如何提高基因编辑的递送效率？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "递送效率提升主要依靠载体优化和递送方法改进。腺相关病毒(AAV)载体具有良好的组织特异性，脂质纳米颗粒(LNP)适合mRNA递送。体内直接注射、电穿孔、超声介导等物理方法也在发展。组织特异性启动子能提高靶向性。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "腺相关病毒载体有什么局限性？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "AAV载体的主要局限包括载荷容量小(约4.7kb)、免疫原性、生产成本高等。重复给药可能引起免疫反应，影响治疗效果。不同血清型的AAV对不同组织有偏好性，需要针对性选择。载荷限制使得大基因难以递送。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "如何克服AAV载荷容量的限制？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "克服载荷限制的策略包括双载体系统、蛋白质分割、内含肽技术等。双AAV系统将大基因分成两部分，通过同源重组或转座子重组。蛋白质分割技术将大蛋白分成功能域，分别表达后重组。内含肽能在翻译后自动剪接。CRISPR系统的小型化也是重要方向，如开发更紧凑的Cas蛋白变体。",
+            "reasoningContent": null
+        }
+    ],
+    "enableExtraction": true,
+    "extractionRules": [
+        {
+            "desc": "提取脱靶率数值，统一为百分比。例如：'1%'、'低脱靶率'。",
+            "valueType": "int",
+            "keyName": "offTargetRate",
+            "defaultValue": -1
+        },
+        {
+            "desc": "提取检测精度等级，1-5级。例如：'高精度'、'超高精度'。",
+            "valueType": "int",
+            "keyName": "detectionPrecision",
+            "defaultValue": -1
+        }
+    ]
+}

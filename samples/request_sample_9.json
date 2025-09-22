@@ -1,0 +1,71 @@
+{
+    "requestId": "brain_computer_interface_009",
+    "query": "神经信号解码算法的实时性要求是什么？",
+    "historyList": [
+        {
+            "role": "user",
+            "content": "脑机接口技术的发展现状如何？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "脑机接口技术正快速发展，主要分为侵入式和非侵入式两类。侵入式接口通过植入电极直接记录神经元活动，精度高但风险大。非侵入式使用EEG、fMRI等技术，安全但精度有限。神经信号解码是核心技术挑战。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "侵入式和非侵入式接口的精度差异有多大？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "侵入式接口可以记录单个神经元的动作电位，时间分辨率达到毫秒级，空间分辨率达到微米级。非侵入式EEG的时间分辨率也很好，但空间分辨率只有厘米级，且信号会被颅骨衰减。fMRI空间分辨率较好但时间分辨率只有秒级。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "如何提高非侵入式接口的信号质量？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "主要方法包括高密度电极阵列、先进的信号处理算法、机器学习技术等。高密度EEG可以提高空间分辨率，独立成分分析能够分离不同信号源，深度学习算法可以从噪声中提取有用特征。多模态融合也是重要方向。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "多模态融合具体是如何实现的？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "多模态融合结合EEG、fMRI、fNIRS等不同技术的优势。EEG提供高时间分辨率，fMRI提供高空间分辨率，fNIRS提供血氧信息。融合算法需要处理不同模态的时间同步、空间配准、特征提取等问题。深度学习网络可以自动学习多模态特征的最优组合。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "深度学习在脑机接口中还有哪些应用？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "深度学习在脑机接口中应用广泛，包括信号预处理、特征提取、意图识别、自适应校准等。卷积神经网络擅长处理时空信号模式，循环神经网络适合序列建模，生成对抗网络可以增强训练数据。实时性是关键挑战，需要在准确性和延迟之间平衡。",
+            "reasoningContent": null
+        }
+    ],
+    "enableExtraction": true,
+    "extractionRules": [
+        {
+            "desc": "提取实时处理延迟，统一为毫秒。例如：'100ms'、'实时响应'。",
+            "valueType": "int",
+            "keyName": "realtimeLatencyMs",
+            "defaultValue": -1
+        },
+        {
+            "desc": "提取算法准确率要求，统一为百分比。例如：'95%'、'高精度'。",
+            "valueType": "int",
+            "keyName": "accuracyRequirement",
+            "defaultValue": -1
+        }
+    ]
+}

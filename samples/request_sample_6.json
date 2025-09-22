@@ -1,0 +1,71 @@
+{
+    "requestId": "blockchain_finance_006",
+    "query": "智能合约的安全漏洞有哪些类型？",
+    "historyList": [
+        {
+            "role": "user",
+            "content": "区块链技术在金融领域的应用前景如何？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "区块链在金融领域前景广阔，主要应用包括数字货币、跨境支付、供应链金融、智能合约等。智能合约能够自动执行合约条款，减少中介成本，但也面临安全性挑战。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "跨境支付相比传统方式有什么优势？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "区块链跨境支付具有速度快、成本低、透明度高的优势。传统跨境支付需要经过多个中介银行，耗时3-5天，手续费高昂。区块链技术可以实现点对点转账，几分钟内完成，大幅降低手续费。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "监管机构对区块链金融的态度如何？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "各国监管态度不一，总体趋向谨慎开放。美国SEC、欧盟、中国央行都在制定相关法规。主要关注点包括反洗钱、消费者保护、金融稳定性等。监管沙盒机制为创新提供了试验空间。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "监管沙盒机制是如何运作的？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "监管沙盒允许金融科技公司在受控环境中测试创新产品，暂时豁免某些监管要求。参与者需要满足准入条件，接受监管机构监督，测试期间收集数据评估风险。成功的创新可以获得正式牌照推广。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "参与监管沙盒的准入条件通常包括哪些？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "准入条件通常包括：具备真正的金融创新、有明确的测试计划、拥有足够的技术和资金实力、能够识别和管控风险。申请者还需要证明创新对消费者有益，并承诺在测试期间保护消费者权益。智能合约的代码审计也是重要考量因素。",
+            "reasoningContent": null
+        }
+    ],
+    "enableExtraction": true,
+    "extractionRules": [
+        {
+            "desc": "提取安全风险等级，1-5级。例如：'高风险'、'中等风险'。",
+            "valueType": "int",
+            "keyName": "securityRiskLevel",
+            "defaultValue": -1
+        },
+        {
+            "desc": "提取漏洞修复时间，统一为天。例如：'7天'、'一周内'。",
+            "valueType": "int",
+            "keyName": "fixTimeDays",
+            "defaultValue": -1
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "requestId": "ai_medical_005",
+    "query": "深度学习算法在这方面的准确率如何？",
+    "historyList": [
+        {
+            "role": "user",
+            "content": "AI在医疗诊断领域有哪些应用？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "AI在医疗诊断领域应用广泛，包括医学影像分析、病理诊断、药物发现等。特别是在影像诊断中，深度学习算法能够识别CT、MRI等影像中的异常，辅助医生进行早期诊断。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "医学影像分析的技术难点在哪里？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "医学影像分析的主要难点包括数据标注成本高、影像质量差异大、疾病表现复杂多样。需要大量专业医生参与标注，而且不同设备、不同患者的影像存在显著差异，这对算法的泛化能力提出了很高要求。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "如何解决数据标注成本高的问题？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "可以采用半监督学习、主动学习、联邦学习等技术。半监督学习能利用少量标注数据和大量无标注数据训练模型，主动学习可以智能选择最有价值的样本进行标注，联邦学习则允许多个医院在不共享原始数据的情况下协同训练模型。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "联邦学习在医疗领域的实际部署情况怎样？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "联邦学习在医疗领域还处于探索阶段，主要挑战包括数据隐私保护、通信效率、模型一致性等。目前一些大型医疗机构正在试点，但大规模商业化应用还需要解决法规合规、技术标准化等问题。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "法规合规方面有什么具体要求？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "医疗AI需要符合FDA、NMPA等监管机构的审批要求，包括临床试验验证、安全性评估、有效性证明等。还需要遵循HIPAA、GDPR等数据保护法规，确保患者隐私安全。深度学习算法的可解释性也是监管关注的重点。",
+            "reasoningContent": null
+        }
+    ],
+    "enableExtraction": true,
+    "extractionRules": [
+        {
+            "desc": "提取准确率数值要求，统一为百分比。例如：'95%'、'90%以上'。",
+            "valueType": "int",
+            "keyName": "accuracyRate",
+            "defaultValue": -1
+        },
+        {
+            "desc": "提取算法类型复杂度，1-5级。例如：'深度学习'、'机器学习'。",
+            "valueType": "int",
+            "keyName": "algorithmComplexity",
+            "defaultValue": -1
+        }
+    ]
+}

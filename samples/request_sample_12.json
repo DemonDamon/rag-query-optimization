@@ -1,0 +1,71 @@
+{
+    "requestId": "nuclear_fusion_012",
+    "query": "托卡马克装置的等离子体约束时间如何延长？",
+    "historyList": [
+        {
+            "role": "user",
+            "content": "核聚变发电的技术难点主要在哪里？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "核聚变发电面临等离子体约束、材料科学、能量平衡等核心挑战。需要在1亿度高温下约束等离子体，同时承受强中子辐射。托卡马克装置通过磁约束实现等离子体控制，但约束时间和稳定性仍需突破。材料需要承受极端环境。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "磁约束相比惯性约束有什么优势？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "磁约束能够实现稳态运行，等离子体密度相对较低但约束时间长。惯性约束需要极高功率激光，实现瞬间高密度压缩，但持续时间极短。磁约束更适合发电应用，惯性约束在武器研究中应用较多。ITER项目代表了磁约束的最高水平。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "ITER项目的技术指标是什么？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "ITER设计目标是实现Q=10的能量增益，即输出500MW聚变功率，输入50MW加热功率。等离子体体积830立方米，磁场强度5.3特斯拉，等离子体温度1.5亿度。计划实现400-600秒的长脉冲运行，验证聚变发电的可行性。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "如何实现如此长时间的脉冲运行？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "长脉冲运行需要解决多个技术问题：超导磁体提供稳定磁场，中性束注入和射频加热维持等离子体温度，主动冷却系统移除多余热量。等离子体面向材料需要承受高热流密度，边界等离子体控制防止杂质污染。实时反馈控制系统维持等离子体稳定性。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "实时反馈控制系统的响应速度要求是什么？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "等离子体控制系统需要毫秒级响应速度，因为等离子体不稳定性发展很快。磁流体不稳定性的时间尺度为毫秒到秒，撕裂模、气球模等需要快速抑制。现代控制系统使用实时诊断、预测算法、快速执行器等技术。约束时间的延长依赖于这些先进控制技术的协同工作。",
+            "reasoningContent": null
+        }
+    ],
+    "enableExtraction": true,
+    "extractionRules": [
+        {
+            "desc": "提取约束时间长度，统一为秒。例如：'600秒'、'长时间约束'。",
+            "valueType": "int",
+            "keyName": "confinementTimeSeconds",
+            "defaultValue": -1
+        },
+        {
+            "desc": "提取控制系统响应时间，统一为毫秒。例如：'10ms'、'快速响应'。",
+            "valueType": "int",
+            "keyName": "responseTimeMs",
+            "defaultValue": -1
+        }
+    ]
+}
