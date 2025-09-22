@@ -21,6 +21,8 @@ thirdparty/
 # prd.md
 
 *.log
+logs/
+**/logs/
 .env
 
 .coverage
