@@ -248,3 +248,86 @@
 2025-06-29 22:47:23.111|192.168.43.242|Hisoka|query-rewrite|p25096d|tMainThreadd|INFO|API|||正常响应（无需改写，返回原始查询）|requestId=query_cls_565df8fd|query=请为公司领导写一篇在技术创新大会上的发言稿，时长控制一小时15分，字数要求两万零一|result=请为公司领导写一篇在技术创新大会上的发言稿，时长控制一小时15分，字数要求两万零一|needRewrite=False|historyList=['考试前饮食应该如何安排？', '这些食物能提供什么营养？', '奶酪的发源地在哪里？']|processTime=1651|queryType=发言稿|extractedInfo=[{'requireWordNums': 20010}, {'durationMins': 75}]|
 2025-06-29 22:47:27.297|192.168.43.242|Hisoka|query-rewrite|p25096d|tMainThreadd|INFO|API|||接收请求|requestId=query_cls_57d57f2e|query=请为公司领导写一篇在技术创新大会上的发言稿，时长控制一百零1分钟，字数要求1000|historyList=['考试前饮食应该如何安排？', '这些食物能提供什么营养？', '奶酪的发源地在哪里？']|enableExtraction=True|extractionRules=[{'desc': "提取文本内容的字数要求。这是一个关于文字数量的指标，与演讲时间无关。例如：'5000字'、'一万字以内'。", 'valueType': 'int', 'keyName': 'requireWordNums', 'defaultValue': -1}, {'desc': "提取演讲或发言的时长要求，并统一为分钟。这是一个关于时间的指标，与字数无关。例如：'5min'、'两小时'。", 'valueType': 'int', 'keyName': 'durationMins', 'defaultValue': ''}]|
 2025-06-29 22:47:28.821|192.168.43.242|Hisoka|query-rewrite|p25096d|tMainThreadd|INFO|API|||正常响应（无需改写，返回原始查询）|requestId=query_cls_57d57f2e|query=请为公司领导写一篇在技术创新大会上的发言稿，时长控制一百零1分钟，字数要求1000|result=请为公司领导写一篇在技术创新大会上的发言稿，时长控制一百零1分钟，字数要求1000|needRewrite=False|historyList=['考试前饮食应该如何安排？', '这些食物能提供什么营养？', '奶酪的发源地在哪里？']|processTime=1523|queryType=发言稿|extractedInfo=[{'requireWordNums': 1000}, {'durationMins': 101}]|
+2025-09-22 17:50:18.359|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59415d|tMainThreadd|INFO|API|||判断模型服务URL|url=http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:50:18.359|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59415d|tMainThreadd|INFO|API|||改写模型服务URL|url=http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:50:18.360|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59415d|tMainThreadd|INFO|API|||总结判断模型服务URL|url=http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:50:18.360|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59415d|tMainThreadd|INFO|API|||查询分类模型服务URL|url=http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:50:18.360|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59415d|tMainThreadd|INFO|API|||信息抽取模型服务URL|url=http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:50:18.363|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59415d|tMainThreadd|INFO|API|||提示词模板加载成功|
+2025-09-22 17:50:18.604|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59420d|tMainThreadd|INFO|API|||判断模型服务URL|url=http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:50:18.604|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59420d|tMainThreadd|INFO|API|||改写模型服务URL|url=http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:50:18.604|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59420d|tMainThreadd|INFO|API|||总结判断模型服务URL|url=http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:50:18.604|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59420d|tMainThreadd|INFO|API|||查询分类模型服务URL|url=http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:50:18.604|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59420d|tMainThreadd|INFO|API|||信息抽取模型服务URL|url=http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:50:18.607|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59420d|tMainThreadd|INFO|API|||提示词模板加载成功|
+2025-09-22 17:50:18.646|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59420d|tMainThreadd|INFO|API|||判断模型服务URL|url=http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:50:18.646|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59420d|tMainThreadd|INFO|API|||改写模型服务URL|url=http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:50:18.646|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59420d|tMainThreadd|INFO|API|||总结判断模型服务URL|url=http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:50:18.646|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59420d|tMainThreadd|INFO|API|||查询分类模型服务URL|url=http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:50:18.646|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59420d|tMainThreadd|INFO|API|||信息抽取模型服务URL|url=http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:50:18.649|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59420d|tMainThreadd|INFO|API|||提示词模板加载成功|
+2025-09-22 17:50:21.888|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59420d|tMainThreadd|INFO|API|||接收请求|requestId=query_opt_123456|query=详细说一下怎么落地|historyList=[]|enableExtraction=True|extractionRules=[{'desc': "提取文本内容的字数要求。这是一个关于文字数量的指标，与演讲时间无关。例如：'5000字'、'一万字以内'。", 'valueType': 'int', 'keyName': 'requireWordNums', 'defaultValue': -1}, {'desc': "提取演讲或发言的时长要求，并统一为分钟。这是一个关于时间的指标，与字数无关。例如：'5min'、'两小时'。", 'valueType': 'int', 'keyName': 'durationMins', 'defaultValue': -1}]|
+2025-09-22 17:50:23.296|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59420d|tThreadPoolExecutor-0_0d|ERROR|API|||异常捕获（调用查询分类模型服务失败）|error=502 Server Error: Bad Gateway for url: http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b|error_type=HTTPError|
+2025-09-22 17:50:24.634|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59420d|tThreadPoolExecutor-0_0d|ERROR|API|||信息抽取请求异常|error=502 Server Error: Bad Gateway for url: http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b|error_type=HTTPError|
+2025-09-22 17:50:24.639|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59420d|tThreadPoolExecutor-0_0d|ERROR|API|||异常捕获（调用信息抽取模型服务失败）|error=502 Server Error: Bad Gateway for url: http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b|error_type=HTTPError|traceback=Traceback (most recent call last):
+  File "/Users/damon/myWork/rag-query-optimization/src/api_server.py", line 1340, in call_llm_for_batch_extraction
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/miniconda3/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b
+|
+2025-09-22 17:50:25.989|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59420d|tThreadPoolExecutor-0_0d|ERROR|API|||异常捕获（调用判断模型服务失败）|error=502 Server Error: Bad Gateway for url: http://0.0.0.0:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:50:25.992|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59420d|tMainThreadd|INFO|API|||正常响应（无需改写，返回原始查询）|requestId=query_opt_123456|query=详细说一下怎么落地|result=详细说一下怎么落地|needRewrite=False|historyList=[]|processTime=4104|queryType=其他类|extractedInfo=[{'requireWordNums': -1}, {'durationMins': -1}]|
+2025-09-22 17:51:42.581|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59692d|tMainThreadd|INFO|API|||判断模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:51:42.581|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59692d|tMainThreadd|INFO|API|||改写模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:51:42.581|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59692d|tMainThreadd|INFO|API|||总结判断模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:51:42.581|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59692d|tMainThreadd|INFO|API|||查询分类模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:51:42.581|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59692d|tMainThreadd|INFO|API|||信息抽取模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:51:42.585|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59692d|tMainThreadd|INFO|API|||提示词模板加载成功|
+2025-09-22 17:51:42.828|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59695d|tMainThreadd|INFO|API|||判断模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:51:42.829|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59695d|tMainThreadd|INFO|API|||改写模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:51:42.829|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59695d|tMainThreadd|INFO|API|||总结判断模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:51:42.829|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59695d|tMainThreadd|INFO|API|||查询分类模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:51:42.829|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59695d|tMainThreadd|INFO|API|||信息抽取模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:51:42.832|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59695d|tMainThreadd|INFO|API|||提示词模板加载成功|
+2025-09-22 17:51:42.858|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59695d|tMainThreadd|INFO|API|||判断模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:51:42.858|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59695d|tMainThreadd|INFO|API|||改写模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:51:42.858|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59695d|tMainThreadd|INFO|API|||总结判断模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:51:42.858|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59695d|tMainThreadd|INFO|API|||查询分类模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:51:42.858|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59695d|tMainThreadd|INFO|API|||信息抽取模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:51:42.861|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59695d|tMainThreadd|INFO|API|||提示词模板加载成功|
+2025-09-22 17:51:46.476|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59695d|tMainThreadd|INFO|API|||接收请求|requestId=query_opt_123456|query=详细说一下怎么落地|historyList=[]|enableExtraction=True|extractionRules=[{'desc': "提取文本内容的字数要求。这是一个关于文字数量的指标，与演讲时间无关。例如：'5000字'、'一万字以内'。", 'valueType': 'int', 'keyName': 'requireWordNums', 'defaultValue': -1}, {'desc': "提取演讲或发言的时长要求，并统一为分钟。这是一个关于时间的指标，与字数无关。例如：'5min'、'两小时'。", 'valueType': 'int', 'keyName': 'durationMins', 'defaultValue': -1}]|
+2025-09-22 17:51:48.050|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59695d|tMainThreadd|INFO|API|||正常响应（查询改写完成）|requestId=query_opt_123456|query=详细说一下怎么落地|result=详细说一下怎么落地Python和Java|needRewrite=True|historyList=[]|processTime=1574|queryType=其他类|extractedInfo=[{'requireWordNums': -1}, {'durationMins': -1}]|
+2025-09-22 17:52:08.641|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59789d|tMainThreadd|INFO|API|||判断模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:08.641|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59789d|tMainThreadd|INFO|API|||改写模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:08.641|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59789d|tMainThreadd|INFO|API|||总结判断模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:08.641|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59789d|tMainThreadd|INFO|API|||查询分类模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:08.641|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59789d|tMainThreadd|INFO|API|||信息抽取模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:08.645|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59789d|tMainThreadd|INFO|API|||提示词模板加载成功|
+2025-09-22 17:52:08.678|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59789d|tMainThreadd|INFO|API|||判断模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:08.678|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59789d|tMainThreadd|INFO|API|||改写模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:08.678|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59789d|tMainThreadd|INFO|API|||总结判断模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:08.678|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59789d|tMainThreadd|INFO|API|||查询分类模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:08.678|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59789d|tMainThreadd|INFO|API|||信息抽取模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:08.681|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59789d|tMainThreadd|INFO|API|||提示词模板加载成功|
+2025-09-22 17:52:14.799|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59810d|tMainThreadd|INFO|API|||判断模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:14.799|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59810d|tMainThreadd|INFO|API|||改写模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:14.799|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59810d|tMainThreadd|INFO|API|||总结判断模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:14.799|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59810d|tMainThreadd|INFO|API|||查询分类模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:14.799|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59810d|tMainThreadd|INFO|API|||信息抽取模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:14.802|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59810d|tMainThreadd|INFO|API|||提示词模板加载成功|
+2025-09-22 17:52:15.040|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59813d|tMainThreadd|INFO|API|||判断模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:15.040|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59813d|tMainThreadd|INFO|API|||改写模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:15.040|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59813d|tMainThreadd|INFO|API|||总结判断模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:15.040|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59813d|tMainThreadd|INFO|API|||查询分类模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:15.040|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59813d|tMainThreadd|INFO|API|||信息抽取模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:15.043|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59813d|tMainThreadd|INFO|API|||提示词模板加载成功|
+2025-09-22 17:52:15.070|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59813d|tMainThreadd|INFO|API|||判断模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:15.070|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59813d|tMainThreadd|INFO|API|||改写模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:15.070|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59813d|tMainThreadd|INFO|API|||总结判断模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:15.070|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59813d|tMainThreadd|INFO|API|||查询分类模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:15.070|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59813d|tMainThreadd|INFO|API|||信息抽取模型服务URL|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|
+2025-09-22 17:52:15.073|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59813d|tMainThreadd|INFO|API|||提示词模板加载成功|
+2025-09-22 17:52:19.082|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59813d|tMainThreadd|INFO|API|||接收请求|requestId=query_opt_123456|query=详细说一下怎么落地|historyList=[]|enableExtraction=True|extractionRules=[{'desc': "提取文本内容的字数要求。这是一个关于文字数量的指标，与演讲时间无关。例如：'5000字'、'一万字以内'。", 'valueType': 'int', 'keyName': 'requireWordNums', 'defaultValue': -1}, {'desc': "提取演讲或发言的时长要求，并统一为分钟。这是一个关于时间的指标，与字数无关。例如：'5min'、'两小时'。", 'valueType': 'int', 'keyName': 'durationMins', 'defaultValue': -1}]|
+2025-09-22 17:52:20.719|192.168.125.165|DamondeMacBook-Air.local|query-rewrite|p59813d|tMainThreadd|INFO|API|||正常响应（查询改写完成）|requestId=query_opt_123456|query=详细说一下怎么落地|result=落地项目怎么实施|needRewrite=True|historyList=[]|processTime=1637|queryType=其他类|extractedInfo=[{'requireWordNums': -1}, {'durationMins': -1}]|
