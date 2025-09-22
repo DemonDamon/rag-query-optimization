@@ -1,0 +1,51 @@
+{
+    "requestId": "mobile_telecom_003",
+    "query": "网络切片技术是怎么工作的？",
+    "historyList": [
+        {
+            "role": "user",
+            "content": "我们企业想要部署5G专网，中国移动有哪些解决方案？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "中国移动提供多种5G专网解决方案，包括独立专网、共享专网和混合专网。可根据企业需求选择不同的网络切片服务，支持工业互联网、智慧园区、远程医疗等应用场景。网络切片技术是5G的核心特性之一，能够在同一物理网络上创建多个虚拟网络。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "独立专网和共享专网有什么区别？哪种更适合制造业？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "独立专网拥有专用频谱和基站，安全性和可控性更高，但成本较大。共享专网通过网络切片技术在公网基础上提供专用服务，成本较低但资源共享。对于制造业，建议选择独立专网，确保生产数据安全和网络稳定性。网络切片可以为不同业务提供定制化的网络服务质量。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "部署周期和费用大概是什么水平？需要哪些前期准备？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "独立专网部署周期通常3-6个月，费用根据覆盖范围在100-500万元。前期需要进行网络规划、频谱申请、设备选型等。还需要企业配合进行现场勘测、机房准备、电力配套等基础设施建设。在共享专网模式下，网络切片技术的配置和优化也是重要环节。",
+            "reasoningContent": null
+        }
+    ],
+    "enableExtraction": true,
+    "extractionRules": [
+        {
+            "desc": "提取技术实现复杂度等级，1-5级。例如：'高复杂度'、'中等难度'。",
+            "valueType": "int",
+            "keyName": "complexityLevel",
+            "defaultValue": -1
+        },
+        {
+            "desc": "提取技术成熟度年限。例如：'3年'、'成熟技术'。",
+            "valueType": "int",
+            "keyName": "maturityYears",
+            "defaultValue": -1
+        }
+    ]
+}

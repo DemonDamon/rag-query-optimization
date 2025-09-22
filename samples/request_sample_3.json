@@ -1,0 +1,51 @@
+{
+    "requestId": "mobile_telecom_002",
+    "query": "这个5G专网方案的技术细节能详细介绍一下吗？",
+    "historyList": [
+        {
+            "role": "user",
+            "content": "我们企业想要部署5G专网，中国移动有哪些解决方案？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "中国移动提供多种5G专网解决方案，包括独立专网、共享专网和混合专网。可根据企业需求选择不同的网络切片服务，支持工业互联网、智慧园区、远程医疗等应用场景。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "独立专网和共享专网有什么区别？哪种更适合制造业？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "独立专网拥有专用频谱和基站，安全性和可控性更高，但成本较大。共享专网通过网络切片技术在公网基础上提供专用服务，成本较低但资源共享。对于制造业，建议选择独立专网，确保生产数据安全和网络稳定性。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "部署周期和费用大概是什么水平？需要哪些前期准备？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "独立专网部署周期通常3-6个月，费用根据覆盖范围在100-500万元。前期需要进行网络规划、频谱申请、设备选型等。还需要企业配合进行现场勘测、机房准备、电力配套等基础设施建设。",
+            "reasoningContent": null
+        }
+    ],
+    "enableExtraction": true,
+    "extractionRules": [
+        {
+            "desc": "提取网络部署周期要求，统一为月。例如：'6个月'、'半年内'。",
+            "valueType": "int",
+            "keyName": "deploymentMonths",
+            "defaultValue": -1
+        },
+        {
+            "desc": "提取网络覆盖范围要求，统一为平方公里。例如：'5平方公里'、'园区范围'。",
+            "valueType": "int",
+            "keyName": "coverageArea",
+            "defaultValue": -1
+        }
+    ]
+}

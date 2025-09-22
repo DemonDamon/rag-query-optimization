@@ -1,0 +1,51 @@
+{
+    "requestId": "office_scenario_001",
+    "query": "具体怎么实施这个方案？",
+    "historyList": [
+        {
+            "role": "user",
+            "content": "我们公司的会议室预订系统经常出现冲突，有什么好的解决方案吗？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "可以考虑实施智能会议室管理系统，包括实时状态显示、自动冲突检测、移动端预订等功能。还可以结合人脸识别或门禁卡自动签到，提高使用效率。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "这种系统的成本大概是多少？实施周期需要多长时间？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "根据公司规模，基础版本成本在10-30万元，包含硬件设备和软件开发。实施周期通常为2-3个月，包括需求调研、系统开发、设备安装和员工培训。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "员工接受度会不会是个问题？如何提高使用率？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "确实需要重视员工接受度。建议采用分阶段推广，先在核心部门试点，收集反馈优化体验。同时提供详细培训，设置激励机制，比如使用积分奖励等。界面要简洁易用，减少学习成本。",
+            "reasoningContent": null
+        }
+    ],
+    "enableExtraction": true,
+    "extractionRules": [
+        {
+            "desc": "提取实施周期的时间要求，统一为月。例如：'3个月'、'半年时间'。",
+            "valueType": "int",
+            "keyName": "implementationMonths",
+            "defaultValue": -1
+        },
+        {
+            "desc": "提取预算成本要求，统一为万元。例如：'20万'、'50万以内'。",
+            "valueType": "int",
+            "keyName": "budgetAmount",
+            "defaultValue": -1
+        }
+    ]
+}

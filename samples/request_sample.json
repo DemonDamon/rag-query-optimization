@@ -1,0 +1,51 @@
+{
+    "requestId": "query_opt_123456",
+    "query": "详细说一下怎么落地",
+    "historyList": [
+        {
+            "role": "user",
+            "content": "数字化转型经验能否复制到其他国企？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "数字化转型经验具有一定的可复制性，但需要结合企业自身特点进行适配。关键在于理解转型的核心逻辑和方法论，而不是简单照搬具体做法。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "数字化转型是\"一次性项目\"还是\"持续演进过程\"？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "数字化转型是一个持续演进的过程，而非一次性项目。它需要企业在技术、组织、文化等多个维度持续投入和优化。",
+            "reasoningContent": null
+        },
+        {
+            "role": "user",
+            "content": "如何避免\"重技术投入、轻业务价值\"的误区？",
+            "reasoningContent": null
+        },
+        {
+            "role": "assistant",
+            "content": "要避免这个误区，需要从业务需求出发，明确数字化转型的价值目标，建立业务价值评估体系，确保技术投入与业务价值紧密结合。",
+            "reasoningContent": null
+        }
+    ],
+    "enableExtraction": true,
+    "extractionRules": [
+        {
+            "desc": "提取文本内容的字数要求。这是一个关于文字数量的指标，与演讲时间无关。例如：'5000字'、'一万字以内'。",
+            "valueType": "int",
+            "keyName": "requireWordNums",
+            "defaultValue": -1
+        },
+        {
+            "desc": "提取演讲或发言的时长要求，并统一为分钟。这是一个关于时间的指标，与字数无关。例如：'5min'、'两小时'。",
+            "valueType": "int",
+            "keyName": "durationMins",
+            "defaultValue": -1
+        }
+    ]
+}
