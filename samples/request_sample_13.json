@@ -1,6 +1,6 @@
 {
     "requestId": "metamaterials_013",
-    "query": "负折射率材料的色散特性如何控制？",
+    "query": "通过设计亚波长实现异常的电磁响应",
     "historyList": [
         {
             "role": "user",
