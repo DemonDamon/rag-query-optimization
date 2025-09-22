@@ -13013,3 +13013,1709 @@ A5: 医疗AI需要符合FDA、NMPA等监管机构的审批要求，包括临床�
 2025-09-23 02:12:53.798|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||改写模型 - LLM原始输出|requestId=ai_medical_005|raw_output=医疗AI深度学习算法的准确率如何？|
 2025-09-23 02:12:53.799|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||改写模型 - 后处理结果 (strip)|requestId=ai_medical_005|processed_output=医疗AI深度学习算法的准确率如何？|
 2025-09-23 02:12:53.800|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tMainThreadd|INFO|API|||正常响应（查询改写完成）|requestId=ai_medical_005|query=深度学习算法在这方面的准确率如何？|result=医疗AI深度学习算法的准确率如何？|needRewrite=True|historyList=['user: AI在医疗诊断领域有哪些应用？', 'assistant: AI在医疗诊断领域应用广泛，包括医学影像分析、病理诊断、药物发现等。特别是在影像诊断中，深度学习算法能够识别CT、MRI等影像中的异常，辅助医生进行早期诊断。', 'user: 医学影像分析的技术难点在哪里？', 'assistant: 医学影像分析的主要难点包括数据标注成本高、影像质量差异大、疾病表现复杂多样。需要大量专业医生参与标注，而且不同设备、不同患者的影像存在显著差异，这对算法的泛化能力提出了很高要求。', 'user: 如何解决数据标注成本高的问题？', 'assistant: 可以采用半监督学习、主动学习、联邦学习等技术。半监督学习能利用少量标注数据和大量无标注数据训练模型，主动学习可以智能选择最有价值的样本进行标注，联邦学习则允许多个医院在不共享原始数据的情况下协同训练模型。', 'user: 联邦学习在医疗领域的实际部署情况怎样？', 'assistant: 联邦学习在医疗领域还处于探索阶段，主要挑战包括数据隐私保护、通信效率、模型一致性等。目前一些大型医疗机构正在试点，但大规模商业化应用还需要解决法规合规、技术标准化等问题。', 'user: 法规合规方面有什么具体要求？', 'assistant: 医疗AI需要符合FDA、NMPA等监管机构的审批要求，包括临床试验验证、安全性评估、有效性证明等。还需要遵循HIPAA、GDPR等数据保护法规，确保患者隐私安全。深度学习算法的可解释性也是监管关注的重点。']|processTime=1510|queryType=其他类|extractedInfo=[{'accuracyRate': -1}, {'algorithmComplexity': 4}]|
+2025-09-23 02:14:30.802|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tMainThreadd|INFO|API|||接收请求|requestId=blockchain_finance_006|query=智能合约的安全漏洞有哪些类型？|historyList=['user: 区块链技术在金融领域的应用前景如何？', 'assistant: 区块链在金融领域前景广阔，主要应用包括数字货币、跨境支付、供应链金融、智能合约等。智能合约能够自动执行合约条款，减少中介成本，但也面临安全性挑战。', 'user: 跨境支付相比传统方式有什么优势？', 'assistant: 区块链跨境支付具有速度快、成本低、透明度高的优势。传统跨境支付需要经过多个中介银行，耗时3-5天，手续费高昂。区块链技术可以实现点对点转账，几分钟内完成，大幅降低手续费。', 'user: 监管机构对区块链金融的态度如何？', 'assistant: 各国监管态度不一，总体趋向谨慎开放。美国SEC、欧盟、中国央行都在制定相关法规。主要关注点包括反洗钱、消费者保护、金融稳定性等。监管沙盒机制为创新提供了试验空间。', 'user: 监管沙盒机制是如何运作的？', 'assistant: 监管沙盒允许金融科技公司在受控环境中测试创新产品，暂时豁免某些监管要求。参与者需要满足准入条件，接受监管机构监督，测试期间收集数据评估风险。成功的创新可以获得正式牌照推广。', 'user: 参与监管沙盒的准入条件通常包括哪些？', 'assistant: 准入条件通常包括：具备真正的金融创新、有明确的测试计划、拥有足够的技术和资金实力、能够识别和管控风险。申请者还需要证明创新对消费者有益，并承诺在测试期间保护消费者权益。智能合约的代码审计也是重要考量因素。']|enableExtraction=True|extractionRules=[{'desc': "提取安全风险等级，1-5级。例如：'高风险'、'中等风险'。", 'valueType': 'int', 'keyName': 'securityRiskLevel', 'defaultValue': -1}, {'desc': "提取漏洞修复时间，统一为天。例如：'7天'、'一周内'。", 'valueType': 'int', 'keyName': 'fixTimeDays', 'defaultValue': -1}]|
+2025-09-23 02:14:30.803|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - 构造的Prompt|requestId=blockchain_finance_006|prompt=你是一个专业的查询分类助手。请根据以下规则对用户的查询进行分类，并仅输出JSON结果，不要包含任何多余内容。
+
+分类规则：
+3. 发言稿（3）：请求撰写演讲稿、发言稿、致辞、演说稿等文稿的查询，关键词示例："演讲稿"、"发言稿"、"致辞"、"演说稿"。
+2. 建议类（2）：需要获得改进方向、解决方案或下一步行动举措的查询，包括但不限于："建议"、"推荐"、"如何"、"应该"、"方案"、"规划"、"差距"、"不足"、"需要完善"、"哪些方面需要提升"、"举措"、"可进步" 等表达。
+1. 总结类（1）：仅要求对信息进行现状"总结"、"概括"、"归纳"、"汇总"、"梳理"，且不涉及提出改进或下一步行动建议的查询。
+0. 其他类（0）：不属于以上任何一类的查询。
+
+识别要点：
+- 如果用户在对标某一标准或目标，并询问 "差距"、"不足"、"哪些方面需要提升"、"需要完善"、"可进步" 等，通常意味着希望获得改进建议，请归为建议类（2）。
+- 如果查询核心在于 "总结 / 概括 / 归纳" 现状，而未涉及提出改进或下一步行动，则归为总结类（1）。
+- 如果查询聚焦于现状描述、优势/劣势(差距)、资源投入或技术重点等信息的梳理，对未来措施仅作背景性提及，而未直接请求改进"方案/举措/对策"，亦归为总结类（1）。
+
+Few-shot 示例（仅用于理解，不要在最终回答中输出）：
+示例1：
+用户：在科技创新投入与成果转化方面，与中央强调的科技自立自强要求对标，我们在关键技术突破上还有哪些差距？
+期望输出：{"queryType": 2}
+
+示例2：
+用户：在推动数字经济与实体经济融合方面，和中央期望比，存在哪些可进步？
+期望输出：{"queryType": 2}
+
+示例3：
+用户：与中央改革要求相比，还存在哪些需要完善的地方？
+期望输出：{"queryType": 2}
+
+示例4：
+用户：从公司整体战略布局来看，这些完善工作会对各业务板块的协同发展产生怎样的影响，如何优化协同策略？
+期望输出：{"queryType": 2}
+
+示例5：
+用户：细化一下在服务集团公司主营主业方面的举措内容。
+期望输出：{"queryType": 2}
+
+示例6：
+用户：在科技创新方面，与集团公司要求相比，中移互联网公司有哪些成果，哪些方面需要进一步提升？
+期望输出：{"queryType": 2}
+
+示例7：
+用户：与党中央对国企高质量党建引领高质量发展要求相比，中移互联网公司以党建引领改革、促进发展还有哪些需进一步提升？
+期望输出：{"queryType": 2}
+
+示例8：
+用户：我们目前在AI领域的技术研发重点是什么？与世界一流信息服务企业的技术布局相比，我们的优势和差距在哪里？
+期望输出：{"queryType": 1}
+
+示例9：
+用户：可重点发展的技术有哪些，主要应用于哪些场景？
+期望输出：{"queryType": 1}
+
+示例10：
+用户：如何确保我们在AI应用开发方面保持领先地位？需要投入多少资源？
+期望输出：{"queryType": 1}
+
+用户查询为：智能合约的安全漏洞有哪些类型？
+
+如果无法根据上述分类规则进行明确判定，请归为其他类（0）。
+
+输出格式：
+{"queryType": 分类标识码}
+|
+2025-09-23 02:14:31.154|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - LLM原始输出|requestId=blockchain_finance_006|raw_output={"queryType": 0}|
+2025-09-23 02:14:31.155|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - 提取的JSON字符串|requestId=blockchain_finance_006|json_str={"queryType": 0}|
+2025-09-23 02:14:31.155|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - JSON解析结果|requestId=blockchain_finance_006|parsed_json={'queryType': 0}|
+2025-09-23 02:14:31.156|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 构造的Prompt|requestId=blockchain_finance_006|prompt=你是一个非常严谨、专业的信息抽取助手。你需要严格按照规则从查询文本中精确提取多项特定信息。
+
+# 核心原则
+你必须严格遵守以下原则：只提取查询中明确提及的信息。如果某项信息在查询中没有被提及，你必须使用为该项指定的默认值，绝对不允许自行推断、估算或根据常识转换（例如，根据字数估算演讲时间，或根据演讲时间估算字数）。
+
+# 抽取规则列表
+[
+  {
+    "desc": "提取安全风险等级，1-5级。例如：'高风险'、'中等风险'。",
+    "valueType": "int",
+    "keyName": "securityRiskLevel",
+    "defaultValue": -1
+  },
+  {
+    "desc": "提取漏洞修复时间，统一为天。例如：'7天'、'一周内'。",
+    "valueType": "int",
+    "keyName": "fixTimeDays",
+    "defaultValue": -1
+  }
+]
+
+# 抽取要求
+1. 必须精确识别并提取查询文本中明确提到的所有目标信息。
+2. 对于在查询文本中完全没有提及的信息，必须使用其默认值。
+3. 如果查询中有多个可能的值，选择最合理的一个（例如，对于范围"3000-5000字"，选择5000）。
+4. 对于数字信息，必须转换为阿拉伯数字格式。
+5. 对于文本信息，保留原始文本格式。
+6. 对于布尔信息，转换为true/false格式。
+7. 严格按照每项规则要求的数据类型返回。
+
+# 数字处理规则
+1. 中文数字转阿拉伯数字：如"一千五百"转为"1500"。
+2. 带单位的数字要去除单位：如"15万"转为"150000"。
+3. 数字范围取上限值：如"10-20分钟"取"20"，"5000字以上"取"5000"。
+4. "几十"、"几百"等模糊表达转为具体数字：如"几十"转为"50"，"几百"转为"500"。
+5. "多"字处理：如"5000多字"转为"5000"。
+6. 特殊表达转换：如"上千"转为"1000"，"数百"转为"500"。
+7. 区分"万"和"万字"：如"写一万字"中的"万"是数量单位。
+
+# 输出格式
+你必须只输出一个有效的JSON对象，包含所有需要提取的信息，每一项的键名必须严格按照抽取规则中指定的keyName。
+
+## 示例 1: 信息完整
+- 查询: "写一篇关于AI的报告，要求1500字，演讲时长10分钟。"
+- 输出:
+```
+{
+  "requireWordNums": 1500,
+  "durationMins": 10
+}
+```
+
+## 示例 2: 信息不完整
+- 查询: "写一篇关于中国移动5G建设成就的发言稿，5000字左右。"
+- 输出 (假设durationMins的默认值是-1):
+```
+{
+  "requireWordNums": 5000,
+  "durationMins": -1
+}
+```
+
+不要输出任何额外的解释或前后缀，只输出JSON对象本身。
+必须确保JSON对象有效且格式正确，所有键名必须使用双引号。
+
+# 查询内容
+智能合约的安全漏洞有哪些类型？ |
+2025-09-23 02:14:31.156|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 请求体|requestId=blockchain_finance_006|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|payload={'request_id': 'blockchain_finance_006', 'input': '你是一个非常严谨、专业的信息抽取助手。你需要严格按照规则从查询文本中精确提取多项特定信息。\n\n# 核心原则\n你必须严格遵守以下原则：只提取查询中明确提及的信息。如果某项信息在查询中没有被提及，你必须使用为该项指定的默认值，绝对不允许自行推断、估算或根据常识转换（例如，根据字数估算演讲时间，或根据演讲时间估算字数）。\n\n# 抽取规则列表\n[\n  {\n    "desc": "提取安全风险等级，1-5级。例如：\'高风险\'、\'中等风险\'。",\n    "valueType": "int",\n    "keyName": "securityRiskLevel",\n    "defaultValue": -1\n  },\n  {\n    "desc": "提取漏洞修复时间，统一为天。例如：\'7天\'、\'一周内\'。",\n    "valueType": "int",\n    "keyName": "fixTimeDays",\n    "defaultValue": -1\n  }\n]\n\n# 抽取要求\n1. 必须精确识别并提取查询文本中明确提到的所有目标信息。\n2. 对于在查询文本中完全没有提及的信息，必须使用其默认值。\n3. 如果查询中有多个可能的值，选择最合理的一个（例如，对于范围"3000-5000字"，选择5000）。\n4. 对于数字信息，必须转换为阿拉伯数字格式。\n5. 对于文本信息，保留原始文本格式。\n6. 对于布尔信息，转换为true/false格式。\n7. 严格按照每项规则要求的数据类型返回。\n\n# 数字处理规则\n1. 中文数字转阿拉伯数字：如"一千五百"转为"1500"。\n2. 带单位的数字要去除单位：如"15万"转为"150000"。\n3. 数字范围取上限值：如"10-20分钟"取"20"，"5000字以上"取"5000"。\n4. "几十"、"几百"等模糊表达转为具体数字：如"几十"转为"50"，"几百"转为"500"。\n5. "多"字处理：如"5000多字"转为"5000"。\n6. 特殊表达转换：如"上千"转为"1000"，"数百"转为"500"。\n7. 区分"万"和"万字"：如"写一万字"中的"万"是数量单位。\n\n# 输出格式\n你必须只输出一个有效的JSON对象，包含所有需要提取的信息，每一项的键名必须严格按照抽取规则中指定的keyName。\n\n## 示例 1: 信息完整\n- 查询: "写一篇关于AI的报告，要求1500字，演讲时长10分钟。"\n- 输出:\n```\n{\n  "requireWordNums": 1500,\n  "durationMins": 10\n}\n```\n\n## 示例 2: 信息不完整\n- 查询: "写一篇关于中国移动5G建设成就的发言稿，5000字左右。"\n- 输出 (假设durationMins的默认值是-1):\n```\n{\n  "requireWordNums": 5000,\n  "durationMins": -1\n}\n```\n\n不要输出任何额外的解释或前后缀，只输出JSON对象本身。\n必须确保JSON对象有效且格式正确，所有键名必须使用双引号。\n\n# 查询内容\n智能合约的安全漏洞有哪些类型？ ', 'max_new_token': 256, 'temperature': 0.01, 'top_p': 0.9, 'streaming': False}|
+2025-09-23 02:14:31.463|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - LLM响应|requestId=blockchain_finance_006|response={'success': True, 'code': '0000', 'message': 'success', 'data': {'request_id': 'blockchain_finance_006', 'result': '{}'}}|
+2025-09-23 02:14:31.463|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - LLM原始输出|requestId=blockchain_finance_006|raw_output={}|
+2025-09-23 02:14:31.464|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 直接JSON解析成功|requestId=blockchain_finance_006|parsed_json={}|
+2025-09-23 02:14:31.465|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||历史查询格式化 - 原始数据|requestId=blockchain_finance_006|history_count=10|history_roles=['user', 'assistant', 'user', 'assistant', 'user', 'assistant', 'user', 'assistant', 'user', 'assistant']|first_message={'role': 'user', 'content': '区块链技术在金融领域的应用前景如何？', 'reasoningContent': None}|all_messages=[{'index': 0, 'role': 'user', 'content': '区块链技术在金融领域的应用前景如何？'}, {'index': 1, 'role': 'assistant', 'content': '区块链在金融领域前景广阔，主要应用包括数字货币、跨境支付、供...'}, {'index': 2, 'role': 'user', 'content': '跨境支付相比传统方式有什么优势？'}, {'index': 3, 'role': 'assistant', 'content': '区块链跨境支付具有速度快、成本低、透明度高的优势。传统跨境支...'}, {'index': 4, 'role': 'user', 'content': '监管机构对区块链金融的态度如何？'}, {'index': 5, 'role': 'assistant', 'content': '各国监管态度不一，总体趋向谨慎开放。美国SEC、欧盟、中国央...'}, {'index': 6, 'role': 'user', 'content': '监管沙盒机制是如何运作的？'}, {'index': 7, 'role': 'assistant', 'content': '监管沙盒允许金融科技公司在受控环境中测试创新产品，暂时豁免某...'}, {'index': 8, 'role': 'user', 'content': '参与监管沙盒的准入条件通常包括哪些？'}, {'index': 9, 'role': 'assistant', 'content': '准入条件通常包括：具备真正的金融创新、有明确的测试计划、拥有...'}]|
+2025-09-23 02:14:31.465|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 0|requestId=blockchain_finance_006|index=0|role=user|content_preview=区块链技术在金融领域的应用前景如何？|full_content=区块链技术在金融领域的应用前景如何？|msg_type=Message|
+2025-09-23 02:14:31.466|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=blockchain_finance_006|qa_pair_num=1|msg_idx=0|q_text=Q1: 区块链技术在金融领域的应用前景如何？|
+2025-09-23 02:14:31.467|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 1|requestId=blockchain_finance_006|index=1|role=assistant|content_preview=区块链在金融领域前景广阔，主要应用包括数字货币、跨境支付、供应链金融、智能合约等。智能合约能够自动执...|full_content=区块链在金融领域前景广阔，主要应用包括数字货币、跨境支付、供应链金融、智能合约等。智能合约能够自动执行合约条款，减少中介成本，但也面临安全性挑战。|msg_type=Message|
+2025-09-23 02:14:31.467|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=blockchain_finance_006|qa_pair_num=1|msg_idx=1|a_text=A1: 区块链在金融领域前景广阔，主要应用包括数字货币、跨境支付、供应链金融、智能合约等。智能合约能够自动执行合约条款，减少中介成本，但也面临安全性挑战。|
+2025-09-23 02:14:31.467|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 2|requestId=blockchain_finance_006|index=2|role=user|content_preview=跨境支付相比传统方式有什么优势？|full_content=跨境支付相比传统方式有什么优势？|msg_type=Message|
+2025-09-23 02:14:31.468|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=blockchain_finance_006|qa_pair_num=2|msg_idx=2|q_text=Q2: 跨境支付相比传统方式有什么优势？|
+2025-09-23 02:14:31.468|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 3|requestId=blockchain_finance_006|index=3|role=assistant|content_preview=区块链跨境支付具有速度快、成本低、透明度高的优势。传统跨境支付需要经过多个中介银行，耗时3-5天，手...|full_content=区块链跨境支付具有速度快、成本低、透明度高的优势。传统跨境支付需要经过多个中介银行，耗时3-5天，手续费高昂。区块链技术可以实现点对点转账，几分钟内完成，大幅降低手续费。|msg_type=Message|
+2025-09-23 02:14:31.469|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=blockchain_finance_006|qa_pair_num=2|msg_idx=3|a_text=A2: 区块链跨境支付具有速度快、成本低、透明度高的优势。传统跨境支付需要经过多个中介银行，耗时3-5天，手续费高昂。区块链技术可以实现点对点转账，几分钟内完成，大幅降低手续费。|
+2025-09-23 02:14:31.469|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 4|requestId=blockchain_finance_006|index=4|role=user|content_preview=监管机构对区块链金融的态度如何？|full_content=监管机构对区块链金融的态度如何？|msg_type=Message|
+2025-09-23 02:14:31.469|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=blockchain_finance_006|qa_pair_num=3|msg_idx=4|q_text=Q3: 监管机构对区块链金融的态度如何？|
+2025-09-23 02:14:31.469|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 5|requestId=blockchain_finance_006|index=5|role=assistant|content_preview=各国监管态度不一，总体趋向谨慎开放。美国SEC、欧盟、中国央行都在制定相关法规。主要关注点包括反洗钱...|full_content=各国监管态度不一，总体趋向谨慎开放。美国SEC、欧盟、中国央行都在制定相关法规。主要关注点包括反洗钱、消费者保护、金融稳定性等。监管沙盒机制为创新提供了试验空间。|msg_type=Message|
+2025-09-23 02:14:31.469|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=blockchain_finance_006|qa_pair_num=3|msg_idx=5|a_text=A3: 各国监管态度不一，总体趋向谨慎开放。美国SEC、欧盟、中国央行都在制定相关法规。主要关注点包括反洗钱、消费者保护、金融稳定性等。监管沙盒机制为创新提供了试验空间。|
+2025-09-23 02:14:31.469|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 6|requestId=blockchain_finance_006|index=6|role=user|content_preview=监管沙盒机制是如何运作的？|full_content=监管沙盒机制是如何运作的？|msg_type=Message|
+2025-09-23 02:14:31.469|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=blockchain_finance_006|qa_pair_num=4|msg_idx=6|q_text=Q4: 监管沙盒机制是如何运作的？|
+2025-09-23 02:14:31.469|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 7|requestId=blockchain_finance_006|index=7|role=assistant|content_preview=监管沙盒允许金融科技公司在受控环境中测试创新产品，暂时豁免某些监管要求。参与者需要满足准入条件，接受...|full_content=监管沙盒允许金融科技公司在受控环境中测试创新产品，暂时豁免某些监管要求。参与者需要满足准入条件，接受监管机构监督，测试期间收集数据评估风险。成功的创新可以获得正式牌照推广。|msg_type=Message|
+2025-09-23 02:14:31.470|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=blockchain_finance_006|qa_pair_num=4|msg_idx=7|a_text=A4: 监管沙盒允许金融科技公司在受控环境中测试创新产品，暂时豁免某些监管要求。参与者需要满足准入条件，接受监管机构监督，测试期间收集数据评估风险。成功的创新可以获得正式牌照推广。|
+2025-09-23 02:14:31.470|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 8|requestId=blockchain_finance_006|index=8|role=user|content_preview=参与监管沙盒的准入条件通常包括哪些？|full_content=参与监管沙盒的准入条件通常包括哪些？|msg_type=Message|
+2025-09-23 02:14:31.470|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=blockchain_finance_006|qa_pair_num=5|msg_idx=8|q_text=Q5: 参与监管沙盒的准入条件通常包括哪些？|
+2025-09-23 02:14:31.470|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 9|requestId=blockchain_finance_006|index=9|role=assistant|content_preview=准入条件通常包括：具备真正的金融创新、有明确的测试计划、拥有足够的技术和资金实力、能够识别和管控风险...|full_content=准入条件通常包括：具备真正的金融创新、有明确的测试计划、拥有足够的技术和资金实力、能够识别和管控风险。申请者还需要证明创新对消费者有益，并承诺在测试期间保护消费者权益。智能合约的代码审计也是重要考量因素。|msg_type=Message|
+2025-09-23 02:14:31.470|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=blockchain_finance_006|qa_pair_num=5|msg_idx=9|a_text=A5: 准入条件通常包括：具备真正的金融创新、有明确的测试计划、拥有足够的技术和资金实力、能够识别和管控风险。申请者还需要证明创新对消费者有益，并承诺在测试期间保护消费者权益。智能合约的代码审计也是重要考量因素。|
+2025-09-23 02:14:31.470|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||历史查询格式化 - 最终结果|requestId=blockchain_finance_006|history_parts_count=10|history_text=Q1: 区块链技术在金融领域的应用前景如何？
+A1: 区块链在金融领域前景广阔，主要应用包括数字货币、跨境支付、供应链金融、智能合约等。智能合约能够自动执行合约条款，减少中介成本，但也面临安全性挑战。
+Q2: 跨境支付相比传统方式有什么优势？
+A2: 区块链跨境支付具有速度快、成本低、透明度高的优势。传统跨境支付需要经过多个中介银行，耗时3-5天，手续费高昂。区块链技术可以实现点对点转账，几分钟内完成，大幅降低手续费。
+Q3: 监管机构对区块链金融的态度如何？
+A3: 各国监管态度不一，总体趋向谨慎开放。美国SEC、欧盟、中国央行都在制定相关法规。主要关注点包括反洗钱、消费者保护、金融稳定性等。监管沙盒机制为创新提供了试验空间。
+Q4: 监管沙盒机制是如何运作的？
+A4: 监管沙盒允许金融科技公司在受控环境中测试创新产品，暂时豁免某些监管要求。参与者需要满足准入条件，接受监管机构监督，测试期间收集数据评估风险。成功的创新可以获得正式牌照推广。
+Q5: 参与监管沙盒的准入条件通常包括哪些？
+A5: 准入条件通常包括：具备真正的金融创新、有明确的测试计划、拥有足够的技术和资金实力、能够识别和管控风险。申请者还需要证明创新对消费者有益，并承诺在测试期间保护消费者权益。智能合约的代码审计也是重要考量因素。|
+2025-09-23 02:14:31.470|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - 构造的Prompt|requestId=blockchain_finance_006|prompt=判断查询是否需要改写。
+
+规则：
+1. 包含这些词必须改写 → 输出 true：
+   "这方面"、"那方面"、"这种"、"那种"、"他"、"她"、"它"、"这个"、"那个"、"此"、"该"、"其"
+
+2. 注意例外情况 → 输出 false：
+   - 查询和历史对话主题完全不同（如：历史谈手机，当前问米粉食品）
+   - 指代词指向的是回答内容而不是问题内容
+   - 查询很短（3个词以内）且没有明确指代词
+
+3. 其他情况：
+   - 查询缺少主语但历史有线索 → 输出 true
+   - 查询独立完整 → 输出 false
+
+历史对话：
+Q1: 区块链技术在金融领域的应用前景如何？
+A1: 区块链在金融领域前景广阔，主要应用包括数字货币、跨境支付、供应链金融、智能合约等。智能合约能够自动执行合约条款，减少中介成本，但也面临安全性挑战。
+Q2: 跨境支付相比传统方式有什么优势？
+A2: 区块链跨境支付具有速度快、成本低、透明度高的优势。传统跨境支付需要经过多个中介银行，耗时3-5天，手续费高昂。区块链技术可以实现点对点转账，几分钟内完成，大幅降低手续费。
+Q3: 监管机构对区块链金融的态度如何？
+A3: 各国监管态度不一，总体趋向谨慎开放。美国SEC、欧盟、中国央行都在制定相关法规。主要关注点包括反洗钱、消费者保护、金融稳定性等。监管沙盒机制为创新提供了试验空间。
+Q4: 监管沙盒机制是如何运作的？
+A4: 监管沙盒允许金融科技公司在受控环境中测试创新产品，暂时豁免某些监管要求。参与者需要满足准入条件，接受监管机构监督，测试期间收集数据评估风险。成功的创新可以获得正式牌照推广。
+Q5: 参与监管沙盒的准入条件通常包括哪些？
+A5: 准入条件通常包括：具备真正的金融创新、有明确的测试计划、拥有足够的技术和资金实力、能够识别和管控风险。申请者还需要证明创新对消费者有益，并承诺在测试期间保护消费者权益。智能合约的代码审计也是重要考量因素。
+
+当前查询：智能合约的安全漏洞有哪些类型？
+
+只输出：true 或 false
+
+<judgment>|
+2025-09-23 02:14:31.943|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - LLM原始输出|requestId=blockchain_finance_006|raw_output=true|
+2025-09-23 02:14:31.943|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - 后处理结果|requestId=blockchain_finance_006|processed_output=true|
+2025-09-23 02:14:31.943|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||改写模型 - 构造的Prompt|requestId=blockchain_finance_006|prompt=<task>
+你的任务是利用历史查询的上下文，改写当前查询使其更清晰、更具体、更独立。
+
+改写规则：
+1. 仔细分析历史查询和当前查询，确认它们之间存在明确的语义关联
+2. 替换当前查询中的指代词（如"他"、"她"、"它"、"这个"、"那个"）为历史查询中的具体实体
+3. 补充缺失的主语或关键信息，使查询独立完整
+4. 当查询涉及历史对话中提到的专业概念、技术术语或具体场景时，适当补充相关上下文信息
+5. 对于短查询（3个词以内）必须确认与历史查询高度相关才进行改写
+
+重要约束：
+- 保持原始查询的意图、语言和表达方式
+- 只进行必要的替换和补充，不添加无关信息
+- 不要过度推断或猜测用户意图
+- 当代词指代依赖于上一个问题的答案而非问题本身时，不进行改写
+- 优先利用历史对话中的关键实体、场景、技术领域等信息来丰富查询
+</task>
+
+<examples>
+    <example>
+       <history>
+          Q1: 小明来自哪里？
+          A1: 小明来自北京。
+       </history>
+       <current_query>他在美团工作吗</current_query>
+       <rewritten_query>小明在美团工作吗</rewritten_query>
+    </example>
+    
+    <example>
+       <history>
+          Q1: Python和Java哪个更高效？
+          A1: 在不同场景下各有优势，Python开发效率高，Java运行效率好。
+       </history>
+       <current_query>它的内存管理怎么样？</current_query>
+       <rewritten_query>它的内存管理怎么样？</rewritten_query>
+    </example>
+    
+    <example>
+       <history>
+          Q1: 我们企业想要部署5G专网，中国移动有哪些解决方案？
+          A1: 中国移动提供多种5G专网解决方案，包括独立专网、共享专网和混合专网。可根据企业需求选择不同的网络切片服务，支持工业互联网、智慧园区、远程医疗等应用场景。
+       </history>
+       <current_query>网络切片技术是怎么工作的？</current_query>
+       <rewritten_query>中国移动5G专网中的网络切片技术是怎么工作的？</rewritten_query>
+    </example>
+</examples>
+
+<history>
+Q1: 区块链技术在金融领域的应用前景如何？
+A1: 区块链在金融领域前景广阔，主要应用包括数字货币、跨境支付、供应链金融、智能合约等。智能合约能够自动执行合约条款，减少中介成本，但也面临安全性挑战。
+Q2: 跨境支付相比传统方式有什么优势？
+A2: 区块链跨境支付具有速度快、成本低、透明度高的优势。传统跨境支付需要经过多个中介银行，耗时3-5天，手续费高昂。区块链技术可以实现点对点转账，几分钟内完成，大幅降低手续费。
+Q3: 监管机构对区块链金融的态度如何？
+A3: 各国监管态度不一，总体趋向谨慎开放。美国SEC、欧盟、中国央行都在制定相关法规。主要关注点包括反洗钱、消费者保护、金融稳定性等。监管沙盒机制为创新提供了试验空间。
+Q4: 监管沙盒机制是如何运作的？
+A4: 监管沙盒允许金融科技公司在受控环境中测试创新产品，暂时豁免某些监管要求。参与者需要满足准入条件，接受监管机构监督，测试期间收集数据评估风险。成功的创新可以获得正式牌照推广。
+Q5: 参与监管沙盒的准入条件通常包括哪些？
+A5: 准入条件通常包括：具备真正的金融创新、有明确的测试计划、拥有足够的技术和资金实力、能够识别和管控风险。申请者还需要证明创新对消费者有益，并承诺在测试期间保护消费者权益。智能合约的代码审计也是重要考量因素。
+</history>
+
+<current_query>智能合约的安全漏洞有哪些类型？</current_query>
+
+<output_instruction>
+只输出最终改写后的查询文本，不包含任何解释。
+</output_instruction>
+
+<rewritten_query>|
+2025-09-23 02:14:32.284|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||改写模型 - LLM原始输出|requestId=blockchain_finance_006|raw_output=智能合约的安全漏洞有哪些类型？|
+2025-09-23 02:14:32.284|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||改写模型 - 后处理结果 (strip)|requestId=blockchain_finance_006|processed_output=智能合约的安全漏洞有哪些类型？|
+2025-09-23 02:14:32.285|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tMainThreadd|INFO|API|||正常响应（查询改写完成）|requestId=blockchain_finance_006|query=智能合约的安全漏洞有哪些类型？|result=智能合约的安全漏洞有哪些类型？|needRewrite=True|historyList=['user: 区块链技术在金融领域的应用前景如何？', 'assistant: 区块链在金融领域前景广阔，主要应用包括数字货币、跨境支付、供应链金融、智能合约等。智能合约能够自动执行合约条款，减少中介成本，但也面临安全性挑战。', 'user: 跨境支付相比传统方式有什么优势？', 'assistant: 区块链跨境支付具有速度快、成本低、透明度高的优势。传统跨境支付需要经过多个中介银行，耗时3-5天，手续费高昂。区块链技术可以实现点对点转账，几分钟内完成，大幅降低手续费。', 'user: 监管机构对区块链金融的态度如何？', 'assistant: 各国监管态度不一，总体趋向谨慎开放。美国SEC、欧盟、中国央行都在制定相关法规。主要关注点包括反洗钱、消费者保护、金融稳定性等。监管沙盒机制为创新提供了试验空间。', 'user: 监管沙盒机制是如何运作的？', 'assistant: 监管沙盒允许金融科技公司在受控环境中测试创新产品，暂时豁免某些监管要求。参与者需要满足准入条件，接受监管机构监督，测试期间收集数据评估风险。成功的创新可以获得正式牌照推广。', 'user: 参与监管沙盒的准入条件通常包括哪些？', 'assistant: 准入条件通常包括：具备真正的金融创新、有明确的测试计划、拥有足够的技术和资金实力、能够识别和管控风险。申请者还需要证明创新对消费者有益，并承诺在测试期间保护消费者权益。智能合约的代码审计也是重要考量因素。']|processTime=1482|queryType=其他类|extractedInfo=[{'securityRiskLevel': -1}, {'fixTimeDays': -1}]|
+2025-09-23 02:14:39.086|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tMainThreadd|INFO|API|||接收请求|requestId=autonomous_driving_007|query=激光雷达和毫米波雷达的融合算法复杂度如何？|historyList=['user: 自动驾驶汽车的感知系统包括哪些传感器？', 'assistant: 自动驾驶感知系统主要包括摄像头、激光雷达、毫米波雷达、超声波传感器等。激光雷达提供高精度3D点云数据，毫米波雷达在恶劣天气下表现稳定，摄像头负责颜色和纹理识别。多传感器融合是关键技术。', 'user: 多传感器融合面临哪些技术挑战？', 'assistant: 主要挑战包括时间同步、空间标定、数据关联、冗余处理等。不同传感器的采样频率、精度、视野范围差异很大，需要复杂的融合算法来统一处理。还要考虑传感器故障时的降级策略。', 'user: 传感器故障的降级策略是怎样的？', 'assistant: 降级策略采用分层设计，当某个传感器失效时，系统会自动切换到备用方案。比如激光雷达故障时，增强摄像头和毫米波雷达的权重。系统会实时监测传感器状态，评估可靠性，动态调整融合权重。', 'user: 如何评估传感器的可靠性？', 'assistant: 可靠性评估包括硬件自检、数据一致性检查、环境适应性测试等。系统会比较不同传感器的检测结果，识别异常数据。还会根据环境条件（如雨雪、强光）调整可靠性权重。机器学习算法也用于预测传感器性能退化。', 'user: 机器学习算法在传感器性能预测中的具体应用？', 'assistant: 主要应用包括故障预测、性能建模、自适应校准等。通过分析历史数据，算法可以预测传感器何时可能出现性能下降。深度学习模型能够学习传感器在不同环境下的表现模式，实现动态补偿。融合算法的复杂度也会根据预测结果进行调整。']|enableExtraction=True|extractionRules=[{'desc': "提取算法复杂度等级，1-10级。例如：'高复杂度'、'中等复杂度'。", 'valueType': 'int', 'keyName': 'algorithmComplexity', 'defaultValue': -1}, {'desc': "提取计算延迟要求，统一为毫秒。例如：'100ms'、'实时处理'。", 'valueType': 'int', 'keyName': 'latencyMs', 'defaultValue': -1}]|
+2025-09-23 02:14:39.086|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - 构造的Prompt|requestId=autonomous_driving_007|prompt=你是一个专业的查询分类助手。请根据以下规则对用户的查询进行分类，并仅输出JSON结果，不要包含任何多余内容。
+
+分类规则：
+3. 发言稿（3）：请求撰写演讲稿、发言稿、致辞、演说稿等文稿的查询，关键词示例："演讲稿"、"发言稿"、"致辞"、"演说稿"。
+2. 建议类（2）：需要获得改进方向、解决方案或下一步行动举措的查询，包括但不限于："建议"、"推荐"、"如何"、"应该"、"方案"、"规划"、"差距"、"不足"、"需要完善"、"哪些方面需要提升"、"举措"、"可进步" 等表达。
+1. 总结类（1）：仅要求对信息进行现状"总结"、"概括"、"归纳"、"汇总"、"梳理"，且不涉及提出改进或下一步行动建议的查询。
+0. 其他类（0）：不属于以上任何一类的查询。
+
+识别要点：
+- 如果用户在对标某一标准或目标，并询问 "差距"、"不足"、"哪些方面需要提升"、"需要完善"、"可进步" 等，通常意味着希望获得改进建议，请归为建议类（2）。
+- 如果查询核心在于 "总结 / 概括 / 归纳" 现状，而未涉及提出改进或下一步行动，则归为总结类（1）。
+- 如果查询聚焦于现状描述、优势/劣势(差距)、资源投入或技术重点等信息的梳理，对未来措施仅作背景性提及，而未直接请求改进"方案/举措/对策"，亦归为总结类（1）。
+
+Few-shot 示例（仅用于理解，不要在最终回答中输出）：
+示例1：
+用户：在科技创新投入与成果转化方面，与中央强调的科技自立自强要求对标，我们在关键技术突破上还有哪些差距？
+期望输出：{"queryType": 2}
+
+示例2：
+用户：在推动数字经济与实体经济融合方面，和中央期望比，存在哪些可进步？
+期望输出：{"queryType": 2}
+
+示例3：
+用户：与中央改革要求相比，还存在哪些需要完善的地方？
+期望输出：{"queryType": 2}
+
+示例4：
+用户：从公司整体战略布局来看，这些完善工作会对各业务板块的协同发展产生怎样的影响，如何优化协同策略？
+期望输出：{"queryType": 2}
+
+示例5：
+用户：细化一下在服务集团公司主营主业方面的举措内容。
+期望输出：{"queryType": 2}
+
+示例6：
+用户：在科技创新方面，与集团公司要求相比，中移互联网公司有哪些成果，哪些方面需要进一步提升？
+期望输出：{"queryType": 2}
+
+示例7：
+用户：与党中央对国企高质量党建引领高质量发展要求相比，中移互联网公司以党建引领改革、促进发展还有哪些需进一步提升？
+期望输出：{"queryType": 2}
+
+示例8：
+用户：我们目前在AI领域的技术研发重点是什么？与世界一流信息服务企业的技术布局相比，我们的优势和差距在哪里？
+期望输出：{"queryType": 1}
+
+示例9：
+用户：可重点发展的技术有哪些，主要应用于哪些场景？
+期望输出：{"queryType": 1}
+
+示例10：
+用户：如何确保我们在AI应用开发方面保持领先地位？需要投入多少资源？
+期望输出：{"queryType": 1}
+
+用户查询为：激光雷达和毫米波雷达的融合算法复杂度如何？
+
+如果无法根据上述分类规则进行明确判定，请归为其他类（0）。
+
+输出格式：
+{"queryType": 分类标识码}
+|
+2025-09-23 02:14:39.469|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - LLM原始输出|requestId=autonomous_driving_007|raw_output={"queryType": 0}|
+2025-09-23 02:14:39.470|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - 提取的JSON字符串|requestId=autonomous_driving_007|json_str={"queryType": 0}|
+2025-09-23 02:14:39.470|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - JSON解析结果|requestId=autonomous_driving_007|parsed_json={'queryType': 0}|
+2025-09-23 02:14:39.471|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 构造的Prompt|requestId=autonomous_driving_007|prompt=你是一个非常严谨、专业的信息抽取助手。你需要严格按照规则从查询文本中精确提取多项特定信息。
+
+# 核心原则
+你必须严格遵守以下原则：只提取查询中明确提及的信息。如果某项信息在查询中没有被提及，你必须使用为该项指定的默认值，绝对不允许自行推断、估算或根据常识转换（例如，根据字数估算演讲时间，或根据演讲时间估算字数）。
+
+# 抽取规则列表
+[
+  {
+    "desc": "提取算法复杂度等级，1-10级。例如：'高复杂度'、'中等复杂度'。",
+    "valueType": "int",
+    "keyName": "algorithmComplexity",
+    "defaultValue": -1
+  },
+  {
+    "desc": "提取计算延迟要求，统一为毫秒。例如：'100ms'、'实时处理'。",
+    "valueType": "int",
+    "keyName": "latencyMs",
+    "defaultValue": -1
+  }
+]
+
+# 抽取要求
+1. 必须精确识别并提取查询文本中明确提到的所有目标信息。
+2. 对于在查询文本中完全没有提及的信息，必须使用其默认值。
+3. 如果查询中有多个可能的值，选择最合理的一个（例如，对于范围"3000-5000字"，选择5000）。
+4. 对于数字信息，必须转换为阿拉伯数字格式。
+5. 对于文本信息，保留原始文本格式。
+6. 对于布尔信息，转换为true/false格式。
+7. 严格按照每项规则要求的数据类型返回。
+
+# 数字处理规则
+1. 中文数字转阿拉伯数字：如"一千五百"转为"1500"。
+2. 带单位的数字要去除单位：如"15万"转为"150000"。
+3. 数字范围取上限值：如"10-20分钟"取"20"，"5000字以上"取"5000"。
+4. "几十"、"几百"等模糊表达转为具体数字：如"几十"转为"50"，"几百"转为"500"。
+5. "多"字处理：如"5000多字"转为"5000"。
+6. 特殊表达转换：如"上千"转为"1000"，"数百"转为"500"。
+7. 区分"万"和"万字"：如"写一万字"中的"万"是数量单位。
+
+# 输出格式
+你必须只输出一个有效的JSON对象，包含所有需要提取的信息，每一项的键名必须严格按照抽取规则中指定的keyName。
+
+## 示例 1: 信息完整
+- 查询: "写一篇关于AI的报告，要求1500字，演讲时长10分钟。"
+- 输出:
+```
+{
+  "requireWordNums": 1500,
+  "durationMins": 10
+}
+```
+
+## 示例 2: 信息不完整
+- 查询: "写一篇关于中国移动5G建设成就的发言稿，5000字左右。"
+- 输出 (假设durationMins的默认值是-1):
+```
+{
+  "requireWordNums": 5000,
+  "durationMins": -1
+}
+```
+
+不要输出任何额外的解释或前后缀，只输出JSON对象本身。
+必须确保JSON对象有效且格式正确，所有键名必须使用双引号。
+
+# 查询内容
+激光雷达和毫米波雷达的融合算法复杂度如何？ |
+2025-09-23 02:14:39.471|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 请求体|requestId=autonomous_driving_007|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|payload={'request_id': 'autonomous_driving_007', 'input': '你是一个非常严谨、专业的信息抽取助手。你需要严格按照规则从查询文本中精确提取多项特定信息。\n\n# 核心原则\n你必须严格遵守以下原则：只提取查询中明确提及的信息。如果某项信息在查询中没有被提及，你必须使用为该项指定的默认值，绝对不允许自行推断、估算或根据常识转换（例如，根据字数估算演讲时间，或根据演讲时间估算字数）。\n\n# 抽取规则列表\n[\n  {\n    "desc": "提取算法复杂度等级，1-10级。例如：\'高复杂度\'、\'中等复杂度\'。",\n    "valueType": "int",\n    "keyName": "algorithmComplexity",\n    "defaultValue": -1\n  },\n  {\n    "desc": "提取计算延迟要求，统一为毫秒。例如：\'100ms\'、\'实时处理\'。",\n    "valueType": "int",\n    "keyName": "latencyMs",\n    "defaultValue": -1\n  }\n]\n\n# 抽取要求\n1. 必须精确识别并提取查询文本中明确提到的所有目标信息。\n2. 对于在查询文本中完全没有提及的信息，必须使用其默认值。\n3. 如果查询中有多个可能的值，选择最合理的一个（例如，对于范围"3000-5000字"，选择5000）。\n4. 对于数字信息，必须转换为阿拉伯数字格式。\n5. 对于文本信息，保留原始文本格式。\n6. 对于布尔信息，转换为true/false格式。\n7. 严格按照每项规则要求的数据类型返回。\n\n# 数字处理规则\n1. 中文数字转阿拉伯数字：如"一千五百"转为"1500"。\n2. 带单位的数字要去除单位：如"15万"转为"150000"。\n3. 数字范围取上限值：如"10-20分钟"取"20"，"5000字以上"取"5000"。\n4. "几十"、"几百"等模糊表达转为具体数字：如"几十"转为"50"，"几百"转为"500"。\n5. "多"字处理：如"5000多字"转为"5000"。\n6. 特殊表达转换：如"上千"转为"1000"，"数百"转为"500"。\n7. 区分"万"和"万字"：如"写一万字"中的"万"是数量单位。\n\n# 输出格式\n你必须只输出一个有效的JSON对象，包含所有需要提取的信息，每一项的键名必须严格按照抽取规则中指定的keyName。\n\n## 示例 1: 信息完整\n- 查询: "写一篇关于AI的报告，要求1500字，演讲时长10分钟。"\n- 输出:\n```\n{\n  "requireWordNums": 1500,\n  "durationMins": 10\n}\n```\n\n## 示例 2: 信息不完整\n- 查询: "写一篇关于中国移动5G建设成就的发言稿，5000字左右。"\n- 输出 (假设durationMins的默认值是-1):\n```\n{\n  "requireWordNums": 5000,\n  "durationMins": -1\n}\n```\n\n不要输出任何额外的解释或前后缀，只输出JSON对象本身。\n必须确保JSON对象有效且格式正确，所有键名必须使用双引号。\n\n# 查询内容\n激光雷达和毫米波雷达的融合算法复杂度如何？ ', 'max_new_token': 256, 'temperature': 0.01, 'top_p': 0.9, 'streaming': False}|
+2025-09-23 02:14:39.873|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - LLM响应|requestId=autonomous_driving_007|response={'success': True, 'code': '0000', 'message': 'success', 'data': {'request_id': 'autonomous_driving_007', 'result': '{\n  "algorithmComplexity": 7\n}'}}|
+2025-09-23 02:14:39.874|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - LLM原始输出|requestId=autonomous_driving_007|raw_output={
+  "algorithmComplexity": 7
+}|
+2025-09-23 02:14:39.874|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 直接JSON解析成功|requestId=autonomous_driving_007|parsed_json={'algorithmComplexity': 7}|
+2025-09-23 02:14:39.875|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||历史查询格式化 - 原始数据|requestId=autonomous_driving_007|history_count=10|history_roles=['user', 'assistant', 'user', 'assistant', 'user', 'assistant', 'user', 'assistant', 'user', 'assistant']|first_message={'role': 'user', 'content': '自动驾驶汽车的感知系统包括哪些传感器？', 'reasoningContent': None}|all_messages=[{'index': 0, 'role': 'user', 'content': '自动驾驶汽车的感知系统包括哪些传感器？'}, {'index': 1, 'role': 'assistant', 'content': '自动驾驶感知系统主要包括摄像头、激光雷达、毫米波雷达、超声波...'}, {'index': 2, 'role': 'user', 'content': '多传感器融合面临哪些技术挑战？'}, {'index': 3, 'role': 'assistant', 'content': '主要挑战包括时间同步、空间标定、数据关联、冗余处理等。不同传...'}, {'index': 4, 'role': 'user', 'content': '传感器故障的降级策略是怎样的？'}, {'index': 5, 'role': 'assistant', 'content': '降级策略采用分层设计，当某个传感器失效时，系统会自动切换到备...'}, {'index': 6, 'role': 'user', 'content': '如何评估传感器的可靠性？'}, {'index': 7, 'role': 'assistant', 'content': '可靠性评估包括硬件自检、数据一致性检查、环境适应性测试等。系...'}, {'index': 8, 'role': 'user', 'content': '机器学习算法在传感器性能预测中的具体应用？'}, {'index': 9, 'role': 'assistant', 'content': '主要应用包括故障预测、性能建模、自适应校准等。通过分析历史数...'}]|
+2025-09-23 02:14:39.875|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 0|requestId=autonomous_driving_007|index=0|role=user|content_preview=自动驾驶汽车的感知系统包括哪些传感器？|full_content=自动驾驶汽车的感知系统包括哪些传感器？|msg_type=Message|
+2025-09-23 02:14:39.876|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=autonomous_driving_007|qa_pair_num=1|msg_idx=0|q_text=Q1: 自动驾驶汽车的感知系统包括哪些传感器？|
+2025-09-23 02:14:39.876|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 1|requestId=autonomous_driving_007|index=1|role=assistant|content_preview=自动驾驶感知系统主要包括摄像头、激光雷达、毫米波雷达、超声波传感器等。激光雷达提供高精度3D点云数据...|full_content=自动驾驶感知系统主要包括摄像头、激光雷达、毫米波雷达、超声波传感器等。激光雷达提供高精度3D点云数据，毫米波雷达在恶劣天气下表现稳定，摄像头负责颜色和纹理识别。多传感器融合是关键技术。|msg_type=Message|
+2025-09-23 02:14:39.876|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=autonomous_driving_007|qa_pair_num=1|msg_idx=1|a_text=A1: 自动驾驶感知系统主要包括摄像头、激光雷达、毫米波雷达、超声波传感器等。激光雷达提供高精度3D点云数据，毫米波雷达在恶劣天气下表现稳定，摄像头负责颜色和纹理识别。多传感器融合是关键技术。|
+2025-09-23 02:14:39.877|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 2|requestId=autonomous_driving_007|index=2|role=user|content_preview=多传感器融合面临哪些技术挑战？|full_content=多传感器融合面临哪些技术挑战？|msg_type=Message|
+2025-09-23 02:14:39.877|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=autonomous_driving_007|qa_pair_num=2|msg_idx=2|q_text=Q2: 多传感器融合面临哪些技术挑战？|
+2025-09-23 02:14:39.877|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 3|requestId=autonomous_driving_007|index=3|role=assistant|content_preview=主要挑战包括时间同步、空间标定、数据关联、冗余处理等。不同传感器的采样频率、精度、视野范围差异很大，...|full_content=主要挑战包括时间同步、空间标定、数据关联、冗余处理等。不同传感器的采样频率、精度、视野范围差异很大，需要复杂的融合算法来统一处理。还要考虑传感器故障时的降级策略。|msg_type=Message|
+2025-09-23 02:14:39.878|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=autonomous_driving_007|qa_pair_num=2|msg_idx=3|a_text=A2: 主要挑战包括时间同步、空间标定、数据关联、冗余处理等。不同传感器的采样频率、精度、视野范围差异很大，需要复杂的融合算法来统一处理。还要考虑传感器故障时的降级策略。|
+2025-09-23 02:14:39.878|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 4|requestId=autonomous_driving_007|index=4|role=user|content_preview=传感器故障的降级策略是怎样的？|full_content=传感器故障的降级策略是怎样的？|msg_type=Message|
+2025-09-23 02:14:39.879|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=autonomous_driving_007|qa_pair_num=3|msg_idx=4|q_text=Q3: 传感器故障的降级策略是怎样的？|
+2025-09-23 02:14:39.879|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 5|requestId=autonomous_driving_007|index=5|role=assistant|content_preview=降级策略采用分层设计，当某个传感器失效时，系统会自动切换到备用方案。比如激光雷达故障时，增强摄像头和...|full_content=降级策略采用分层设计，当某个传感器失效时，系统会自动切换到备用方案。比如激光雷达故障时，增强摄像头和毫米波雷达的权重。系统会实时监测传感器状态，评估可靠性，动态调整融合权重。|msg_type=Message|
+2025-09-23 02:14:39.879|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=autonomous_driving_007|qa_pair_num=3|msg_idx=5|a_text=A3: 降级策略采用分层设计，当某个传感器失效时，系统会自动切换到备用方案。比如激光雷达故障时，增强摄像头和毫米波雷达的权重。系统会实时监测传感器状态，评估可靠性，动态调整融合权重。|
+2025-09-23 02:14:39.879|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 6|requestId=autonomous_driving_007|index=6|role=user|content_preview=如何评估传感器的可靠性？|full_content=如何评估传感器的可靠性？|msg_type=Message|
+2025-09-23 02:14:39.879|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=autonomous_driving_007|qa_pair_num=4|msg_idx=6|q_text=Q4: 如何评估传感器的可靠性？|
+2025-09-23 02:14:39.879|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 7|requestId=autonomous_driving_007|index=7|role=assistant|content_preview=可靠性评估包括硬件自检、数据一致性检查、环境适应性测试等。系统会比较不同传感器的检测结果，识别异常数...|full_content=可靠性评估包括硬件自检、数据一致性检查、环境适应性测试等。系统会比较不同传感器的检测结果，识别异常数据。还会根据环境条件（如雨雪、强光）调整可靠性权重。机器学习算法也用于预测传感器性能退化。|msg_type=Message|
+2025-09-23 02:14:39.879|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=autonomous_driving_007|qa_pair_num=4|msg_idx=7|a_text=A4: 可靠性评估包括硬件自检、数据一致性检查、环境适应性测试等。系统会比较不同传感器的检测结果，识别异常数据。还会根据环境条件（如雨雪、强光）调整可靠性权重。机器学习算法也用于预测传感器性能退化。|
+2025-09-23 02:14:39.879|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 8|requestId=autonomous_driving_007|index=8|role=user|content_preview=机器学习算法在传感器性能预测中的具体应用？|full_content=机器学习算法在传感器性能预测中的具体应用？|msg_type=Message|
+2025-09-23 02:14:39.880|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=autonomous_driving_007|qa_pair_num=5|msg_idx=8|q_text=Q5: 机器学习算法在传感器性能预测中的具体应用？|
+2025-09-23 02:14:39.880|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 9|requestId=autonomous_driving_007|index=9|role=assistant|content_preview=主要应用包括故障预测、性能建模、自适应校准等。通过分析历史数据，算法可以预测传感器何时可能出现性能下...|full_content=主要应用包括故障预测、性能建模、自适应校准等。通过分析历史数据，算法可以预测传感器何时可能出现性能下降。深度学习模型能够学习传感器在不同环境下的表现模式，实现动态补偿。融合算法的复杂度也会根据预测结果进行调整。|msg_type=Message|
+2025-09-23 02:14:39.880|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=autonomous_driving_007|qa_pair_num=5|msg_idx=9|a_text=A5: 主要应用包括故障预测、性能建模、自适应校准等。通过分析历史数据，算法可以预测传感器何时可能出现性能下降。深度学习模型能够学习传感器在不同环境下的表现模式，实现动态补偿。融合算法的复杂度也会根据预测结果进行调整。|
+2025-09-23 02:14:39.880|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||历史查询格式化 - 最终结果|requestId=autonomous_driving_007|history_parts_count=10|history_text=Q1: 自动驾驶汽车的感知系统包括哪些传感器？
+A1: 自动驾驶感知系统主要包括摄像头、激光雷达、毫米波雷达、超声波传感器等。激光雷达提供高精度3D点云数据，毫米波雷达在恶劣天气下表现稳定，摄像头负责颜色和纹理识别。多传感器融合是关键技术。
+Q2: 多传感器融合面临哪些技术挑战？
+A2: 主要挑战包括时间同步、空间标定、数据关联、冗余处理等。不同传感器的采样频率、精度、视野范围差异很大，需要复杂的融合算法来统一处理。还要考虑传感器故障时的降级策略。
+Q3: 传感器故障的降级策略是怎样的？
+A3: 降级策略采用分层设计，当某个传感器失效时，系统会自动切换到备用方案。比如激光雷达故障时，增强摄像头和毫米波雷达的权重。系统会实时监测传感器状态，评估可靠性，动态调整融合权重。
+Q4: 如何评估传感器的可靠性？
+A4: 可靠性评估包括硬件自检、数据一致性检查、环境适应性测试等。系统会比较不同传感器的检测结果，识别异常数据。还会根据环境条件（如雨雪、强光）调整可靠性权重。机器学习算法也用于预测传感器性能退化。
+Q5: 机器学习算法在传感器性能预测中的具体应用？
+A5: 主要应用包括故障预测、性能建模、自适应校准等。通过分析历史数据，算法可以预测传感器何时可能出现性能下降。深度学习模型能够学习传感器在不同环境下的表现模式，实现动态补偿。融合算法的复杂度也会根据预测结果进行调整。|
+2025-09-23 02:14:39.880|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - 构造的Prompt|requestId=autonomous_driving_007|prompt=判断查询是否需要改写。
+
+规则：
+1. 包含这些词必须改写 → 输出 true：
+   "这方面"、"那方面"、"这种"、"那种"、"他"、"她"、"它"、"这个"、"那个"、"此"、"该"、"其"
+
+2. 注意例外情况 → 输出 false：
+   - 查询和历史对话主题完全不同（如：历史谈手机，当前问米粉食品）
+   - 指代词指向的是回答内容而不是问题内容
+   - 查询很短（3个词以内）且没有明确指代词
+
+3. 其他情况：
+   - 查询缺少主语但历史有线索 → 输出 true
+   - 查询独立完整 → 输出 false
+
+历史对话：
+Q1: 自动驾驶汽车的感知系统包括哪些传感器？
+A1: 自动驾驶感知系统主要包括摄像头、激光雷达、毫米波雷达、超声波传感器等。激光雷达提供高精度3D点云数据，毫米波雷达在恶劣天气下表现稳定，摄像头负责颜色和纹理识别。多传感器融合是关键技术。
+Q2: 多传感器融合面临哪些技术挑战？
+A2: 主要挑战包括时间同步、空间标定、数据关联、冗余处理等。不同传感器的采样频率、精度、视野范围差异很大，需要复杂的融合算法来统一处理。还要考虑传感器故障时的降级策略。
+Q3: 传感器故障的降级策略是怎样的？
+A3: 降级策略采用分层设计，当某个传感器失效时，系统会自动切换到备用方案。比如激光雷达故障时，增强摄像头和毫米波雷达的权重。系统会实时监测传感器状态，评估可靠性，动态调整融合权重。
+Q4: 如何评估传感器的可靠性？
+A4: 可靠性评估包括硬件自检、数据一致性检查、环境适应性测试等。系统会比较不同传感器的检测结果，识别异常数据。还会根据环境条件（如雨雪、强光）调整可靠性权重。机器学习算法也用于预测传感器性能退化。
+Q5: 机器学习算法在传感器性能预测中的具体应用？
+A5: 主要应用包括故障预测、性能建模、自适应校准等。通过分析历史数据，算法可以预测传感器何时可能出现性能下降。深度学习模型能够学习传感器在不同环境下的表现模式，实现动态补偿。融合算法的复杂度也会根据预测结果进行调整。
+
+当前查询：激光雷达和毫米波雷达的融合算法复杂度如何？
+
+只输出：true 或 false
+
+<judgment>|
+2025-09-23 02:14:40.153|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - LLM原始输出|requestId=autonomous_driving_007|raw_output=true|
+2025-09-23 02:14:40.153|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - 后处理结果|requestId=autonomous_driving_007|processed_output=true|
+2025-09-23 02:14:40.154|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||改写模型 - 构造的Prompt|requestId=autonomous_driving_007|prompt=<task>
+你的任务是利用历史查询的上下文，改写当前查询使其更清晰、更具体、更独立。
+
+改写规则：
+1. 仔细分析历史查询和当前查询，确认它们之间存在明确的语义关联
+2. 替换当前查询中的指代词（如"他"、"她"、"它"、"这个"、"那个"）为历史查询中的具体实体
+3. 补充缺失的主语或关键信息，使查询独立完整
+4. 当查询涉及历史对话中提到的专业概念、技术术语或具体场景时，适当补充相关上下文信息
+5. 对于短查询（3个词以内）必须确认与历史查询高度相关才进行改写
+
+重要约束：
+- 保持原始查询的意图、语言和表达方式
+- 只进行必要的替换和补充，不添加无关信息
+- 不要过度推断或猜测用户意图
+- 当代词指代依赖于上一个问题的答案而非问题本身时，不进行改写
+- 优先利用历史对话中的关键实体、场景、技术领域等信息来丰富查询
+</task>
+
+<examples>
+    <example>
+       <history>
+          Q1: 小明来自哪里？
+          A1: 小明来自北京。
+       </history>
+       <current_query>他在美团工作吗</current_query>
+       <rewritten_query>小明在美团工作吗</rewritten_query>
+    </example>
+    
+    <example>
+       <history>
+          Q1: Python和Java哪个更高效？
+          A1: 在不同场景下各有优势，Python开发效率高，Java运行效率好。
+       </history>
+       <current_query>它的内存管理怎么样？</current_query>
+       <rewritten_query>它的内存管理怎么样？</rewritten_query>
+    </example>
+    
+    <example>
+       <history>
+          Q1: 我们企业想要部署5G专网，中国移动有哪些解决方案？
+          A1: 中国移动提供多种5G专网解决方案，包括独立专网、共享专网和混合专网。可根据企业需求选择不同的网络切片服务，支持工业互联网、智慧园区、远程医疗等应用场景。
+       </history>
+       <current_query>网络切片技术是怎么工作的？</current_query>
+       <rewritten_query>中国移动5G专网中的网络切片技术是怎么工作的？</rewritten_query>
+    </example>
+</examples>
+
+<history>
+Q1: 自动驾驶汽车的感知系统包括哪些传感器？
+A1: 自动驾驶感知系统主要包括摄像头、激光雷达、毫米波雷达、超声波传感器等。激光雷达提供高精度3D点云数据，毫米波雷达在恶劣天气下表现稳定，摄像头负责颜色和纹理识别。多传感器融合是关键技术。
+Q2: 多传感器融合面临哪些技术挑战？
+A2: 主要挑战包括时间同步、空间标定、数据关联、冗余处理等。不同传感器的采样频率、精度、视野范围差异很大，需要复杂的融合算法来统一处理。还要考虑传感器故障时的降级策略。
+Q3: 传感器故障的降级策略是怎样的？
+A3: 降级策略采用分层设计，当某个传感器失效时，系统会自动切换到备用方案。比如激光雷达故障时，增强摄像头和毫米波雷达的权重。系统会实时监测传感器状态，评估可靠性，动态调整融合权重。
+Q4: 如何评估传感器的可靠性？
+A4: 可靠性评估包括硬件自检、数据一致性检查、环境适应性测试等。系统会比较不同传感器的检测结果，识别异常数据。还会根据环境条件（如雨雪、强光）调整可靠性权重。机器学习算法也用于预测传感器性能退化。
+Q5: 机器学习算法在传感器性能预测中的具体应用？
+A5: 主要应用包括故障预测、性能建模、自适应校准等。通过分析历史数据，算法可以预测传感器何时可能出现性能下降。深度学习模型能够学习传感器在不同环境下的表现模式，实现动态补偿。融合算法的复杂度也会根据预测结果进行调整。
+</history>
+
+<current_query>激光雷达和毫米波雷达的融合算法复杂度如何？</current_query>
+
+<output_instruction>
+只输出最终改写后的查询文本，不包含任何解释。
+</output_instruction>
+
+<rewritten_query>|
+2025-09-23 02:14:40.605|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||改写模型 - LLM原始输出|requestId=autonomous_driving_007|raw_output=激光雷达和毫米波雷达的融合算法复杂度如何？|
+2025-09-23 02:14:40.605|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||改写模型 - 后处理结果 (strip)|requestId=autonomous_driving_007|processed_output=激光雷达和毫米波雷达的融合算法复杂度如何？|
+2025-09-23 02:14:40.606|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tMainThreadd|INFO|API|||正常响应（查询改写完成）|requestId=autonomous_driving_007|query=激光雷达和毫米波雷达的融合算法复杂度如何？|result=激光雷达和毫米波雷达的融合算法复杂度如何？|needRewrite=True|historyList=['user: 自动驾驶汽车的感知系统包括哪些传感器？', 'assistant: 自动驾驶感知系统主要包括摄像头、激光雷达、毫米波雷达、超声波传感器等。激光雷达提供高精度3D点云数据，毫米波雷达在恶劣天气下表现稳定，摄像头负责颜色和纹理识别。多传感器融合是关键技术。', 'user: 多传感器融合面临哪些技术挑战？', 'assistant: 主要挑战包括时间同步、空间标定、数据关联、冗余处理等。不同传感器的采样频率、精度、视野范围差异很大，需要复杂的融合算法来统一处理。还要考虑传感器故障时的降级策略。', 'user: 传感器故障的降级策略是怎样的？', 'assistant: 降级策略采用分层设计，当某个传感器失效时，系统会自动切换到备用方案。比如激光雷达故障时，增强摄像头和毫米波雷达的权重。系统会实时监测传感器状态，评估可靠性，动态调整融合权重。', 'user: 如何评估传感器的可靠性？', 'assistant: 可靠性评估包括硬件自检、数据一致性检查、环境适应性测试等。系统会比较不同传感器的检测结果，识别异常数据。还会根据环境条件（如雨雪、强光）调整可靠性权重。机器学习算法也用于预测传感器性能退化。', 'user: 机器学习算法在传感器性能预测中的具体应用？', 'assistant: 主要应用包括故障预测、性能建模、自适应校准等。通过分析历史数据，算法可以预测传感器何时可能出现性能下降。深度学习模型能够学习传感器在不同环境下的表现模式，实现动态补偿。融合算法的复杂度也会根据预测结果进行调整。']|processTime=1520|queryType=其他类|extractedInfo=[{'algorithmComplexity': 7}, {'latencyMs': -1}]|
+2025-09-23 02:14:51.269|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tMainThreadd|INFO|API|||接收请求|requestId=quantum_computing_008|query=量子纠错码的实现难度有多大？|historyList=['user: 量子计算相比经典计算有什么根本优势？', 'assistant: 量子计算利用量子叠加和量子纠缠等量子力学现象，能够并行处理指数级的计算状态。在特定问题上具有指数级加速优势，如大数分解、数据库搜索、化学模拟等。但量子比特极易受环境干扰，需要量子纠错技术。', 'user: 量子比特为什么容易受环境干扰？', 'assistant: 量子比特的量子态非常脆弱，任何与环境的相互作用都会导致量子退相干。温度波动、电磁场、振动等都会破坏量子叠加态。这就是为什么量子计算机需要在接近绝对零度的环境中运行，并且需要精密的屏蔽和隔离。', 'user: 目前的量子计算机是如何实现低温环境的？', 'assistant: 主要使用稀释制冷机，能够达到10-15毫开尔文的超低温。制冷过程包括多级冷却，从室温逐步降到液氦温度，再通过稀释制冷达到毫开尔文级别。整个系统非常复杂昂贵，功耗也很大。', 'user: 除了低温，还有其他方法保护量子比特吗？', 'assistant: 是的，还有动态解耦、量子纠错码、拓扑保护等方法。动态解耦通过快速脉冲序列抵消环境噪声，量子纠错码使用多个物理量子比特编码一个逻辑量子比特，拓扑量子比特利用拓扑性质天然抗噪声。', 'user: 拓扑量子比特的工作原理是什么？', 'assistant: 拓扑量子比特基于任意子的拓扑性质，信息存储在全局拓扑态中而非局部状态。即使局部受到干扰，只要拓扑结构不变，量子信息就能保持。操作通过编织任意子轨迹实现，这种方式天然具有容错性。但实现拓扑量子比特需要特殊的材料和条件，技术难度极高。']|enableExtraction=True|extractionRules=[{'desc': "提取技术实现难度等级，1-10级。例如：'极高难度'、'中等难度'。", 'valueType': 'int', 'keyName': 'implementationDifficulty', 'defaultValue': -1}, {'desc': "提取研发周期，统一为年。例如：'5年'、'十年以上'。", 'valueType': 'int', 'keyName': 'developmentYears', 'defaultValue': -1}]|
+2025-09-23 02:14:51.270|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - 构造的Prompt|requestId=quantum_computing_008|prompt=你是一个专业的查询分类助手。请根据以下规则对用户的查询进行分类，并仅输出JSON结果，不要包含任何多余内容。
+
+分类规则：
+3. 发言稿（3）：请求撰写演讲稿、发言稿、致辞、演说稿等文稿的查询，关键词示例："演讲稿"、"发言稿"、"致辞"、"演说稿"。
+2. 建议类（2）：需要获得改进方向、解决方案或下一步行动举措的查询，包括但不限于："建议"、"推荐"、"如何"、"应该"、"方案"、"规划"、"差距"、"不足"、"需要完善"、"哪些方面需要提升"、"举措"、"可进步" 等表达。
+1. 总结类（1）：仅要求对信息进行现状"总结"、"概括"、"归纳"、"汇总"、"梳理"，且不涉及提出改进或下一步行动建议的查询。
+0. 其他类（0）：不属于以上任何一类的查询。
+
+识别要点：
+- 如果用户在对标某一标准或目标，并询问 "差距"、"不足"、"哪些方面需要提升"、"需要完善"、"可进步" 等，通常意味着希望获得改进建议，请归为建议类（2）。
+- 如果查询核心在于 "总结 / 概括 / 归纳" 现状，而未涉及提出改进或下一步行动，则归为总结类（1）。
+- 如果查询聚焦于现状描述、优势/劣势(差距)、资源投入或技术重点等信息的梳理，对未来措施仅作背景性提及，而未直接请求改进"方案/举措/对策"，亦归为总结类（1）。
+
+Few-shot 示例（仅用于理解，不要在最终回答中输出）：
+示例1：
+用户：在科技创新投入与成果转化方面，与中央强调的科技自立自强要求对标，我们在关键技术突破上还有哪些差距？
+期望输出：{"queryType": 2}
+
+示例2：
+用户：在推动数字经济与实体经济融合方面，和中央期望比，存在哪些可进步？
+期望输出：{"queryType": 2}
+
+示例3：
+用户：与中央改革要求相比，还存在哪些需要完善的地方？
+期望输出：{"queryType": 2}
+
+示例4：
+用户：从公司整体战略布局来看，这些完善工作会对各业务板块的协同发展产生怎样的影响，如何优化协同策略？
+期望输出：{"queryType": 2}
+
+示例5：
+用户：细化一下在服务集团公司主营主业方面的举措内容。
+期望输出：{"queryType": 2}
+
+示例6：
+用户：在科技创新方面，与集团公司要求相比，中移互联网公司有哪些成果，哪些方面需要进一步提升？
+期望输出：{"queryType": 2}
+
+示例7：
+用户：与党中央对国企高质量党建引领高质量发展要求相比，中移互联网公司以党建引领改革、促进发展还有哪些需进一步提升？
+期望输出：{"queryType": 2}
+
+示例8：
+用户：我们目前在AI领域的技术研发重点是什么？与世界一流信息服务企业的技术布局相比，我们的优势和差距在哪里？
+期望输出：{"queryType": 1}
+
+示例9：
+用户：可重点发展的技术有哪些，主要应用于哪些场景？
+期望输出：{"queryType": 1}
+
+示例10：
+用户：如何确保我们在AI应用开发方面保持领先地位？需要投入多少资源？
+期望输出：{"queryType": 1}
+
+用户查询为：量子纠错码的实现难度有多大？
+
+如果无法根据上述分类规则进行明确判定，请归为其他类（0）。
+
+输出格式：
+{"queryType": 分类标识码}
+|
+2025-09-23 02:14:51.601|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - LLM原始输出|requestId=quantum_computing_008|raw_output={"queryType": 0}|
+2025-09-23 02:14:51.602|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - 提取的JSON字符串|requestId=quantum_computing_008|json_str={"queryType": 0}|
+2025-09-23 02:14:51.602|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - JSON解析结果|requestId=quantum_computing_008|parsed_json={'queryType': 0}|
+2025-09-23 02:14:51.603|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 构造的Prompt|requestId=quantum_computing_008|prompt=你是一个非常严谨、专业的信息抽取助手。你需要严格按照规则从查询文本中精确提取多项特定信息。
+
+# 核心原则
+你必须严格遵守以下原则：只提取查询中明确提及的信息。如果某项信息在查询中没有被提及，你必须使用为该项指定的默认值，绝对不允许自行推断、估算或根据常识转换（例如，根据字数估算演讲时间，或根据演讲时间估算字数）。
+
+# 抽取规则列表
+[
+  {
+    "desc": "提取技术实现难度等级，1-10级。例如：'极高难度'、'中等难度'。",
+    "valueType": "int",
+    "keyName": "implementationDifficulty",
+    "defaultValue": -1
+  },
+  {
+    "desc": "提取研发周期，统一为年。例如：'5年'、'十年以上'。",
+    "valueType": "int",
+    "keyName": "developmentYears",
+    "defaultValue": -1
+  }
+]
+
+# 抽取要求
+1. 必须精确识别并提取查询文本中明确提到的所有目标信息。
+2. 对于在查询文本中完全没有提及的信息，必须使用其默认值。
+3. 如果查询中有多个可能的值，选择最合理的一个（例如，对于范围"3000-5000字"，选择5000）。
+4. 对于数字信息，必须转换为阿拉伯数字格式。
+5. 对于文本信息，保留原始文本格式。
+6. 对于布尔信息，转换为true/false格式。
+7. 严格按照每项规则要求的数据类型返回。
+
+# 数字处理规则
+1. 中文数字转阿拉伯数字：如"一千五百"转为"1500"。
+2. 带单位的数字要去除单位：如"15万"转为"150000"。
+3. 数字范围取上限值：如"10-20分钟"取"20"，"5000字以上"取"5000"。
+4. "几十"、"几百"等模糊表达转为具体数字：如"几十"转为"50"，"几百"转为"500"。
+5. "多"字处理：如"5000多字"转为"5000"。
+6. 特殊表达转换：如"上千"转为"1000"，"数百"转为"500"。
+7. 区分"万"和"万字"：如"写一万字"中的"万"是数量单位。
+
+# 输出格式
+你必须只输出一个有效的JSON对象，包含所有需要提取的信息，每一项的键名必须严格按照抽取规则中指定的keyName。
+
+## 示例 1: 信息完整
+- 查询: "写一篇关于AI的报告，要求1500字，演讲时长10分钟。"
+- 输出:
+```
+{
+  "requireWordNums": 1500,
+  "durationMins": 10
+}
+```
+
+## 示例 2: 信息不完整
+- 查询: "写一篇关于中国移动5G建设成就的发言稿，5000字左右。"
+- 输出 (假设durationMins的默认值是-1):
+```
+{
+  "requireWordNums": 5000,
+  "durationMins": -1
+}
+```
+
+不要输出任何额外的解释或前后缀，只输出JSON对象本身。
+必须确保JSON对象有效且格式正确，所有键名必须使用双引号。
+
+# 查询内容
+量子纠错码的实现难度有多大？ |
+2025-09-23 02:14:51.604|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 请求体|requestId=quantum_computing_008|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|payload={'request_id': 'quantum_computing_008', 'input': '你是一个非常严谨、专业的信息抽取助手。你需要严格按照规则从查询文本中精确提取多项特定信息。\n\n# 核心原则\n你必须严格遵守以下原则：只提取查询中明确提及的信息。如果某项信息在查询中没有被提及，你必须使用为该项指定的默认值，绝对不允许自行推断、估算或根据常识转换（例如，根据字数估算演讲时间，或根据演讲时间估算字数）。\n\n# 抽取规则列表\n[\n  {\n    "desc": "提取技术实现难度等级，1-10级。例如：\'极高难度\'、\'中等难度\'。",\n    "valueType": "int",\n    "keyName": "implementationDifficulty",\n    "defaultValue": -1\n  },\n  {\n    "desc": "提取研发周期，统一为年。例如：\'5年\'、\'十年以上\'。",\n    "valueType": "int",\n    "keyName": "developmentYears",\n    "defaultValue": -1\n  }\n]\n\n# 抽取要求\n1. 必须精确识别并提取查询文本中明确提到的所有目标信息。\n2. 对于在查询文本中完全没有提及的信息，必须使用其默认值。\n3. 如果查询中有多个可能的值，选择最合理的一个（例如，对于范围"3000-5000字"，选择5000）。\n4. 对于数字信息，必须转换为阿拉伯数字格式。\n5. 对于文本信息，保留原始文本格式。\n6. 对于布尔信息，转换为true/false格式。\n7. 严格按照每项规则要求的数据类型返回。\n\n# 数字处理规则\n1. 中文数字转阿拉伯数字：如"一千五百"转为"1500"。\n2. 带单位的数字要去除单位：如"15万"转为"150000"。\n3. 数字范围取上限值：如"10-20分钟"取"20"，"5000字以上"取"5000"。\n4. "几十"、"几百"等模糊表达转为具体数字：如"几十"转为"50"，"几百"转为"500"。\n5. "多"字处理：如"5000多字"转为"5000"。\n6. 特殊表达转换：如"上千"转为"1000"，"数百"转为"500"。\n7. 区分"万"和"万字"：如"写一万字"中的"万"是数量单位。\n\n# 输出格式\n你必须只输出一个有效的JSON对象，包含所有需要提取的信息，每一项的键名必须严格按照抽取规则中指定的keyName。\n\n## 示例 1: 信息完整\n- 查询: "写一篇关于AI的报告，要求1500字，演讲时长10分钟。"\n- 输出:\n```\n{\n  "requireWordNums": 1500,\n  "durationMins": 10\n}\n```\n\n## 示例 2: 信息不完整\n- 查询: "写一篇关于中国移动5G建设成就的发言稿，5000字左右。"\n- 输出 (假设durationMins的默认值是-1):\n```\n{\n  "requireWordNums": 5000,\n  "durationMins": -1\n}\n```\n\n不要输出任何额外的解释或前后缀，只输出JSON对象本身。\n必须确保JSON对象有效且格式正确，所有键名必须使用双引号。\n\n# 查询内容\n量子纠错码的实现难度有多大？ ', 'max_new_token': 256, 'temperature': 0.01, 'top_p': 0.9, 'streaming': False}|
+2025-09-23 02:14:52.000|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - LLM响应|requestId=quantum_computing_008|response={'success': True, 'code': '0000', 'message': 'success', 'data': {'request_id': 'quantum_computing_008', 'result': '{\n  "implementationDifficulty": -1\n}'}}|
+2025-09-23 02:14:52.001|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - LLM原始输出|requestId=quantum_computing_008|raw_output={
+  "implementationDifficulty": -1
+}|
+2025-09-23 02:14:52.001|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 直接JSON解析成功|requestId=quantum_computing_008|parsed_json={'implementationDifficulty': -1}|
+2025-09-23 02:14:52.002|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||历史查询格式化 - 原始数据|requestId=quantum_computing_008|history_count=10|history_roles=['user', 'assistant', 'user', 'assistant', 'user', 'assistant', 'user', 'assistant', 'user', 'assistant']|first_message={'role': 'user', 'content': '量子计算相比经典计算有什么根本优势？', 'reasoningContent': None}|all_messages=[{'index': 0, 'role': 'user', 'content': '量子计算相比经典计算有什么根本优势？'}, {'index': 1, 'role': 'assistant', 'content': '量子计算利用量子叠加和量子纠缠等量子力学现象，能够并行处理指...'}, {'index': 2, 'role': 'user', 'content': '量子比特为什么容易受环境干扰？'}, {'index': 3, 'role': 'assistant', 'content': '量子比特的量子态非常脆弱，任何与环境的相互作用都会导致量子退...'}, {'index': 4, 'role': 'user', 'content': '目前的量子计算机是如何实现低温环境的？'}, {'index': 5, 'role': 'assistant', 'content': '主要使用稀释制冷机，能够达到10-15毫开尔文的超低温。制冷...'}, {'index': 6, 'role': 'user', 'content': '除了低温，还有其他方法保护量子比特吗？'}, {'index': 7, 'role': 'assistant', 'content': '是的，还有动态解耦、量子纠错码、拓扑保护等方法。动态解耦通过...'}, {'index': 8, 'role': 'user', 'content': '拓扑量子比特的工作原理是什么？'}, {'index': 9, 'role': 'assistant', 'content': '拓扑量子比特基于任意子的拓扑性质，信息存储在全局拓扑态中而非...'}]|
+2025-09-23 02:14:52.003|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 0|requestId=quantum_computing_008|index=0|role=user|content_preview=量子计算相比经典计算有什么根本优势？|full_content=量子计算相比经典计算有什么根本优势？|msg_type=Message|
+2025-09-23 02:14:52.003|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=quantum_computing_008|qa_pair_num=1|msg_idx=0|q_text=Q1: 量子计算相比经典计算有什么根本优势？|
+2025-09-23 02:14:52.003|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 1|requestId=quantum_computing_008|index=1|role=assistant|content_preview=量子计算利用量子叠加和量子纠缠等量子力学现象，能够并行处理指数级的计算状态。在特定问题上具有指数级加...|full_content=量子计算利用量子叠加和量子纠缠等量子力学现象，能够并行处理指数级的计算状态。在特定问题上具有指数级加速优势，如大数分解、数据库搜索、化学模拟等。但量子比特极易受环境干扰，需要量子纠错技术。|msg_type=Message|
+2025-09-23 02:14:52.003|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=quantum_computing_008|qa_pair_num=1|msg_idx=1|a_text=A1: 量子计算利用量子叠加和量子纠缠等量子力学现象，能够并行处理指数级的计算状态。在特定问题上具有指数级加速优势，如大数分解、数据库搜索、化学模拟等。但量子比特极易受环境干扰，需要量子纠错技术。|
+2025-09-23 02:14:52.003|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 2|requestId=quantum_computing_008|index=2|role=user|content_preview=量子比特为什么容易受环境干扰？|full_content=量子比特为什么容易受环境干扰？|msg_type=Message|
+2025-09-23 02:14:52.004|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=quantum_computing_008|qa_pair_num=2|msg_idx=2|q_text=Q2: 量子比特为什么容易受环境干扰？|
+2025-09-23 02:14:52.004|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 3|requestId=quantum_computing_008|index=3|role=assistant|content_preview=量子比特的量子态非常脆弱，任何与环境的相互作用都会导致量子退相干。温度波动、电磁场、振动等都会破坏量...|full_content=量子比特的量子态非常脆弱，任何与环境的相互作用都会导致量子退相干。温度波动、电磁场、振动等都会破坏量子叠加态。这就是为什么量子计算机需要在接近绝对零度的环境中运行，并且需要精密的屏蔽和隔离。|msg_type=Message|
+2025-09-23 02:14:52.004|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=quantum_computing_008|qa_pair_num=2|msg_idx=3|a_text=A2: 量子比特的量子态非常脆弱，任何与环境的相互作用都会导致量子退相干。温度波动、电磁场、振动等都会破坏量子叠加态。这就是为什么量子计算机需要在接近绝对零度的环境中运行，并且需要精密的屏蔽和隔离。|
+2025-09-23 02:14:52.004|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 4|requestId=quantum_computing_008|index=4|role=user|content_preview=目前的量子计算机是如何实现低温环境的？|full_content=目前的量子计算机是如何实现低温环境的？|msg_type=Message|
+2025-09-23 02:14:52.004|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=quantum_computing_008|qa_pair_num=3|msg_idx=4|q_text=Q3: 目前的量子计算机是如何实现低温环境的？|
+2025-09-23 02:14:52.004|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 5|requestId=quantum_computing_008|index=5|role=assistant|content_preview=主要使用稀释制冷机，能够达到10-15毫开尔文的超低温。制冷过程包括多级冷却，从室温逐步降到液氦温度...|full_content=主要使用稀释制冷机，能够达到10-15毫开尔文的超低温。制冷过程包括多级冷却，从室温逐步降到液氦温度，再通过稀释制冷达到毫开尔文级别。整个系统非常复杂昂贵，功耗也很大。|msg_type=Message|
+2025-09-23 02:14:52.005|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=quantum_computing_008|qa_pair_num=3|msg_idx=5|a_text=A3: 主要使用稀释制冷机，能够达到10-15毫开尔文的超低温。制冷过程包括多级冷却，从室温逐步降到液氦温度，再通过稀释制冷达到毫开尔文级别。整个系统非常复杂昂贵，功耗也很大。|
+2025-09-23 02:14:52.005|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 6|requestId=quantum_computing_008|index=6|role=user|content_preview=除了低温，还有其他方法保护量子比特吗？|full_content=除了低温，还有其他方法保护量子比特吗？|msg_type=Message|
+2025-09-23 02:14:52.005|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=quantum_computing_008|qa_pair_num=4|msg_idx=6|q_text=Q4: 除了低温，还有其他方法保护量子比特吗？|
+2025-09-23 02:14:52.005|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 7|requestId=quantum_computing_008|index=7|role=assistant|content_preview=是的，还有动态解耦、量子纠错码、拓扑保护等方法。动态解耦通过快速脉冲序列抵消环境噪声，量子纠错码使用...|full_content=是的，还有动态解耦、量子纠错码、拓扑保护等方法。动态解耦通过快速脉冲序列抵消环境噪声，量子纠错码使用多个物理量子比特编码一个逻辑量子比特，拓扑量子比特利用拓扑性质天然抗噪声。|msg_type=Message|
+2025-09-23 02:14:52.005|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=quantum_computing_008|qa_pair_num=4|msg_idx=7|a_text=A4: 是的，还有动态解耦、量子纠错码、拓扑保护等方法。动态解耦通过快速脉冲序列抵消环境噪声，量子纠错码使用多个物理量子比特编码一个逻辑量子比特，拓扑量子比特利用拓扑性质天然抗噪声。|
+2025-09-23 02:14:52.005|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 8|requestId=quantum_computing_008|index=8|role=user|content_preview=拓扑量子比特的工作原理是什么？|full_content=拓扑量子比特的工作原理是什么？|msg_type=Message|
+2025-09-23 02:14:52.005|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=quantum_computing_008|qa_pair_num=5|msg_idx=8|q_text=Q5: 拓扑量子比特的工作原理是什么？|
+2025-09-23 02:14:52.006|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 9|requestId=quantum_computing_008|index=9|role=assistant|content_preview=拓扑量子比特基于任意子的拓扑性质，信息存储在全局拓扑态中而非局部状态。即使局部受到干扰，只要拓扑结构...|full_content=拓扑量子比特基于任意子的拓扑性质，信息存储在全局拓扑态中而非局部状态。即使局部受到干扰，只要拓扑结构不变，量子信息就能保持。操作通过编织任意子轨迹实现，这种方式天然具有容错性。但实现拓扑量子比特需要特殊的材料和条件，技术难度极高。|msg_type=Message|
+2025-09-23 02:14:52.006|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=quantum_computing_008|qa_pair_num=5|msg_idx=9|a_text=A5: 拓扑量子比特基于任意子的拓扑性质，信息存储在全局拓扑态中而非局部状态。即使局部受到干扰，只要拓扑结构不变，量子信息就能保持。操作通过编织任意子轨迹实现，这种方式天然具有容错性。但实现拓扑量子比特需要特殊的材料和条件，技术难度极高。|
+2025-09-23 02:14:52.006|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||历史查询格式化 - 最终结果|requestId=quantum_computing_008|history_parts_count=10|history_text=Q1: 量子计算相比经典计算有什么根本优势？
+A1: 量子计算利用量子叠加和量子纠缠等量子力学现象，能够并行处理指数级的计算状态。在特定问题上具有指数级加速优势，如大数分解、数据库搜索、化学模拟等。但量子比特极易受环境干扰，需要量子纠错技术。
+Q2: 量子比特为什么容易受环境干扰？
+A2: 量子比特的量子态非常脆弱，任何与环境的相互作用都会导致量子退相干。温度波动、电磁场、振动等都会破坏量子叠加态。这就是为什么量子计算机需要在接近绝对零度的环境中运行，并且需要精密的屏蔽和隔离。
+Q3: 目前的量子计算机是如何实现低温环境的？
+A3: 主要使用稀释制冷机，能够达到10-15毫开尔文的超低温。制冷过程包括多级冷却，从室温逐步降到液氦温度，再通过稀释制冷达到毫开尔文级别。整个系统非常复杂昂贵，功耗也很大。
+Q4: 除了低温，还有其他方法保护量子比特吗？
+A4: 是的，还有动态解耦、量子纠错码、拓扑保护等方法。动态解耦通过快速脉冲序列抵消环境噪声，量子纠错码使用多个物理量子比特编码一个逻辑量子比特，拓扑量子比特利用拓扑性质天然抗噪声。
+Q5: 拓扑量子比特的工作原理是什么？
+A5: 拓扑量子比特基于任意子的拓扑性质，信息存储在全局拓扑态中而非局部状态。即使局部受到干扰，只要拓扑结构不变，量子信息就能保持。操作通过编织任意子轨迹实现，这种方式天然具有容错性。但实现拓扑量子比特需要特殊的材料和条件，技术难度极高。|
+2025-09-23 02:14:52.006|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - 构造的Prompt|requestId=quantum_computing_008|prompt=判断查询是否需要改写。
+
+规则：
+1. 包含这些词必须改写 → 输出 true：
+   "这方面"、"那方面"、"这种"、"那种"、"他"、"她"、"它"、"这个"、"那个"、"此"、"该"、"其"
+
+2. 注意例外情况 → 输出 false：
+   - 查询和历史对话主题完全不同（如：历史谈手机，当前问米粉食品）
+   - 指代词指向的是回答内容而不是问题内容
+   - 查询很短（3个词以内）且没有明确指代词
+
+3. 其他情况：
+   - 查询缺少主语但历史有线索 → 输出 true
+   - 查询独立完整 → 输出 false
+
+历史对话：
+Q1: 量子计算相比经典计算有什么根本优势？
+A1: 量子计算利用量子叠加和量子纠缠等量子力学现象，能够并行处理指数级的计算状态。在特定问题上具有指数级加速优势，如大数分解、数据库搜索、化学模拟等。但量子比特极易受环境干扰，需要量子纠错技术。
+Q2: 量子比特为什么容易受环境干扰？
+A2: 量子比特的量子态非常脆弱，任何与环境的相互作用都会导致量子退相干。温度波动、电磁场、振动等都会破坏量子叠加态。这就是为什么量子计算机需要在接近绝对零度的环境中运行，并且需要精密的屏蔽和隔离。
+Q3: 目前的量子计算机是如何实现低温环境的？
+A3: 主要使用稀释制冷机，能够达到10-15毫开尔文的超低温。制冷过程包括多级冷却，从室温逐步降到液氦温度，再通过稀释制冷达到毫开尔文级别。整个系统非常复杂昂贵，功耗也很大。
+Q4: 除了低温，还有其他方法保护量子比特吗？
+A4: 是的，还有动态解耦、量子纠错码、拓扑保护等方法。动态解耦通过快速脉冲序列抵消环境噪声，量子纠错码使用多个物理量子比特编码一个逻辑量子比特，拓扑量子比特利用拓扑性质天然抗噪声。
+Q5: 拓扑量子比特的工作原理是什么？
+A5: 拓扑量子比特基于任意子的拓扑性质，信息存储在全局拓扑态中而非局部状态。即使局部受到干扰，只要拓扑结构不变，量子信息就能保持。操作通过编织任意子轨迹实现，这种方式天然具有容错性。但实现拓扑量子比特需要特殊的材料和条件，技术难度极高。
+
+当前查询：量子纠错码的实现难度有多大？
+
+只输出：true 或 false
+
+<judgment>|
+2025-09-23 02:14:52.271|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - LLM原始输出|requestId=quantum_computing_008|raw_output=true|
+2025-09-23 02:14:52.272|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - 后处理结果|requestId=quantum_computing_008|processed_output=true|
+2025-09-23 02:14:52.272|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||改写模型 - 构造的Prompt|requestId=quantum_computing_008|prompt=<task>
+你的任务是利用历史查询的上下文，改写当前查询使其更清晰、更具体、更独立。
+
+改写规则：
+1. 仔细分析历史查询和当前查询，确认它们之间存在明确的语义关联
+2. 替换当前查询中的指代词（如"他"、"她"、"它"、"这个"、"那个"）为历史查询中的具体实体
+3. 补充缺失的主语或关键信息，使查询独立完整
+4. 当查询涉及历史对话中提到的专业概念、技术术语或具体场景时，适当补充相关上下文信息
+5. 对于短查询（3个词以内）必须确认与历史查询高度相关才进行改写
+
+重要约束：
+- 保持原始查询的意图、语言和表达方式
+- 只进行必要的替换和补充，不添加无关信息
+- 不要过度推断或猜测用户意图
+- 当代词指代依赖于上一个问题的答案而非问题本身时，不进行改写
+- 优先利用历史对话中的关键实体、场景、技术领域等信息来丰富查询
+</task>
+
+<examples>
+    <example>
+       <history>
+          Q1: 小明来自哪里？
+          A1: 小明来自北京。
+       </history>
+       <current_query>他在美团工作吗</current_query>
+       <rewritten_query>小明在美团工作吗</rewritten_query>
+    </example>
+    
+    <example>
+       <history>
+          Q1: Python和Java哪个更高效？
+          A1: 在不同场景下各有优势，Python开发效率高，Java运行效率好。
+       </history>
+       <current_query>它的内存管理怎么样？</current_query>
+       <rewritten_query>它的内存管理怎么样？</rewritten_query>
+    </example>
+    
+    <example>
+       <history>
+          Q1: 我们企业想要部署5G专网，中国移动有哪些解决方案？
+          A1: 中国移动提供多种5G专网解决方案，包括独立专网、共享专网和混合专网。可根据企业需求选择不同的网络切片服务，支持工业互联网、智慧园区、远程医疗等应用场景。
+       </history>
+       <current_query>网络切片技术是怎么工作的？</current_query>
+       <rewritten_query>中国移动5G专网中的网络切片技术是怎么工作的？</rewritten_query>
+    </example>
+</examples>
+
+<history>
+Q1: 量子计算相比经典计算有什么根本优势？
+A1: 量子计算利用量子叠加和量子纠缠等量子力学现象，能够并行处理指数级的计算状态。在特定问题上具有指数级加速优势，如大数分解、数据库搜索、化学模拟等。但量子比特极易受环境干扰，需要量子纠错技术。
+Q2: 量子比特为什么容易受环境干扰？
+A2: 量子比特的量子态非常脆弱，任何与环境的相互作用都会导致量子退相干。温度波动、电磁场、振动等都会破坏量子叠加态。这就是为什么量子计算机需要在接近绝对零度的环境中运行，并且需要精密的屏蔽和隔离。
+Q3: 目前的量子计算机是如何实现低温环境的？
+A3: 主要使用稀释制冷机，能够达到10-15毫开尔文的超低温。制冷过程包括多级冷却，从室温逐步降到液氦温度，再通过稀释制冷达到毫开尔文级别。整个系统非常复杂昂贵，功耗也很大。
+Q4: 除了低温，还有其他方法保护量子比特吗？
+A4: 是的，还有动态解耦、量子纠错码、拓扑保护等方法。动态解耦通过快速脉冲序列抵消环境噪声，量子纠错码使用多个物理量子比特编码一个逻辑量子比特，拓扑量子比特利用拓扑性质天然抗噪声。
+Q5: 拓扑量子比特的工作原理是什么？
+A5: 拓扑量子比特基于任意子的拓扑性质，信息存储在全局拓扑态中而非局部状态。即使局部受到干扰，只要拓扑结构不变，量子信息就能保持。操作通过编织任意子轨迹实现，这种方式天然具有容错性。但实现拓扑量子比特需要特殊的材料和条件，技术难度极高。
+</history>
+
+<current_query>量子纠错码的实现难度有多大？</current_query>
+
+<output_instruction>
+只输出最终改写后的查询文本，不包含任何解释。
+</output_instruction>
+
+<rewritten_query>|
+2025-09-23 02:14:52.630|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||改写模型 - LLM原始输出|requestId=quantum_computing_008|raw_output=量子纠错码的实现难度有多大？|
+2025-09-23 02:14:52.630|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||改写模型 - 后处理结果 (strip)|requestId=quantum_computing_008|processed_output=量子纠错码的实现难度有多大？|
+2025-09-23 02:14:52.631|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tMainThreadd|INFO|API|||正常响应（查询改写完成）|requestId=quantum_computing_008|query=量子纠错码的实现难度有多大？|result=量子纠错码的实现难度有多大？|needRewrite=True|historyList=['user: 量子计算相比经典计算有什么根本优势？', 'assistant: 量子计算利用量子叠加和量子纠缠等量子力学现象，能够并行处理指数级的计算状态。在特定问题上具有指数级加速优势，如大数分解、数据库搜索、化学模拟等。但量子比特极易受环境干扰，需要量子纠错技术。', 'user: 量子比特为什么容易受环境干扰？', 'assistant: 量子比特的量子态非常脆弱，任何与环境的相互作用都会导致量子退相干。温度波动、电磁场、振动等都会破坏量子叠加态。这就是为什么量子计算机需要在接近绝对零度的环境中运行，并且需要精密的屏蔽和隔离。', 'user: 目前的量子计算机是如何实现低温环境的？', 'assistant: 主要使用稀释制冷机，能够达到10-15毫开尔文的超低温。制冷过程包括多级冷却，从室温逐步降到液氦温度，再通过稀释制冷达到毫开尔文级别。整个系统非常复杂昂贵，功耗也很大。', 'user: 除了低温，还有其他方法保护量子比特吗？', 'assistant: 是的，还有动态解耦、量子纠错码、拓扑保护等方法。动态解耦通过快速脉冲序列抵消环境噪声，量子纠错码使用多个物理量子比特编码一个逻辑量子比特，拓扑量子比特利用拓扑性质天然抗噪声。', 'user: 拓扑量子比特的工作原理是什么？', 'assistant: 拓扑量子比特基于任意子的拓扑性质，信息存储在全局拓扑态中而非局部状态。即使局部受到干扰，只要拓扑结构不变，量子信息就能保持。操作通过编织任意子轨迹实现，这种方式天然具有容错性。但实现拓扑量子比特需要特殊的材料和条件，技术难度极高。']|processTime=1361|queryType=其他类|extractedInfo=[{'implementationDifficulty': -1}, {'developmentYears': -1}]|
+2025-09-23 02:15:11.067|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tMainThreadd|INFO|API|||接收请求|requestId=brain_computer_interface_009|query=神经信号解码算法的实时性要求是什么？|historyList=['user: 脑机接口技术的发展现状如何？', 'assistant: 脑机接口技术正快速发展，主要分为侵入式和非侵入式两类。侵入式接口通过植入电极直接记录神经元活动，精度高但风险大。非侵入式使用EEG、fMRI等技术，安全但精度有限。神经信号解码是核心技术挑战。', 'user: 侵入式和非侵入式接口的精度差异有多大？', 'assistant: 侵入式接口可以记录单个神经元的动作电位，时间分辨率达到毫秒级，空间分辨率达到微米级。非侵入式EEG的时间分辨率也很好，但空间分辨率只有厘米级，且信号会被颅骨衰减。fMRI空间分辨率较好但时间分辨率只有秒级。', 'user: 如何提高非侵入式接口的信号质量？', 'assistant: 主要方法包括高密度电极阵列、先进的信号处理算法、机器学习技术等。高密度EEG可以提高空间分辨率，独立成分分析能够分离不同信号源，深度学习算法可以从噪声中提取有用特征。多模态融合也是重要方向。', 'user: 多模态融合具体是如何实现的？', 'assistant: 多模态融合结合EEG、fMRI、fNIRS等不同技术的优势。EEG提供高时间分辨率，fMRI提供高空间分辨率，fNIRS提供血氧信息。融合算法需要处理不同模态的时间同步、空间配准、特征提取等问题。深度学习网络可以自动学习多模态特征的最优组合。', 'user: 深度学习在脑机接口中还有哪些应用？', 'assistant: 深度学习在脑机接口中应用广泛，包括信号预处理、特征提取、意图识别、自适应校准等。卷积神经网络擅长处理时空信号模式，循环神经网络适合序列建模，生成对抗网络可以增强训练数据。实时性是关键挑战，需要在准确性和延迟之间平衡。']|enableExtraction=True|extractionRules=[{'desc': "提取实时处理延迟，统一为毫秒。例如：'100ms'、'实时响应'。", 'valueType': 'int', 'keyName': 'realtimeLatencyMs', 'defaultValue': -1}, {'desc': "提取算法准确率要求，统一为百分比。例如：'95%'、'高精度'。", 'valueType': 'int', 'keyName': 'accuracyRequirement', 'defaultValue': -1}]|
+2025-09-23 02:15:11.068|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - 构造的Prompt|requestId=brain_computer_interface_009|prompt=你是一个专业的查询分类助手。请根据以下规则对用户的查询进行分类，并仅输出JSON结果，不要包含任何多余内容。
+
+分类规则：
+3. 发言稿（3）：请求撰写演讲稿、发言稿、致辞、演说稿等文稿的查询，关键词示例："演讲稿"、"发言稿"、"致辞"、"演说稿"。
+2. 建议类（2）：需要获得改进方向、解决方案或下一步行动举措的查询，包括但不限于："建议"、"推荐"、"如何"、"应该"、"方案"、"规划"、"差距"、"不足"、"需要完善"、"哪些方面需要提升"、"举措"、"可进步" 等表达。
+1. 总结类（1）：仅要求对信息进行现状"总结"、"概括"、"归纳"、"汇总"、"梳理"，且不涉及提出改进或下一步行动建议的查询。
+0. 其他类（0）：不属于以上任何一类的查询。
+
+识别要点：
+- 如果用户在对标某一标准或目标，并询问 "差距"、"不足"、"哪些方面需要提升"、"需要完善"、"可进步" 等，通常意味着希望获得改进建议，请归为建议类（2）。
+- 如果查询核心在于 "总结 / 概括 / 归纳" 现状，而未涉及提出改进或下一步行动，则归为总结类（1）。
+- 如果查询聚焦于现状描述、优势/劣势(差距)、资源投入或技术重点等信息的梳理，对未来措施仅作背景性提及，而未直接请求改进"方案/举措/对策"，亦归为总结类（1）。
+
+Few-shot 示例（仅用于理解，不要在最终回答中输出）：
+示例1：
+用户：在科技创新投入与成果转化方面，与中央强调的科技自立自强要求对标，我们在关键技术突破上还有哪些差距？
+期望输出：{"queryType": 2}
+
+示例2：
+用户：在推动数字经济与实体经济融合方面，和中央期望比，存在哪些可进步？
+期望输出：{"queryType": 2}
+
+示例3：
+用户：与中央改革要求相比，还存在哪些需要完善的地方？
+期望输出：{"queryType": 2}
+
+示例4：
+用户：从公司整体战略布局来看，这些完善工作会对各业务板块的协同发展产生怎样的影响，如何优化协同策略？
+期望输出：{"queryType": 2}
+
+示例5：
+用户：细化一下在服务集团公司主营主业方面的举措内容。
+期望输出：{"queryType": 2}
+
+示例6：
+用户：在科技创新方面，与集团公司要求相比，中移互联网公司有哪些成果，哪些方面需要进一步提升？
+期望输出：{"queryType": 2}
+
+示例7：
+用户：与党中央对国企高质量党建引领高质量发展要求相比，中移互联网公司以党建引领改革、促进发展还有哪些需进一步提升？
+期望输出：{"queryType": 2}
+
+示例8：
+用户：我们目前在AI领域的技术研发重点是什么？与世界一流信息服务企业的技术布局相比，我们的优势和差距在哪里？
+期望输出：{"queryType": 1}
+
+示例9：
+用户：可重点发展的技术有哪些，主要应用于哪些场景？
+期望输出：{"queryType": 1}
+
+示例10：
+用户：如何确保我们在AI应用开发方面保持领先地位？需要投入多少资源？
+期望输出：{"queryType": 1}
+
+用户查询为：神经信号解码算法的实时性要求是什么？
+
+如果无法根据上述分类规则进行明确判定，请归为其他类（0）。
+
+输出格式：
+{"queryType": 分类标识码}
+|
+2025-09-23 02:15:11.519|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - LLM原始输出|requestId=brain_computer_interface_009|raw_output={"queryType": 0}|
+2025-09-23 02:15:11.520|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - 提取的JSON字符串|requestId=brain_computer_interface_009|json_str={"queryType": 0}|
+2025-09-23 02:15:11.520|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - JSON解析结果|requestId=brain_computer_interface_009|parsed_json={'queryType': 0}|
+2025-09-23 02:15:11.521|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 构造的Prompt|requestId=brain_computer_interface_009|prompt=你是一个非常严谨、专业的信息抽取助手。你需要严格按照规则从查询文本中精确提取多项特定信息。
+
+# 核心原则
+你必须严格遵守以下原则：只提取查询中明确提及的信息。如果某项信息在查询中没有被提及，你必须使用为该项指定的默认值，绝对不允许自行推断、估算或根据常识转换（例如，根据字数估算演讲时间，或根据演讲时间估算字数）。
+
+# 抽取规则列表
+[
+  {
+    "desc": "提取实时处理延迟，统一为毫秒。例如：'100ms'、'实时响应'。",
+    "valueType": "int",
+    "keyName": "realtimeLatencyMs",
+    "defaultValue": -1
+  },
+  {
+    "desc": "提取算法准确率要求，统一为百分比。例如：'95%'、'高精度'。",
+    "valueType": "int",
+    "keyName": "accuracyRequirement",
+    "defaultValue": -1
+  }
+]
+
+# 抽取要求
+1. 必须精确识别并提取查询文本中明确提到的所有目标信息。
+2. 对于在查询文本中完全没有提及的信息，必须使用其默认值。
+3. 如果查询中有多个可能的值，选择最合理的一个（例如，对于范围"3000-5000字"，选择5000）。
+4. 对于数字信息，必须转换为阿拉伯数字格式。
+5. 对于文本信息，保留原始文本格式。
+6. 对于布尔信息，转换为true/false格式。
+7. 严格按照每项规则要求的数据类型返回。
+
+# 数字处理规则
+1. 中文数字转阿拉伯数字：如"一千五百"转为"1500"。
+2. 带单位的数字要去除单位：如"15万"转为"150000"。
+3. 数字范围取上限值：如"10-20分钟"取"20"，"5000字以上"取"5000"。
+4. "几十"、"几百"等模糊表达转为具体数字：如"几十"转为"50"，"几百"转为"500"。
+5. "多"字处理：如"5000多字"转为"5000"。
+6. 特殊表达转换：如"上千"转为"1000"，"数百"转为"500"。
+7. 区分"万"和"万字"：如"写一万字"中的"万"是数量单位。
+
+# 输出格式
+你必须只输出一个有效的JSON对象，包含所有需要提取的信息，每一项的键名必须严格按照抽取规则中指定的keyName。
+
+## 示例 1: 信息完整
+- 查询: "写一篇关于AI的报告，要求1500字，演讲时长10分钟。"
+- 输出:
+```
+{
+  "requireWordNums": 1500,
+  "durationMins": 10
+}
+```
+
+## 示例 2: 信息不完整
+- 查询: "写一篇关于中国移动5G建设成就的发言稿，5000字左右。"
+- 输出 (假设durationMins的默认值是-1):
+```
+{
+  "requireWordNums": 5000,
+  "durationMins": -1
+}
+```
+
+不要输出任何额外的解释或前后缀，只输出JSON对象本身。
+必须确保JSON对象有效且格式正确，所有键名必须使用双引号。
+
+# 查询内容
+神经信号解码算法的实时性要求是什么？ |
+2025-09-23 02:15:11.521|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 请求体|requestId=brain_computer_interface_009|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|payload={'request_id': 'brain_computer_interface_009', 'input': '你是一个非常严谨、专业的信息抽取助手。你需要严格按照规则从查询文本中精确提取多项特定信息。\n\n# 核心原则\n你必须严格遵守以下原则：只提取查询中明确提及的信息。如果某项信息在查询中没有被提及，你必须使用为该项指定的默认值，绝对不允许自行推断、估算或根据常识转换（例如，根据字数估算演讲时间，或根据演讲时间估算字数）。\n\n# 抽取规则列表\n[\n  {\n    "desc": "提取实时处理延迟，统一为毫秒。例如：\'100ms\'、\'实时响应\'。",\n    "valueType": "int",\n    "keyName": "realtimeLatencyMs",\n    "defaultValue": -1\n  },\n  {\n    "desc": "提取算法准确率要求，统一为百分比。例如：\'95%\'、\'高精度\'。",\n    "valueType": "int",\n    "keyName": "accuracyRequirement",\n    "defaultValue": -1\n  }\n]\n\n# 抽取要求\n1. 必须精确识别并提取查询文本中明确提到的所有目标信息。\n2. 对于在查询文本中完全没有提及的信息，必须使用其默认值。\n3. 如果查询中有多个可能的值，选择最合理的一个（例如，对于范围"3000-5000字"，选择5000）。\n4. 对于数字信息，必须转换为阿拉伯数字格式。\n5. 对于文本信息，保留原始文本格式。\n6. 对于布尔信息，转换为true/false格式。\n7. 严格按照每项规则要求的数据类型返回。\n\n# 数字处理规则\n1. 中文数字转阿拉伯数字：如"一千五百"转为"1500"。\n2. 带单位的数字要去除单位：如"15万"转为"150000"。\n3. 数字范围取上限值：如"10-20分钟"取"20"，"5000字以上"取"5000"。\n4. "几十"、"几百"等模糊表达转为具体数字：如"几十"转为"50"，"几百"转为"500"。\n5. "多"字处理：如"5000多字"转为"5000"。\n6. 特殊表达转换：如"上千"转为"1000"，"数百"转为"500"。\n7. 区分"万"和"万字"：如"写一万字"中的"万"是数量单位。\n\n# 输出格式\n你必须只输出一个有效的JSON对象，包含所有需要提取的信息，每一项的键名必须严格按照抽取规则中指定的keyName。\n\n## 示例 1: 信息完整\n- 查询: "写一篇关于AI的报告，要求1500字，演讲时长10分钟。"\n- 输出:\n```\n{\n  "requireWordNums": 1500,\n  "durationMins": 10\n}\n```\n\n## 示例 2: 信息不完整\n- 查询: "写一篇关于中国移动5G建设成就的发言稿，5000字左右。"\n- 输出 (假设durationMins的默认值是-1):\n```\n{\n  "requireWordNums": 5000,\n  "durationMins": -1\n}\n```\n\n不要输出任何额外的解释或前后缀，只输出JSON对象本身。\n必须确保JSON对象有效且格式正确，所有键名必须使用双引号。\n\n# 查询内容\n神经信号解码算法的实时性要求是什么？ ', 'max_new_token': 256, 'temperature': 0.01, 'top_p': 0.9, 'streaming': False}|
+2025-09-23 02:15:12.035|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - LLM响应|requestId=brain_computer_interface_009|response={'success': True, 'code': '0000', 'message': 'success', 'data': {'request_id': 'brain_computer_interface_009', 'result': '{\n  "accuracyRequirement": -1\n}'}}|
+2025-09-23 02:15:12.035|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - LLM原始输出|requestId=brain_computer_interface_009|raw_output={
+  "accuracyRequirement": -1
+}|
+2025-09-23 02:15:12.035|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 直接JSON解析成功|requestId=brain_computer_interface_009|parsed_json={'accuracyRequirement': -1}|
+2025-09-23 02:15:12.036|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||历史查询格式化 - 原始数据|requestId=brain_computer_interface_009|history_count=10|history_roles=['user', 'assistant', 'user', 'assistant', 'user', 'assistant', 'user', 'assistant', 'user', 'assistant']|first_message={'role': 'user', 'content': '脑机接口技术的发展现状如何？', 'reasoningContent': None}|all_messages=[{'index': 0, 'role': 'user', 'content': '脑机接口技术的发展现状如何？'}, {'index': 1, 'role': 'assistant', 'content': '脑机接口技术正快速发展，主要分为侵入式和非侵入式两类。侵入式...'}, {'index': 2, 'role': 'user', 'content': '侵入式和非侵入式接口的精度差异有多大？'}, {'index': 3, 'role': 'assistant', 'content': '侵入式接口可以记录单个神经元的动作电位，时间分辨率达到毫秒级...'}, {'index': 4, 'role': 'user', 'content': '如何提高非侵入式接口的信号质量？'}, {'index': 5, 'role': 'assistant', 'content': '主要方法包括高密度电极阵列、先进的信号处理算法、机器学习技术...'}, {'index': 6, 'role': 'user', 'content': '多模态融合具体是如何实现的？'}, {'index': 7, 'role': 'assistant', 'content': '多模态融合结合EEG、fMRI、fNIRS等不同技术的优势。...'}, {'index': 8, 'role': 'user', 'content': '深度学习在脑机接口中还有哪些应用？'}, {'index': 9, 'role': 'assistant', 'content': '深度学习在脑机接口中应用广泛，包括信号预处理、特征提取、意图...'}]|
+2025-09-23 02:15:12.036|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 0|requestId=brain_computer_interface_009|index=0|role=user|content_preview=脑机接口技术的发展现状如何？|full_content=脑机接口技术的发展现状如何？|msg_type=Message|
+2025-09-23 02:15:12.036|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=brain_computer_interface_009|qa_pair_num=1|msg_idx=0|q_text=Q1: 脑机接口技术的发展现状如何？|
+2025-09-23 02:15:12.036|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 1|requestId=brain_computer_interface_009|index=1|role=assistant|content_preview=脑机接口技术正快速发展，主要分为侵入式和非侵入式两类。侵入式接口通过植入电极直接记录神经元活动，精度...|full_content=脑机接口技术正快速发展，主要分为侵入式和非侵入式两类。侵入式接口通过植入电极直接记录神经元活动，精度高但风险大。非侵入式使用EEG、fMRI等技术，安全但精度有限。神经信号解码是核心技术挑战。|msg_type=Message|
+2025-09-23 02:15:12.036|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=brain_computer_interface_009|qa_pair_num=1|msg_idx=1|a_text=A1: 脑机接口技术正快速发展，主要分为侵入式和非侵入式两类。侵入式接口通过植入电极直接记录神经元活动，精度高但风险大。非侵入式使用EEG、fMRI等技术，安全但精度有限。神经信号解码是核心技术挑战。|
+2025-09-23 02:15:12.036|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 2|requestId=brain_computer_interface_009|index=2|role=user|content_preview=侵入式和非侵入式接口的精度差异有多大？|full_content=侵入式和非侵入式接口的精度差异有多大？|msg_type=Message|
+2025-09-23 02:15:12.036|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=brain_computer_interface_009|qa_pair_num=2|msg_idx=2|q_text=Q2: 侵入式和非侵入式接口的精度差异有多大？|
+2025-09-23 02:15:12.036|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 3|requestId=brain_computer_interface_009|index=3|role=assistant|content_preview=侵入式接口可以记录单个神经元的动作电位，时间分辨率达到毫秒级，空间分辨率达到微米级。非侵入式EEG的...|full_content=侵入式接口可以记录单个神经元的动作电位，时间分辨率达到毫秒级，空间分辨率达到微米级。非侵入式EEG的时间分辨率也很好，但空间分辨率只有厘米级，且信号会被颅骨衰减。fMRI空间分辨率较好但时间分辨率只有秒级。|msg_type=Message|
+2025-09-23 02:15:12.036|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=brain_computer_interface_009|qa_pair_num=2|msg_idx=3|a_text=A2: 侵入式接口可以记录单个神经元的动作电位，时间分辨率达到毫秒级，空间分辨率达到微米级。非侵入式EEG的时间分辨率也很好，但空间分辨率只有厘米级，且信号会被颅骨衰减。fMRI空间分辨率较好但时间分辨率只有秒级。|
+2025-09-23 02:15:12.036|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 4|requestId=brain_computer_interface_009|index=4|role=user|content_preview=如何提高非侵入式接口的信号质量？|full_content=如何提高非侵入式接口的信号质量？|msg_type=Message|
+2025-09-23 02:15:12.036|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=brain_computer_interface_009|qa_pair_num=3|msg_idx=4|q_text=Q3: 如何提高非侵入式接口的信号质量？|
+2025-09-23 02:15:12.037|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 5|requestId=brain_computer_interface_009|index=5|role=assistant|content_preview=主要方法包括高密度电极阵列、先进的信号处理算法、机器学习技术等。高密度EEG可以提高空间分辨率，独立...|full_content=主要方法包括高密度电极阵列、先进的信号处理算法、机器学习技术等。高密度EEG可以提高空间分辨率，独立成分分析能够分离不同信号源，深度学习算法可以从噪声中提取有用特征。多模态融合也是重要方向。|msg_type=Message|
+2025-09-23 02:15:12.037|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=brain_computer_interface_009|qa_pair_num=3|msg_idx=5|a_text=A3: 主要方法包括高密度电极阵列、先进的信号处理算法、机器学习技术等。高密度EEG可以提高空间分辨率，独立成分分析能够分离不同信号源，深度学习算法可以从噪声中提取有用特征。多模态融合也是重要方向。|
+2025-09-23 02:15:12.037|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 6|requestId=brain_computer_interface_009|index=6|role=user|content_preview=多模态融合具体是如何实现的？|full_content=多模态融合具体是如何实现的？|msg_type=Message|
+2025-09-23 02:15:12.037|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=brain_computer_interface_009|qa_pair_num=4|msg_idx=6|q_text=Q4: 多模态融合具体是如何实现的？|
+2025-09-23 02:15:12.037|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 7|requestId=brain_computer_interface_009|index=7|role=assistant|content_preview=多模态融合结合EEG、fMRI、fNIRS等不同技术的优势。EEG提供高时间分辨率，fMRI提供高空...|full_content=多模态融合结合EEG、fMRI、fNIRS等不同技术的优势。EEG提供高时间分辨率，fMRI提供高空间分辨率，fNIRS提供血氧信息。融合算法需要处理不同模态的时间同步、空间配准、特征提取等问题。深度学习网络可以自动学习多模态特征的最优组合。|msg_type=Message|
+2025-09-23 02:15:12.037|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=brain_computer_interface_009|qa_pair_num=4|msg_idx=7|a_text=A4: 多模态融合结合EEG、fMRI、fNIRS等不同技术的优势。EEG提供高时间分辨率，fMRI提供高空间分辨率，fNIRS提供血氧信息。融合算法需要处理不同模态的时间同步、空间配准、特征提取等问题。深度学习网络可以自动学习多模态特征的最优组合。|
+2025-09-23 02:15:12.037|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 8|requestId=brain_computer_interface_009|index=8|role=user|content_preview=深度学习在脑机接口中还有哪些应用？|full_content=深度学习在脑机接口中还有哪些应用？|msg_type=Message|
+2025-09-23 02:15:12.037|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=brain_computer_interface_009|qa_pair_num=5|msg_idx=8|q_text=Q5: 深度学习在脑机接口中还有哪些应用？|
+2025-09-23 02:15:12.037|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 9|requestId=brain_computer_interface_009|index=9|role=assistant|content_preview=深度学习在脑机接口中应用广泛，包括信号预处理、特征提取、意图识别、自适应校准等。卷积神经网络擅长处理...|full_content=深度学习在脑机接口中应用广泛，包括信号预处理、特征提取、意图识别、自适应校准等。卷积神经网络擅长处理时空信号模式，循环神经网络适合序列建模，生成对抗网络可以增强训练数据。实时性是关键挑战，需要在准确性和延迟之间平衡。|msg_type=Message|
+2025-09-23 02:15:12.037|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=brain_computer_interface_009|qa_pair_num=5|msg_idx=9|a_text=A5: 深度学习在脑机接口中应用广泛，包括信号预处理、特征提取、意图识别、自适应校准等。卷积神经网络擅长处理时空信号模式，循环神经网络适合序列建模，生成对抗网络可以增强训练数据。实时性是关键挑战，需要在准确性和延迟之间平衡。|
+2025-09-23 02:15:12.037|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||历史查询格式化 - 最终结果|requestId=brain_computer_interface_009|history_parts_count=10|history_text=Q1: 脑机接口技术的发展现状如何？
+A1: 脑机接口技术正快速发展，主要分为侵入式和非侵入式两类。侵入式接口通过植入电极直接记录神经元活动，精度高但风险大。非侵入式使用EEG、fMRI等技术，安全但精度有限。神经信号解码是核心技术挑战。
+Q2: 侵入式和非侵入式接口的精度差异有多大？
+A2: 侵入式接口可以记录单个神经元的动作电位，时间分辨率达到毫秒级，空间分辨率达到微米级。非侵入式EEG的时间分辨率也很好，但空间分辨率只有厘米级，且信号会被颅骨衰减。fMRI空间分辨率较好但时间分辨率只有秒级。
+Q3: 如何提高非侵入式接口的信号质量？
+A3: 主要方法包括高密度电极阵列、先进的信号处理算法、机器学习技术等。高密度EEG可以提高空间分辨率，独立成分分析能够分离不同信号源，深度学习算法可以从噪声中提取有用特征。多模态融合也是重要方向。
+Q4: 多模态融合具体是如何实现的？
+A4: 多模态融合结合EEG、fMRI、fNIRS等不同技术的优势。EEG提供高时间分辨率，fMRI提供高空间分辨率，fNIRS提供血氧信息。融合算法需要处理不同模态的时间同步、空间配准、特征提取等问题。深度学习网络可以自动学习多模态特征的最优组合。
+Q5: 深度学习在脑机接口中还有哪些应用？
+A5: 深度学习在脑机接口中应用广泛，包括信号预处理、特征提取、意图识别、自适应校准等。卷积神经网络擅长处理时空信号模式，循环神经网络适合序列建模，生成对抗网络可以增强训练数据。实时性是关键挑战，需要在准确性和延迟之间平衡。|
+2025-09-23 02:15:12.037|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - 构造的Prompt|requestId=brain_computer_interface_009|prompt=判断查询是否需要改写。
+
+规则：
+1. 包含这些词必须改写 → 输出 true：
+   "这方面"、"那方面"、"这种"、"那种"、"他"、"她"、"它"、"这个"、"那个"、"此"、"该"、"其"
+
+2. 注意例外情况 → 输出 false：
+   - 查询和历史对话主题完全不同（如：历史谈手机，当前问米粉食品）
+   - 指代词指向的是回答内容而不是问题内容
+   - 查询很短（3个词以内）且没有明确指代词
+
+3. 其他情况：
+   - 查询缺少主语但历史有线索 → 输出 true
+   - 查询独立完整 → 输出 false
+
+历史对话：
+Q1: 脑机接口技术的发展现状如何？
+A1: 脑机接口技术正快速发展，主要分为侵入式和非侵入式两类。侵入式接口通过植入电极直接记录神经元活动，精度高但风险大。非侵入式使用EEG、fMRI等技术，安全但精度有限。神经信号解码是核心技术挑战。
+Q2: 侵入式和非侵入式接口的精度差异有多大？
+A2: 侵入式接口可以记录单个神经元的动作电位，时间分辨率达到毫秒级，空间分辨率达到微米级。非侵入式EEG的时间分辨率也很好，但空间分辨率只有厘米级，且信号会被颅骨衰减。fMRI空间分辨率较好但时间分辨率只有秒级。
+Q3: 如何提高非侵入式接口的信号质量？
+A3: 主要方法包括高密度电极阵列、先进的信号处理算法、机器学习技术等。高密度EEG可以提高空间分辨率，独立成分分析能够分离不同信号源，深度学习算法可以从噪声中提取有用特征。多模态融合也是重要方向。
+Q4: 多模态融合具体是如何实现的？
+A4: 多模态融合结合EEG、fMRI、fNIRS等不同技术的优势。EEG提供高时间分辨率，fMRI提供高空间分辨率，fNIRS提供血氧信息。融合算法需要处理不同模态的时间同步、空间配准、特征提取等问题。深度学习网络可以自动学习多模态特征的最优组合。
+Q5: 深度学习在脑机接口中还有哪些应用？
+A5: 深度学习在脑机接口中应用广泛，包括信号预处理、特征提取、意图识别、自适应校准等。卷积神经网络擅长处理时空信号模式，循环神经网络适合序列建模，生成对抗网络可以增强训练数据。实时性是关键挑战，需要在准确性和延迟之间平衡。
+
+当前查询：神经信号解码算法的实时性要求是什么？
+
+只输出：true 或 false
+
+<judgment>|
+2025-09-23 02:15:12.287|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - LLM原始输出|requestId=brain_computer_interface_009|raw_output=false|
+2025-09-23 02:15:12.288|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - 后处理结果|requestId=brain_computer_interface_009|processed_output=false|
+2025-09-23 02:15:12.289|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tMainThreadd|INFO|API|||正常响应（无需改写，返回原始查询）|requestId=brain_computer_interface_009|query=神经信号解码算法的实时性要求是什么？|result=神经信号解码算法的实时性要求是什么？|needRewrite=False|historyList=['user: 脑机接口技术的发展现状如何？', 'assistant: 脑机接口技术正快速发展，主要分为侵入式和非侵入式两类。侵入式接口通过植入电极直接记录神经元活动，精度高但风险大。非侵入式使用EEG、fMRI等技术，安全但精度有限。神经信号解码是核心技术挑战。', 'user: 侵入式和非侵入式接口的精度差异有多大？', 'assistant: 侵入式接口可以记录单个神经元的动作电位，时间分辨率达到毫秒级，空间分辨率达到微米级。非侵入式EEG的时间分辨率也很好，但空间分辨率只有厘米级，且信号会被颅骨衰减。fMRI空间分辨率较好但时间分辨率只有秒级。', 'user: 如何提高非侵入式接口的信号质量？', 'assistant: 主要方法包括高密度电极阵列、先进的信号处理算法、机器学习技术等。高密度EEG可以提高空间分辨率，独立成分分析能够分离不同信号源，深度学习算法可以从噪声中提取有用特征。多模态融合也是重要方向。', 'user: 多模态融合具体是如何实现的？', 'assistant: 多模态融合结合EEG、fMRI、fNIRS等不同技术的优势。EEG提供高时间分辨率，fMRI提供高空间分辨率，fNIRS提供血氧信息。融合算法需要处理不同模态的时间同步、空间配准、特征提取等问题。深度学习网络可以自动学习多模态特征的最优组合。', 'user: 深度学习在脑机接口中还有哪些应用？', 'assistant: 深度学习在脑机接口中应用广泛，包括信号预处理、特征提取、意图识别、自适应校准等。卷积神经网络擅长处理时空信号模式，循环神经网络适合序列建模，生成对抗网络可以增强训练数据。实时性是关键挑战，需要在准确性和延迟之间平衡。']|processTime=1221|queryType=其他类|extractedInfo=[{'realtimeLatencyMs': -1}, {'accuracyRequirement': -1}]|
+2025-09-23 02:15:20.670|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tMainThreadd|INFO|API|||接收请求|requestId=space_exploration_010|query=离子推进器的比冲性能优化方案有哪些？|historyList=['user: 火星探测任务面临哪些主要技术挑战？', 'assistant: 火星探测面临推进系统、生命支持、着陆技术、通信延迟等挑战。推进系统需要在长距离航行中保持高效率，传统化学推进燃料消耗大，离子推进器虽然推力小但比冲高，适合深空任务。着陆时的大气制动和精确导航也是难点。', 'user: 离子推进器相比化学推进有什么优势？', 'assistant: 离子推进器的比冲可达3000-10000秒，远高于化学推进的300-450秒。这意味着相同质量的推进剂能产生更大的速度增量。虽然推力较小，但在长期任务中燃料效率极高。缺点是推力密度低，无法用于发射阶段。', 'user: 如何解决离子推进器推力小的问题？', 'assistant: 主要方法包括多推进器并联、提高功率密度、优化离子束聚焦等。NASA的NEXT推进器通过改进栅极设计和磁场配置，将推力提升到236毫牛。还可以采用可变比冲推进器，根据任务阶段调整推力和比冲的平衡。', 'user: 可变比冲推进器是如何工作的？', 'assistant: 可变比冲推进器通过调节电压、磁场强度、推进剂流量等参数来改变工作模式。高比冲模式用于巡航阶段，高推力模式用于机动阶段。VASIMR推进器使用射频加热等离子体，可以在1000-30000秒比冲范围内调节。控制系统需要实时优化参数以适应不同任务需求。', 'user: VASIMR推进器的射频加热系统复杂度如何？', 'assistant: VASIMR的射频系统非常复杂，包括射频发生器、天线阵列、磁场线圈、等离子体诊断等子系统。需要精确控制射频功率和频率，维持稳定的等离子体状态。系统效率、热管理、电磁兼容性都是关键技术难点。比冲性能的进一步优化需要在材料科学、等离子体物理等多个领域取得突破。']|enableExtraction=True|extractionRules=[{'desc': "提取比冲性能数值，统一为秒。例如：'3000秒'、'高比冲'。", 'valueType': 'int', 'keyName': 'specificImpulseSeconds', 'defaultValue': -1}, {'desc': "提取系统复杂度等级，1-10级。例如：'极高复杂度'、'中等复杂度'。", 'valueType': 'int', 'keyName': 'systemComplexity', 'defaultValue': -1}]|
+2025-09-23 02:15:20.671|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - 构造的Prompt|requestId=space_exploration_010|prompt=你是一个专业的查询分类助手。请根据以下规则对用户的查询进行分类，并仅输出JSON结果，不要包含任何多余内容。
+
+分类规则：
+3. 发言稿（3）：请求撰写演讲稿、发言稿、致辞、演说稿等文稿的查询，关键词示例："演讲稿"、"发言稿"、"致辞"、"演说稿"。
+2. 建议类（2）：需要获得改进方向、解决方案或下一步行动举措的查询，包括但不限于："建议"、"推荐"、"如何"、"应该"、"方案"、"规划"、"差距"、"不足"、"需要完善"、"哪些方面需要提升"、"举措"、"可进步" 等表达。
+1. 总结类（1）：仅要求对信息进行现状"总结"、"概括"、"归纳"、"汇总"、"梳理"，且不涉及提出改进或下一步行动建议的查询。
+0. 其他类（0）：不属于以上任何一类的查询。
+
+识别要点：
+- 如果用户在对标某一标准或目标，并询问 "差距"、"不足"、"哪些方面需要提升"、"需要完善"、"可进步" 等，通常意味着希望获得改进建议，请归为建议类（2）。
+- 如果查询核心在于 "总结 / 概括 / 归纳" 现状，而未涉及提出改进或下一步行动，则归为总结类（1）。
+- 如果查询聚焦于现状描述、优势/劣势(差距)、资源投入或技术重点等信息的梳理，对未来措施仅作背景性提及，而未直接请求改进"方案/举措/对策"，亦归为总结类（1）。
+
+Few-shot 示例（仅用于理解，不要在最终回答中输出）：
+示例1：
+用户：在科技创新投入与成果转化方面，与中央强调的科技自立自强要求对标，我们在关键技术突破上还有哪些差距？
+期望输出：{"queryType": 2}
+
+示例2：
+用户：在推动数字经济与实体经济融合方面，和中央期望比，存在哪些可进步？
+期望输出：{"queryType": 2}
+
+示例3：
+用户：与中央改革要求相比，还存在哪些需要完善的地方？
+期望输出：{"queryType": 2}
+
+示例4：
+用户：从公司整体战略布局来看，这些完善工作会对各业务板块的协同发展产生怎样的影响，如何优化协同策略？
+期望输出：{"queryType": 2}
+
+示例5：
+用户：细化一下在服务集团公司主营主业方面的举措内容。
+期望输出：{"queryType": 2}
+
+示例6：
+用户：在科技创新方面，与集团公司要求相比，中移互联网公司有哪些成果，哪些方面需要进一步提升？
+期望输出：{"queryType": 2}
+
+示例7：
+用户：与党中央对国企高质量党建引领高质量发展要求相比，中移互联网公司以党建引领改革、促进发展还有哪些需进一步提升？
+期望输出：{"queryType": 2}
+
+示例8：
+用户：我们目前在AI领域的技术研发重点是什么？与世界一流信息服务企业的技术布局相比，我们的优势和差距在哪里？
+期望输出：{"queryType": 1}
+
+示例9：
+用户：可重点发展的技术有哪些，主要应用于哪些场景？
+期望输出：{"queryType": 1}
+
+示例10：
+用户：如何确保我们在AI应用开发方面保持领先地位？需要投入多少资源？
+期望输出：{"queryType": 1}
+
+用户查询为：离子推进器的比冲性能优化方案有哪些？
+
+如果无法根据上述分类规则进行明确判定，请归为其他类（0）。
+
+输出格式：
+{"queryType": 分类标识码}
+|
+2025-09-23 02:15:21.018|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - LLM原始输出|requestId=space_exploration_010|raw_output={"queryType": 0}|
+2025-09-23 02:15:21.019|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - 提取的JSON字符串|requestId=space_exploration_010|json_str={"queryType": 0}|
+2025-09-23 02:15:21.019|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - JSON解析结果|requestId=space_exploration_010|parsed_json={'queryType': 0}|
+2025-09-23 02:15:21.020|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 构造的Prompt|requestId=space_exploration_010|prompt=你是一个非常严谨、专业的信息抽取助手。你需要严格按照规则从查询文本中精确提取多项特定信息。
+
+# 核心原则
+你必须严格遵守以下原则：只提取查询中明确提及的信息。如果某项信息在查询中没有被提及，你必须使用为该项指定的默认值，绝对不允许自行推断、估算或根据常识转换（例如，根据字数估算演讲时间，或根据演讲时间估算字数）。
+
+# 抽取规则列表
+[
+  {
+    "desc": "提取比冲性能数值，统一为秒。例如：'3000秒'、'高比冲'。",
+    "valueType": "int",
+    "keyName": "specificImpulseSeconds",
+    "defaultValue": -1
+  },
+  {
+    "desc": "提取系统复杂度等级，1-10级。例如：'极高复杂度'、'中等复杂度'。",
+    "valueType": "int",
+    "keyName": "systemComplexity",
+    "defaultValue": -1
+  }
+]
+
+# 抽取要求
+1. 必须精确识别并提取查询文本中明确提到的所有目标信息。
+2. 对于在查询文本中完全没有提及的信息，必须使用其默认值。
+3. 如果查询中有多个可能的值，选择最合理的一个（例如，对于范围"3000-5000字"，选择5000）。
+4. 对于数字信息，必须转换为阿拉伯数字格式。
+5. 对于文本信息，保留原始文本格式。
+6. 对于布尔信息，转换为true/false格式。
+7. 严格按照每项规则要求的数据类型返回。
+
+# 数字处理规则
+1. 中文数字转阿拉伯数字：如"一千五百"转为"1500"。
+2. 带单位的数字要去除单位：如"15万"转为"150000"。
+3. 数字范围取上限值：如"10-20分钟"取"20"，"5000字以上"取"5000"。
+4. "几十"、"几百"等模糊表达转为具体数字：如"几十"转为"50"，"几百"转为"500"。
+5. "多"字处理：如"5000多字"转为"5000"。
+6. 特殊表达转换：如"上千"转为"1000"，"数百"转为"500"。
+7. 区分"万"和"万字"：如"写一万字"中的"万"是数量单位。
+
+# 输出格式
+你必须只输出一个有效的JSON对象，包含所有需要提取的信息，每一项的键名必须严格按照抽取规则中指定的keyName。
+
+## 示例 1: 信息完整
+- 查询: "写一篇关于AI的报告，要求1500字，演讲时长10分钟。"
+- 输出:
+```
+{
+  "requireWordNums": 1500,
+  "durationMins": 10
+}
+```
+
+## 示例 2: 信息不完整
+- 查询: "写一篇关于中国移动5G建设成就的发言稿，5000字左右。"
+- 输出 (假设durationMins的默认值是-1):
+```
+{
+  "requireWordNums": 5000,
+  "durationMins": -1
+}
+```
+
+不要输出任何额外的解释或前后缀，只输出JSON对象本身。
+必须确保JSON对象有效且格式正确，所有键名必须使用双引号。
+
+# 查询内容
+离子推进器的比冲性能优化方案有哪些？ |
+2025-09-23 02:15:21.020|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 请求体|requestId=space_exploration_010|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|payload={'request_id': 'space_exploration_010', 'input': '你是一个非常严谨、专业的信息抽取助手。你需要严格按照规则从查询文本中精确提取多项特定信息。\n\n# 核心原则\n你必须严格遵守以下原则：只提取查询中明确提及的信息。如果某项信息在查询中没有被提及，你必须使用为该项指定的默认值，绝对不允许自行推断、估算或根据常识转换（例如，根据字数估算演讲时间，或根据演讲时间估算字数）。\n\n# 抽取规则列表\n[\n  {\n    "desc": "提取比冲性能数值，统一为秒。例如：\'3000秒\'、\'高比冲\'。",\n    "valueType": "int",\n    "keyName": "specificImpulseSeconds",\n    "defaultValue": -1\n  },\n  {\n    "desc": "提取系统复杂度等级，1-10级。例如：\'极高复杂度\'、\'中等复杂度\'。",\n    "valueType": "int",\n    "keyName": "systemComplexity",\n    "defaultValue": -1\n  }\n]\n\n# 抽取要求\n1. 必须精确识别并提取查询文本中明确提到的所有目标信息。\n2. 对于在查询文本中完全没有提及的信息，必须使用其默认值。\n3. 如果查询中有多个可能的值，选择最合理的一个（例如，对于范围"3000-5000字"，选择5000）。\n4. 对于数字信息，必须转换为阿拉伯数字格式。\n5. 对于文本信息，保留原始文本格式。\n6. 对于布尔信息，转换为true/false格式。\n7. 严格按照每项规则要求的数据类型返回。\n\n# 数字处理规则\n1. 中文数字转阿拉伯数字：如"一千五百"转为"1500"。\n2. 带单位的数字要去除单位：如"15万"转为"150000"。\n3. 数字范围取上限值：如"10-20分钟"取"20"，"5000字以上"取"5000"。\n4. "几十"、"几百"等模糊表达转为具体数字：如"几十"转为"50"，"几百"转为"500"。\n5. "多"字处理：如"5000多字"转为"5000"。\n6. 特殊表达转换：如"上千"转为"1000"，"数百"转为"500"。\n7. 区分"万"和"万字"：如"写一万字"中的"万"是数量单位。\n\n# 输出格式\n你必须只输出一个有效的JSON对象，包含所有需要提取的信息，每一项的键名必须严格按照抽取规则中指定的keyName。\n\n## 示例 1: 信息完整\n- 查询: "写一篇关于AI的报告，要求1500字，演讲时长10分钟。"\n- 输出:\n```\n{\n  "requireWordNums": 1500,\n  "durationMins": 10\n}\n```\n\n## 示例 2: 信息不完整\n- 查询: "写一篇关于中国移动5G建设成就的发言稿，5000字左右。"\n- 输出 (假设durationMins的默认值是-1):\n```\n{\n  "requireWordNums": 5000,\n  "durationMins": -1\n}\n```\n\n不要输出任何额外的解释或前后缀，只输出JSON对象本身。\n必须确保JSON对象有效且格式正确，所有键名必须使用双引号。\n\n# 查询内容\n离子推进器的比冲性能优化方案有哪些？ ', 'max_new_token': 256, 'temperature': 0.01, 'top_p': 0.9, 'streaming': False}|
+2025-09-23 02:15:21.484|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - LLM响应|requestId=space_exploration_010|response={'success': True, 'code': '0000', 'message': 'success', 'data': {'request_id': 'space_exploration_010', 'result': '{\n  "specificImpulseSeconds": 3000\n}'}}|
+2025-09-23 02:15:21.484|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - LLM原始输出|requestId=space_exploration_010|raw_output={
+  "specificImpulseSeconds": 3000
+}|
+2025-09-23 02:15:21.484|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 直接JSON解析成功|requestId=space_exploration_010|parsed_json={'specificImpulseSeconds': 3000}|
+2025-09-23 02:15:21.485|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||历史查询格式化 - 原始数据|requestId=space_exploration_010|history_count=10|history_roles=['user', 'assistant', 'user', 'assistant', 'user', 'assistant', 'user', 'assistant', 'user', 'assistant']|first_message={'role': 'user', 'content': '火星探测任务面临哪些主要技术挑战？', 'reasoningContent': None}|all_messages=[{'index': 0, 'role': 'user', 'content': '火星探测任务面临哪些主要技术挑战？'}, {'index': 1, 'role': 'assistant', 'content': '火星探测面临推进系统、生命支持、着陆技术、通信延迟等挑战。推...'}, {'index': 2, 'role': 'user', 'content': '离子推进器相比化学推进有什么优势？'}, {'index': 3, 'role': 'assistant', 'content': '离子推进器的比冲可达3000-10000秒，远高于化学推进的...'}, {'index': 4, 'role': 'user', 'content': '如何解决离子推进器推力小的问题？'}, {'index': 5, 'role': 'assistant', 'content': '主要方法包括多推进器并联、提高功率密度、优化离子束聚焦等。N...'}, {'index': 6, 'role': 'user', 'content': '可变比冲推进器是如何工作的？'}, {'index': 7, 'role': 'assistant', 'content': '可变比冲推进器通过调节电压、磁场强度、推进剂流量等参数来改变...'}, {'index': 8, 'role': 'user', 'content': 'VASIMR推进器的射频加热系统复杂度如何？'}, {'index': 9, 'role': 'assistant', 'content': 'VASIMR的射频系统非常复杂，包括射频发生器、天线阵列、磁...'}]|
+2025-09-23 02:15:21.486|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 0|requestId=space_exploration_010|index=0|role=user|content_preview=火星探测任务面临哪些主要技术挑战？|full_content=火星探测任务面临哪些主要技术挑战？|msg_type=Message|
+2025-09-23 02:15:21.486|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=space_exploration_010|qa_pair_num=1|msg_idx=0|q_text=Q1: 火星探测任务面临哪些主要技术挑战？|
+2025-09-23 02:15:21.486|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 1|requestId=space_exploration_010|index=1|role=assistant|content_preview=火星探测面临推进系统、生命支持、着陆技术、通信延迟等挑战。推进系统需要在长距离航行中保持高效率，传统...|full_content=火星探测面临推进系统、生命支持、着陆技术、通信延迟等挑战。推进系统需要在长距离航行中保持高效率，传统化学推进燃料消耗大，离子推进器虽然推力小但比冲高，适合深空任务。着陆时的大气制动和精确导航也是难点。|msg_type=Message|
+2025-09-23 02:15:21.486|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=space_exploration_010|qa_pair_num=1|msg_idx=1|a_text=A1: 火星探测面临推进系统、生命支持、着陆技术、通信延迟等挑战。推进系统需要在长距离航行中保持高效率，传统化学推进燃料消耗大，离子推进器虽然推力小但比冲高，适合深空任务。着陆时的大气制动和精确导航也是难点。|
+2025-09-23 02:15:21.486|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 2|requestId=space_exploration_010|index=2|role=user|content_preview=离子推进器相比化学推进有什么优势？|full_content=离子推进器相比化学推进有什么优势？|msg_type=Message|
+2025-09-23 02:15:21.487|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=space_exploration_010|qa_pair_num=2|msg_idx=2|q_text=Q2: 离子推进器相比化学推进有什么优势？|
+2025-09-23 02:15:21.487|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 3|requestId=space_exploration_010|index=3|role=assistant|content_preview=离子推进器的比冲可达3000-10000秒，远高于化学推进的300-450秒。这意味着相同质量的推进...|full_content=离子推进器的比冲可达3000-10000秒，远高于化学推进的300-450秒。这意味着相同质量的推进剂能产生更大的速度增量。虽然推力较小，但在长期任务中燃料效率极高。缺点是推力密度低，无法用于发射阶段。|msg_type=Message|
+2025-09-23 02:15:21.487|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=space_exploration_010|qa_pair_num=2|msg_idx=3|a_text=A2: 离子推进器的比冲可达3000-10000秒，远高于化学推进的300-450秒。这意味着相同质量的推进剂能产生更大的速度增量。虽然推力较小，但在长期任务中燃料效率极高。缺点是推力密度低，无法用于发射阶段。|
+2025-09-23 02:15:21.487|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 4|requestId=space_exploration_010|index=4|role=user|content_preview=如何解决离子推进器推力小的问题？|full_content=如何解决离子推进器推力小的问题？|msg_type=Message|
+2025-09-23 02:15:21.488|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=space_exploration_010|qa_pair_num=3|msg_idx=4|q_text=Q3: 如何解决离子推进器推力小的问题？|
+2025-09-23 02:15:21.488|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 5|requestId=space_exploration_010|index=5|role=assistant|content_preview=主要方法包括多推进器并联、提高功率密度、优化离子束聚焦等。NASA的NEXT推进器通过改进栅极设计和...|full_content=主要方法包括多推进器并联、提高功率密度、优化离子束聚焦等。NASA的NEXT推进器通过改进栅极设计和磁场配置，将推力提升到236毫牛。还可以采用可变比冲推进器，根据任务阶段调整推力和比冲的平衡。|msg_type=Message|
+2025-09-23 02:15:21.489|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=space_exploration_010|qa_pair_num=3|msg_idx=5|a_text=A3: 主要方法包括多推进器并联、提高功率密度、优化离子束聚焦等。NASA的NEXT推进器通过改进栅极设计和磁场配置，将推力提升到236毫牛。还可以采用可变比冲推进器，根据任务阶段调整推力和比冲的平衡。|
+2025-09-23 02:15:21.489|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 6|requestId=space_exploration_010|index=6|role=user|content_preview=可变比冲推进器是如何工作的？|full_content=可变比冲推进器是如何工作的？|msg_type=Message|
+2025-09-23 02:15:21.489|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=space_exploration_010|qa_pair_num=4|msg_idx=6|q_text=Q4: 可变比冲推进器是如何工作的？|
+2025-09-23 02:15:21.489|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 7|requestId=space_exploration_010|index=7|role=assistant|content_preview=可变比冲推进器通过调节电压、磁场强度、推进剂流量等参数来改变工作模式。高比冲模式用于巡航阶段，高推力...|full_content=可变比冲推进器通过调节电压、磁场强度、推进剂流量等参数来改变工作模式。高比冲模式用于巡航阶段，高推力模式用于机动阶段。VASIMR推进器使用射频加热等离子体，可以在1000-30000秒比冲范围内调节。控制系统需要实时优化参数以适应不同任务需求。|msg_type=Message|
+2025-09-23 02:15:21.490|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=space_exploration_010|qa_pair_num=4|msg_idx=7|a_text=A4: 可变比冲推进器通过调节电压、磁场强度、推进剂流量等参数来改变工作模式。高比冲模式用于巡航阶段，高推力模式用于机动阶段。VASIMR推进器使用射频加热等离子体，可以在1000-30000秒比冲范围内调节。控制系统需要实时优化参数以适应不同任务需求。|
+2025-09-23 02:15:21.490|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 8|requestId=space_exploration_010|index=8|role=user|content_preview=VASIMR推进器的射频加热系统复杂度如何？|full_content=VASIMR推进器的射频加热系统复杂度如何？|msg_type=Message|
+2025-09-23 02:15:21.490|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=space_exploration_010|qa_pair_num=5|msg_idx=8|q_text=Q5: VASIMR推进器的射频加热系统复杂度如何？|
+2025-09-23 02:15:21.490|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 9|requestId=space_exploration_010|index=9|role=assistant|content_preview=VASIMR的射频系统非常复杂，包括射频发生器、天线阵列、磁场线圈、等离子体诊断等子系统。需要精确控...|full_content=VASIMR的射频系统非常复杂，包括射频发生器、天线阵列、磁场线圈、等离子体诊断等子系统。需要精确控制射频功率和频率，维持稳定的等离子体状态。系统效率、热管理、电磁兼容性都是关键技术难点。比冲性能的进一步优化需要在材料科学、等离子体物理等多个领域取得突破。|msg_type=Message|
+2025-09-23 02:15:21.491|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=space_exploration_010|qa_pair_num=5|msg_idx=9|a_text=A5: VASIMR的射频系统非常复杂，包括射频发生器、天线阵列、磁场线圈、等离子体诊断等子系统。需要精确控制射频功率和频率，维持稳定的等离子体状态。系统效率、热管理、电磁兼容性都是关键技术难点。比冲性能的进一步优化需要在材料科学、等离子体物理等多个领域取得突破。|
+2025-09-23 02:15:21.491|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||历史查询格式化 - 最终结果|requestId=space_exploration_010|history_parts_count=10|history_text=Q1: 火星探测任务面临哪些主要技术挑战？
+A1: 火星探测面临推进系统、生命支持、着陆技术、通信延迟等挑战。推进系统需要在长距离航行中保持高效率，传统化学推进燃料消耗大，离子推进器虽然推力小但比冲高，适合深空任务。着陆时的大气制动和精确导航也是难点。
+Q2: 离子推进器相比化学推进有什么优势？
+A2: 离子推进器的比冲可达3000-10000秒，远高于化学推进的300-450秒。这意味着相同质量的推进剂能产生更大的速度增量。虽然推力较小，但在长期任务中燃料效率极高。缺点是推力密度低，无法用于发射阶段。
+Q3: 如何解决离子推进器推力小的问题？
+A3: 主要方法包括多推进器并联、提高功率密度、优化离子束聚焦等。NASA的NEXT推进器通过改进栅极设计和磁场配置，将推力提升到236毫牛。还可以采用可变比冲推进器，根据任务阶段调整推力和比冲的平衡。
+Q4: 可变比冲推进器是如何工作的？
+A4: 可变比冲推进器通过调节电压、磁场强度、推进剂流量等参数来改变工作模式。高比冲模式用于巡航阶段，高推力模式用于机动阶段。VASIMR推进器使用射频加热等离子体，可以在1000-30000秒比冲范围内调节。控制系统需要实时优化参数以适应不同任务需求。
+Q5: VASIMR推进器的射频加热系统复杂度如何？
+A5: VASIMR的射频系统非常复杂，包括射频发生器、天线阵列、磁场线圈、等离子体诊断等子系统。需要精确控制射频功率和频率，维持稳定的等离子体状态。系统效率、热管理、电磁兼容性都是关键技术难点。比冲性能的进一步优化需要在材料科学、等离子体物理等多个领域取得突破。|
+2025-09-23 02:15:21.491|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - 构造的Prompt|requestId=space_exploration_010|prompt=判断查询是否需要改写。
+
+规则：
+1. 包含这些词必须改写 → 输出 true：
+   "这方面"、"那方面"、"这种"、"那种"、"他"、"她"、"它"、"这个"、"那个"、"此"、"该"、"其"
+
+2. 注意例外情况 → 输出 false：
+   - 查询和历史对话主题完全不同（如：历史谈手机，当前问米粉食品）
+   - 指代词指向的是回答内容而不是问题内容
+   - 查询很短（3个词以内）且没有明确指代词
+
+3. 其他情况：
+   - 查询缺少主语但历史有线索 → 输出 true
+   - 查询独立完整 → 输出 false
+
+历史对话：
+Q1: 火星探测任务面临哪些主要技术挑战？
+A1: 火星探测面临推进系统、生命支持、着陆技术、通信延迟等挑战。推进系统需要在长距离航行中保持高效率，传统化学推进燃料消耗大，离子推进器虽然推力小但比冲高，适合深空任务。着陆时的大气制动和精确导航也是难点。
+Q2: 离子推进器相比化学推进有什么优势？
+A2: 离子推进器的比冲可达3000-10000秒，远高于化学推进的300-450秒。这意味着相同质量的推进剂能产生更大的速度增量。虽然推力较小，但在长期任务中燃料效率极高。缺点是推力密度低，无法用于发射阶段。
+Q3: 如何解决离子推进器推力小的问题？
+A3: 主要方法包括多推进器并联、提高功率密度、优化离子束聚焦等。NASA的NEXT推进器通过改进栅极设计和磁场配置，将推力提升到236毫牛。还可以采用可变比冲推进器，根据任务阶段调整推力和比冲的平衡。
+Q4: 可变比冲推进器是如何工作的？
+A4: 可变比冲推进器通过调节电压、磁场强度、推进剂流量等参数来改变工作模式。高比冲模式用于巡航阶段，高推力模式用于机动阶段。VASIMR推进器使用射频加热等离子体，可以在1000-30000秒比冲范围内调节。控制系统需要实时优化参数以适应不同任务需求。
+Q5: VASIMR推进器的射频加热系统复杂度如何？
+A5: VASIMR的射频系统非常复杂，包括射频发生器、天线阵列、磁场线圈、等离子体诊断等子系统。需要精确控制射频功率和频率，维持稳定的等离子体状态。系统效率、热管理、电磁兼容性都是关键技术难点。比冲性能的进一步优化需要在材料科学、等离子体物理等多个领域取得突破。
+
+当前查询：离子推进器的比冲性能优化方案有哪些？
+
+只输出：true 或 false
+
+<judgment>|
+2025-09-23 02:15:21.751|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - LLM原始输出|requestId=space_exploration_010|raw_output=false|
+2025-09-23 02:15:21.751|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - 后处理结果|requestId=space_exploration_010|processed_output=false|
+2025-09-23 02:15:21.752|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tMainThreadd|INFO|API|||正常响应（无需改写，返回原始查询）|requestId=space_exploration_010|query=离子推进器的比冲性能优化方案有哪些？|result=离子推进器的比冲性能优化方案有哪些？|needRewrite=False|historyList=['user: 火星探测任务面临哪些主要技术挑战？', 'assistant: 火星探测面临推进系统、生命支持、着陆技术、通信延迟等挑战。推进系统需要在长距离航行中保持高效率，传统化学推进燃料消耗大，离子推进器虽然推力小但比冲高，适合深空任务。着陆时的大气制动和精确导航也是难点。', 'user: 离子推进器相比化学推进有什么优势？', 'assistant: 离子推进器的比冲可达3000-10000秒，远高于化学推进的300-450秒。这意味着相同质量的推进剂能产生更大的速度增量。虽然推力较小，但在长期任务中燃料效率极高。缺点是推力密度低，无法用于发射阶段。', 'user: 如何解决离子推进器推力小的问题？', 'assistant: 主要方法包括多推进器并联、提高功率密度、优化离子束聚焦等。NASA的NEXT推进器通过改进栅极设计和磁场配置，将推力提升到236毫牛。还可以采用可变比冲推进器，根据任务阶段调整推力和比冲的平衡。', 'user: 可变比冲推进器是如何工作的？', 'assistant: 可变比冲推进器通过调节电压、磁场强度、推进剂流量等参数来改变工作模式。高比冲模式用于巡航阶段，高推力模式用于机动阶段。VASIMR推进器使用射频加热等离子体，可以在1000-30000秒比冲范围内调节。控制系统需要实时优化参数以适应不同任务需求。', 'user: VASIMR推进器的射频加热系统复杂度如何？', 'assistant: VASIMR的射频系统非常复杂，包括射频发生器、天线阵列、磁场线圈、等离子体诊断等子系统。需要精确控制射频功率和频率，维持稳定的等离子体状态。系统效率、热管理、电磁兼容性都是关键技术难点。比冲性能的进一步优化需要在材料科学、等离子体物理等多个领域取得突破。']|processTime=1082|queryType=其他类|extractedInfo=[{'specificImpulseSeconds': 3000}, {'systemComplexity': -1}]|
+2025-09-23 02:15:29.488|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tMainThreadd|INFO|API|||接收请求|requestId=gene_editing_011|query=CRISPR-Cas9系统的脱靶效应如何检测？|historyList=['user: 基因编辑技术在治疗遗传疾病方面有什么进展？', 'assistant: 基因编辑技术在遗传疾病治疗方面取得重大进展，CRISPR-Cas9、碱基编辑、引导编辑等技术日趋成熟。已有多个临床试验针对镰状细胞病、β地中海贫血等疾病。但脱靶效应、递送效率、免疫反应等安全性问题仍需解决。', 'user: 不同基因编辑技术的精确度如何比较？', 'assistant: CRISPR-Cas9适合大片段删除插入，但可能产生不可预测的插入缺失。碱基编辑器能实现单碱基替换，精确度更高但编辑范围有限。引导编辑结合了两者优势，能进行精确的小片段编辑。新一代工具如Cas12、CasX等也在不断改进精确度。', 'user: 如何提高基因编辑的递送效率？', 'assistant: 递送效率提升主要依靠载体优化和递送方法改进。腺相关病毒(AAV)载体具有良好的组织特异性，脂质纳米颗粒(LNP)适合mRNA递送。体内直接注射、电穿孔、超声介导等物理方法也在发展。组织特异性启动子能提高靶向性。', 'user: 腺相关病毒载体有什么局限性？', 'assistant: AAV载体的主要局限包括载荷容量小(约4.7kb)、免疫原性、生产成本高等。重复给药可能引起免疫反应，影响治疗效果。不同血清型的AAV对不同组织有偏好性，需要针对性选择。载荷限制使得大基因难以递送。', 'user: 如何克服AAV载荷容量的限制？', 'assistant: 克服载荷限制的策略包括双载体系统、蛋白质分割、内含肽技术等。双AAV系统将大基因分成两部分，通过同源重组或转座子重组。蛋白质分割技术将大蛋白分成功能域，分别表达后重组。内含肽能在翻译后自动剪接。CRISPR系统的小型化也是重要方向，如开发更紧凑的Cas蛋白变体。']|enableExtraction=True|extractionRules=[{'desc': "提取脱靶率数值，统一为百分比。例如：'1%'、'低脱靶率'。", 'valueType': 'int', 'keyName': 'offTargetRate', 'defaultValue': -1}, {'desc': "提取检测精度等级，1-5级。例如：'高精度'、'超高精度'。", 'valueType': 'int', 'keyName': 'detectionPrecision', 'defaultValue': -1}]|
+2025-09-23 02:15:29.489|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - 构造的Prompt|requestId=gene_editing_011|prompt=你是一个专业的查询分类助手。请根据以下规则对用户的查询进行分类，并仅输出JSON结果，不要包含任何多余内容。
+
+分类规则：
+3. 发言稿（3）：请求撰写演讲稿、发言稿、致辞、演说稿等文稿的查询，关键词示例："演讲稿"、"发言稿"、"致辞"、"演说稿"。
+2. 建议类（2）：需要获得改进方向、解决方案或下一步行动举措的查询，包括但不限于："建议"、"推荐"、"如何"、"应该"、"方案"、"规划"、"差距"、"不足"、"需要完善"、"哪些方面需要提升"、"举措"、"可进步" 等表达。
+1. 总结类（1）：仅要求对信息进行现状"总结"、"概括"、"归纳"、"汇总"、"梳理"，且不涉及提出改进或下一步行动建议的查询。
+0. 其他类（0）：不属于以上任何一类的查询。
+
+识别要点：
+- 如果用户在对标某一标准或目标，并询问 "差距"、"不足"、"哪些方面需要提升"、"需要完善"、"可进步" 等，通常意味着希望获得改进建议，请归为建议类（2）。
+- 如果查询核心在于 "总结 / 概括 / 归纳" 现状，而未涉及提出改进或下一步行动，则归为总结类（1）。
+- 如果查询聚焦于现状描述、优势/劣势(差距)、资源投入或技术重点等信息的梳理，对未来措施仅作背景性提及，而未直接请求改进"方案/举措/对策"，亦归为总结类（1）。
+
+Few-shot 示例（仅用于理解，不要在最终回答中输出）：
+示例1：
+用户：在科技创新投入与成果转化方面，与中央强调的科技自立自强要求对标，我们在关键技术突破上还有哪些差距？
+期望输出：{"queryType": 2}
+
+示例2：
+用户：在推动数字经济与实体经济融合方面，和中央期望比，存在哪些可进步？
+期望输出：{"queryType": 2}
+
+示例3：
+用户：与中央改革要求相比，还存在哪些需要完善的地方？
+期望输出：{"queryType": 2}
+
+示例4：
+用户：从公司整体战略布局来看，这些完善工作会对各业务板块的协同发展产生怎样的影响，如何优化协同策略？
+期望输出：{"queryType": 2}
+
+示例5：
+用户：细化一下在服务集团公司主营主业方面的举措内容。
+期望输出：{"queryType": 2}
+
+示例6：
+用户：在科技创新方面，与集团公司要求相比，中移互联网公司有哪些成果，哪些方面需要进一步提升？
+期望输出：{"queryType": 2}
+
+示例7：
+用户：与党中央对国企高质量党建引领高质量发展要求相比，中移互联网公司以党建引领改革、促进发展还有哪些需进一步提升？
+期望输出：{"queryType": 2}
+
+示例8：
+用户：我们目前在AI领域的技术研发重点是什么？与世界一流信息服务企业的技术布局相比，我们的优势和差距在哪里？
+期望输出：{"queryType": 1}
+
+示例9：
+用户：可重点发展的技术有哪些，主要应用于哪些场景？
+期望输出：{"queryType": 1}
+
+示例10：
+用户：如何确保我们在AI应用开发方面保持领先地位？需要投入多少资源？
+期望输出：{"queryType": 1}
+
+用户查询为：CRISPR-Cas9系统的脱靶效应如何检测？
+
+如果无法根据上述分类规则进行明确判定，请归为其他类（0）。
+
+输出格式：
+{"queryType": 分类标识码}
+|
+2025-09-23 02:15:29.854|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - LLM原始输出|requestId=gene_editing_011|raw_output={"queryType": 0}|
+2025-09-23 02:15:29.855|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - 提取的JSON字符串|requestId=gene_editing_011|json_str={"queryType": 0}|
+2025-09-23 02:15:29.855|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - JSON解析结果|requestId=gene_editing_011|parsed_json={'queryType': 0}|
+2025-09-23 02:15:29.856|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 构造的Prompt|requestId=gene_editing_011|prompt=你是一个非常严谨、专业的信息抽取助手。你需要严格按照规则从查询文本中精确提取多项特定信息。
+
+# 核心原则
+你必须严格遵守以下原则：只提取查询中明确提及的信息。如果某项信息在查询中没有被提及，你必须使用为该项指定的默认值，绝对不允许自行推断、估算或根据常识转换（例如，根据字数估算演讲时间，或根据演讲时间估算字数）。
+
+# 抽取规则列表
+[
+  {
+    "desc": "提取脱靶率数值，统一为百分比。例如：'1%'、'低脱靶率'。",
+    "valueType": "int",
+    "keyName": "offTargetRate",
+    "defaultValue": -1
+  },
+  {
+    "desc": "提取检测精度等级，1-5级。例如：'高精度'、'超高精度'。",
+    "valueType": "int",
+    "keyName": "detectionPrecision",
+    "defaultValue": -1
+  }
+]
+
+# 抽取要求
+1. 必须精确识别并提取查询文本中明确提到的所有目标信息。
+2. 对于在查询文本中完全没有提及的信息，必须使用其默认值。
+3. 如果查询中有多个可能的值，选择最合理的一个（例如，对于范围"3000-5000字"，选择5000）。
+4. 对于数字信息，必须转换为阿拉伯数字格式。
+5. 对于文本信息，保留原始文本格式。
+6. 对于布尔信息，转换为true/false格式。
+7. 严格按照每项规则要求的数据类型返回。
+
+# 数字处理规则
+1. 中文数字转阿拉伯数字：如"一千五百"转为"1500"。
+2. 带单位的数字要去除单位：如"15万"转为"150000"。
+3. 数字范围取上限值：如"10-20分钟"取"20"，"5000字以上"取"5000"。
+4. "几十"、"几百"等模糊表达转为具体数字：如"几十"转为"50"，"几百"转为"500"。
+5. "多"字处理：如"5000多字"转为"5000"。
+6. 特殊表达转换：如"上千"转为"1000"，"数百"转为"500"。
+7. 区分"万"和"万字"：如"写一万字"中的"万"是数量单位。
+
+# 输出格式
+你必须只输出一个有效的JSON对象，包含所有需要提取的信息，每一项的键名必须严格按照抽取规则中指定的keyName。
+
+## 示例 1: 信息完整
+- 查询: "写一篇关于AI的报告，要求1500字，演讲时长10分钟。"
+- 输出:
+```
+{
+  "requireWordNums": 1500,
+  "durationMins": 10
+}
+```
+
+## 示例 2: 信息不完整
+- 查询: "写一篇关于中国移动5G建设成就的发言稿，5000字左右。"
+- 输出 (假设durationMins的默认值是-1):
+```
+{
+  "requireWordNums": 5000,
+  "durationMins": -1
+}
+```
+
+不要输出任何额外的解释或前后缀，只输出JSON对象本身。
+必须确保JSON对象有效且格式正确，所有键名必须使用双引号。
+
+# 查询内容
+CRISPR-Cas9系统的脱靶效应如何检测？ |
+2025-09-23 02:15:29.856|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 请求体|requestId=gene_editing_011|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|payload={'request_id': 'gene_editing_011', 'input': '你是一个非常严谨、专业的信息抽取助手。你需要严格按照规则从查询文本中精确提取多项特定信息。\n\n# 核心原则\n你必须严格遵守以下原则：只提取查询中明确提及的信息。如果某项信息在查询中没有被提及，你必须使用为该项指定的默认值，绝对不允许自行推断、估算或根据常识转换（例如，根据字数估算演讲时间，或根据演讲时间估算字数）。\n\n# 抽取规则列表\n[\n  {\n    "desc": "提取脱靶率数值，统一为百分比。例如：\'1%\'、\'低脱靶率\'。",\n    "valueType": "int",\n    "keyName": "offTargetRate",\n    "defaultValue": -1\n  },\n  {\n    "desc": "提取检测精度等级，1-5级。例如：\'高精度\'、\'超高精度\'。",\n    "valueType": "int",\n    "keyName": "detectionPrecision",\n    "defaultValue": -1\n  }\n]\n\n# 抽取要求\n1. 必须精确识别并提取查询文本中明确提到的所有目标信息。\n2. 对于在查询文本中完全没有提及的信息，必须使用其默认值。\n3. 如果查询中有多个可能的值，选择最合理的一个（例如，对于范围"3000-5000字"，选择5000）。\n4. 对于数字信息，必须转换为阿拉伯数字格式。\n5. 对于文本信息，保留原始文本格式。\n6. 对于布尔信息，转换为true/false格式。\n7. 严格按照每项规则要求的数据类型返回。\n\n# 数字处理规则\n1. 中文数字转阿拉伯数字：如"一千五百"转为"1500"。\n2. 带单位的数字要去除单位：如"15万"转为"150000"。\n3. 数字范围取上限值：如"10-20分钟"取"20"，"5000字以上"取"5000"。\n4. "几十"、"几百"等模糊表达转为具体数字：如"几十"转为"50"，"几百"转为"500"。\n5. "多"字处理：如"5000多字"转为"5000"。\n6. 特殊表达转换：如"上千"转为"1000"，"数百"转为"500"。\n7. 区分"万"和"万字"：如"写一万字"中的"万"是数量单位。\n\n# 输出格式\n你必须只输出一个有效的JSON对象，包含所有需要提取的信息，每一项的键名必须严格按照抽取规则中指定的keyName。\n\n## 示例 1: 信息完整\n- 查询: "写一篇关于AI的报告，要求1500字，演讲时长10分钟。"\n- 输出:\n```\n{\n  "requireWordNums": 1500,\n  "durationMins": 10\n}\n```\n\n## 示例 2: 信息不完整\n- 查询: "写一篇关于中国移动5G建设成就的发言稿，5000字左右。"\n- 输出 (假设durationMins的默认值是-1):\n```\n{\n  "requireWordNums": 5000,\n  "durationMins": -1\n}\n```\n\n不要输出任何额外的解释或前后缀，只输出JSON对象本身。\n必须确保JSON对象有效且格式正确，所有键名必须使用双引号。\n\n# 查询内容\nCRISPR-Cas9系统的脱靶效应如何检测？ ', 'max_new_token': 256, 'temperature': 0.01, 'top_p': 0.9, 'streaming': False}|
+2025-09-23 02:15:30.202|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - LLM响应|requestId=gene_editing_011|response={'success': True, 'code': '0000', 'message': 'success', 'data': {'request_id': 'gene_editing_011', 'result': '{"offTargetRate": -1}'}}|
+2025-09-23 02:15:30.202|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - LLM原始输出|requestId=gene_editing_011|raw_output={"offTargetRate": -1}|
+2025-09-23 02:15:30.202|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 直接JSON解析成功|requestId=gene_editing_011|parsed_json={'offTargetRate': -1}|
+2025-09-23 02:15:30.202|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||历史查询格式化 - 原始数据|requestId=gene_editing_011|history_count=10|history_roles=['user', 'assistant', 'user', 'assistant', 'user', 'assistant', 'user', 'assistant', 'user', 'assistant']|first_message={'role': 'user', 'content': '基因编辑技术在治疗遗传疾病方面有什么进展？', 'reasoningContent': None}|all_messages=[{'index': 0, 'role': 'user', 'content': '基因编辑技术在治疗遗传疾病方面有什么进展？'}, {'index': 1, 'role': 'assistant', 'content': '基因编辑技术在遗传疾病治疗方面取得重大进展，CRISPR-C...'}, {'index': 2, 'role': 'user', 'content': '不同基因编辑技术的精确度如何比较？'}, {'index': 3, 'role': 'assistant', 'content': 'CRISPR-Cas9适合大片段删除插入，但可能产生不可预测...'}, {'index': 4, 'role': 'user', 'content': '如何提高基因编辑的递送效率？'}, {'index': 5, 'role': 'assistant', 'content': '递送效率提升主要依靠载体优化和递送方法改进。腺相关病毒(AA...'}, {'index': 6, 'role': 'user', 'content': '腺相关病毒载体有什么局限性？'}, {'index': 7, 'role': 'assistant', 'content': 'AAV载体的主要局限包括载荷容量小(约4.7kb)、免疫原性...'}, {'index': 8, 'role': 'user', 'content': '如何克服AAV载荷容量的限制？'}, {'index': 9, 'role': 'assistant', 'content': '克服载荷限制的策略包括双载体系统、蛋白质分割、内含肽技术等。...'}]|
+2025-09-23 02:15:30.203|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 0|requestId=gene_editing_011|index=0|role=user|content_preview=基因编辑技术在治疗遗传疾病方面有什么进展？|full_content=基因编辑技术在治疗遗传疾病方面有什么进展？|msg_type=Message|
+2025-09-23 02:15:30.203|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=gene_editing_011|qa_pair_num=1|msg_idx=0|q_text=Q1: 基因编辑技术在治疗遗传疾病方面有什么进展？|
+2025-09-23 02:15:30.203|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 1|requestId=gene_editing_011|index=1|role=assistant|content_preview=基因编辑技术在遗传疾病治疗方面取得重大进展，CRISPR-Cas9、碱基编辑、引导编辑等技术日趋成熟...|full_content=基因编辑技术在遗传疾病治疗方面取得重大进展，CRISPR-Cas9、碱基编辑、引导编辑等技术日趋成熟。已有多个临床试验针对镰状细胞病、β地中海贫血等疾病。但脱靶效应、递送效率、免疫反应等安全性问题仍需解决。|msg_type=Message|
+2025-09-23 02:15:30.203|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=gene_editing_011|qa_pair_num=1|msg_idx=1|a_text=A1: 基因编辑技术在遗传疾病治疗方面取得重大进展，CRISPR-Cas9、碱基编辑、引导编辑等技术日趋成熟。已有多个临床试验针对镰状细胞病、β地中海贫血等疾病。但脱靶效应、递送效率、免疫反应等安全性问题仍需解决。|
+2025-09-23 02:15:30.203|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 2|requestId=gene_editing_011|index=2|role=user|content_preview=不同基因编辑技术的精确度如何比较？|full_content=不同基因编辑技术的精确度如何比较？|msg_type=Message|
+2025-09-23 02:15:30.204|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=gene_editing_011|qa_pair_num=2|msg_idx=2|q_text=Q2: 不同基因编辑技术的精确度如何比较？|
+2025-09-23 02:15:30.204|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 3|requestId=gene_editing_011|index=3|role=assistant|content_preview=CRISPR-Cas9适合大片段删除插入，但可能产生不可预测的插入缺失。碱基编辑器能实现单碱基替换，...|full_content=CRISPR-Cas9适合大片段删除插入，但可能产生不可预测的插入缺失。碱基编辑器能实现单碱基替换，精确度更高但编辑范围有限。引导编辑结合了两者优势，能进行精确的小片段编辑。新一代工具如Cas12、CasX等也在不断改进精确度。|msg_type=Message|
+2025-09-23 02:15:30.204|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=gene_editing_011|qa_pair_num=2|msg_idx=3|a_text=A2: CRISPR-Cas9适合大片段删除插入，但可能产生不可预测的插入缺失。碱基编辑器能实现单碱基替换，精确度更高但编辑范围有限。引导编辑结合了两者优势，能进行精确的小片段编辑。新一代工具如Cas12、CasX等也在不断改进精确度。|
+2025-09-23 02:15:30.204|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 4|requestId=gene_editing_011|index=4|role=user|content_preview=如何提高基因编辑的递送效率？|full_content=如何提高基因编辑的递送效率？|msg_type=Message|
+2025-09-23 02:15:30.204|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=gene_editing_011|qa_pair_num=3|msg_idx=4|q_text=Q3: 如何提高基因编辑的递送效率？|
+2025-09-23 02:15:30.204|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 5|requestId=gene_editing_011|index=5|role=assistant|content_preview=递送效率提升主要依靠载体优化和递送方法改进。腺相关病毒(AAV)载体具有良好的组织特异性，脂质纳米颗...|full_content=递送效率提升主要依靠载体优化和递送方法改进。腺相关病毒(AAV)载体具有良好的组织特异性，脂质纳米颗粒(LNP)适合mRNA递送。体内直接注射、电穿孔、超声介导等物理方法也在发展。组织特异性启动子能提高靶向性。|msg_type=Message|
+2025-09-23 02:15:30.204|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=gene_editing_011|qa_pair_num=3|msg_idx=5|a_text=A3: 递送效率提升主要依靠载体优化和递送方法改进。腺相关病毒(AAV)载体具有良好的组织特异性，脂质纳米颗粒(LNP)适合mRNA递送。体内直接注射、电穿孔、超声介导等物理方法也在发展。组织特异性启动子能提高靶向性。|
+2025-09-23 02:15:30.204|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 6|requestId=gene_editing_011|index=6|role=user|content_preview=腺相关病毒载体有什么局限性？|full_content=腺相关病毒载体有什么局限性？|msg_type=Message|
+2025-09-23 02:15:30.205|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=gene_editing_011|qa_pair_num=4|msg_idx=6|q_text=Q4: 腺相关病毒载体有什么局限性？|
+2025-09-23 02:15:30.205|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 7|requestId=gene_editing_011|index=7|role=assistant|content_preview=AAV载体的主要局限包括载荷容量小(约4.7kb)、免疫原性、生产成本高等。重复给药可能引起免疫反应...|full_content=AAV载体的主要局限包括载荷容量小(约4.7kb)、免疫原性、生产成本高等。重复给药可能引起免疫反应，影响治疗效果。不同血清型的AAV对不同组织有偏好性，需要针对性选择。载荷限制使得大基因难以递送。|msg_type=Message|
+2025-09-23 02:15:30.205|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=gene_editing_011|qa_pair_num=4|msg_idx=7|a_text=A4: AAV载体的主要局限包括载荷容量小(约4.7kb)、免疫原性、生产成本高等。重复给药可能引起免疫反应，影响治疗效果。不同血清型的AAV对不同组织有偏好性，需要针对性选择。载荷限制使得大基因难以递送。|
+2025-09-23 02:15:30.205|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 8|requestId=gene_editing_011|index=8|role=user|content_preview=如何克服AAV载荷容量的限制？|full_content=如何克服AAV载荷容量的限制？|msg_type=Message|
+2025-09-23 02:15:30.205|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=gene_editing_011|qa_pair_num=5|msg_idx=8|q_text=Q5: 如何克服AAV载荷容量的限制？|
+2025-09-23 02:15:30.205|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 9|requestId=gene_editing_011|index=9|role=assistant|content_preview=克服载荷限制的策略包括双载体系统、蛋白质分割、内含肽技术等。双AAV系统将大基因分成两部分，通过同源...|full_content=克服载荷限制的策略包括双载体系统、蛋白质分割、内含肽技术等。双AAV系统将大基因分成两部分，通过同源重组或转座子重组。蛋白质分割技术将大蛋白分成功能域，分别表达后重组。内含肽能在翻译后自动剪接。CRISPR系统的小型化也是重要方向，如开发更紧凑的Cas蛋白变体。|msg_type=Message|
+2025-09-23 02:15:30.205|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=gene_editing_011|qa_pair_num=5|msg_idx=9|a_text=A5: 克服载荷限制的策略包括双载体系统、蛋白质分割、内含肽技术等。双AAV系统将大基因分成两部分，通过同源重组或转座子重组。蛋白质分割技术将大蛋白分成功能域，分别表达后重组。内含肽能在翻译后自动剪接。CRISPR系统的小型化也是重要方向，如开发更紧凑的Cas蛋白变体。|
+2025-09-23 02:15:30.206|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||历史查询格式化 - 最终结果|requestId=gene_editing_011|history_parts_count=10|history_text=Q1: 基因编辑技术在治疗遗传疾病方面有什么进展？
+A1: 基因编辑技术在遗传疾病治疗方面取得重大进展，CRISPR-Cas9、碱基编辑、引导编辑等技术日趋成熟。已有多个临床试验针对镰状细胞病、β地中海贫血等疾病。但脱靶效应、递送效率、免疫反应等安全性问题仍需解决。
+Q2: 不同基因编辑技术的精确度如何比较？
+A2: CRISPR-Cas9适合大片段删除插入，但可能产生不可预测的插入缺失。碱基编辑器能实现单碱基替换，精确度更高但编辑范围有限。引导编辑结合了两者优势，能进行精确的小片段编辑。新一代工具如Cas12、CasX等也在不断改进精确度。
+Q3: 如何提高基因编辑的递送效率？
+A3: 递送效率提升主要依靠载体优化和递送方法改进。腺相关病毒(AAV)载体具有良好的组织特异性，脂质纳米颗粒(LNP)适合mRNA递送。体内直接注射、电穿孔、超声介导等物理方法也在发展。组织特异性启动子能提高靶向性。
+Q4: 腺相关病毒载体有什么局限性？
+A4: AAV载体的主要局限包括载荷容量小(约4.7kb)、免疫原性、生产成本高等。重复给药可能引起免疫反应，影响治疗效果。不同血清型的AAV对不同组织有偏好性，需要针对性选择。载荷限制使得大基因难以递送。
+Q5: 如何克服AAV载荷容量的限制？
+A5: 克服载荷限制的策略包括双载体系统、蛋白质分割、内含肽技术等。双AAV系统将大基因分成两部分，通过同源重组或转座子重组。蛋白质分割技术将大蛋白分成功能域，分别表达后重组。内含肽能在翻译后自动剪接。CRISPR系统的小型化也是重要方向，如开发更紧凑的Cas蛋白变体。|
+2025-09-23 02:15:30.206|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - 构造的Prompt|requestId=gene_editing_011|prompt=判断查询是否需要改写。
+
+规则：
+1. 包含这些词必须改写 → 输出 true：
+   "这方面"、"那方面"、"这种"、"那种"、"他"、"她"、"它"、"这个"、"那个"、"此"、"该"、"其"
+
+2. 注意例外情况 → 输出 false：
+   - 查询和历史对话主题完全不同（如：历史谈手机，当前问米粉食品）
+   - 指代词指向的是回答内容而不是问题内容
+   - 查询很短（3个词以内）且没有明确指代词
+
+3. 其他情况：
+   - 查询缺少主语但历史有线索 → 输出 true
+   - 查询独立完整 → 输出 false
+
+历史对话：
+Q1: 基因编辑技术在治疗遗传疾病方面有什么进展？
+A1: 基因编辑技术在遗传疾病治疗方面取得重大进展，CRISPR-Cas9、碱基编辑、引导编辑等技术日趋成熟。已有多个临床试验针对镰状细胞病、β地中海贫血等疾病。但脱靶效应、递送效率、免疫反应等安全性问题仍需解决。
+Q2: 不同基因编辑技术的精确度如何比较？
+A2: CRISPR-Cas9适合大片段删除插入，但可能产生不可预测的插入缺失。碱基编辑器能实现单碱基替换，精确度更高但编辑范围有限。引导编辑结合了两者优势，能进行精确的小片段编辑。新一代工具如Cas12、CasX等也在不断改进精确度。
+Q3: 如何提高基因编辑的递送效率？
+A3: 递送效率提升主要依靠载体优化和递送方法改进。腺相关病毒(AAV)载体具有良好的组织特异性，脂质纳米颗粒(LNP)适合mRNA递送。体内直接注射、电穿孔、超声介导等物理方法也在发展。组织特异性启动子能提高靶向性。
+Q4: 腺相关病毒载体有什么局限性？
+A4: AAV载体的主要局限包括载荷容量小(约4.7kb)、免疫原性、生产成本高等。重复给药可能引起免疫反应，影响治疗效果。不同血清型的AAV对不同组织有偏好性，需要针对性选择。载荷限制使得大基因难以递送。
+Q5: 如何克服AAV载荷容量的限制？
+A5: 克服载荷限制的策略包括双载体系统、蛋白质分割、内含肽技术等。双AAV系统将大基因分成两部分，通过同源重组或转座子重组。蛋白质分割技术将大蛋白分成功能域，分别表达后重组。内含肽能在翻译后自动剪接。CRISPR系统的小型化也是重要方向，如开发更紧凑的Cas蛋白变体。
+
+当前查询：CRISPR-Cas9系统的脱靶效应如何检测？
+
+只输出：true 或 false
+
+<judgment>|
+2025-09-23 02:15:30.445|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - LLM原始输出|requestId=gene_editing_011|raw_output=true|
+2025-09-23 02:15:30.445|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - 后处理结果|requestId=gene_editing_011|processed_output=true|
+2025-09-23 02:15:30.445|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||改写模型 - 构造的Prompt|requestId=gene_editing_011|prompt=<task>
+你的任务是利用历史查询的上下文，改写当前查询使其更清晰、更具体、更独立。
+
+改写规则：
+1. 仔细分析历史查询和当前查询，确认它们之间存在明确的语义关联
+2. 替换当前查询中的指代词（如"他"、"她"、"它"、"这个"、"那个"）为历史查询中的具体实体
+3. 补充缺失的主语或关键信息，使查询独立完整
+4. 当查询涉及历史对话中提到的专业概念、技术术语或具体场景时，适当补充相关上下文信息
+5. 对于短查询（3个词以内）必须确认与历史查询高度相关才进行改写
+
+重要约束：
+- 保持原始查询的意图、语言和表达方式
+- 只进行必要的替换和补充，不添加无关信息
+- 不要过度推断或猜测用户意图
+- 当代词指代依赖于上一个问题的答案而非问题本身时，不进行改写
+- 优先利用历史对话中的关键实体、场景、技术领域等信息来丰富查询
+</task>
+
+<examples>
+    <example>
+       <history>
+          Q1: 小明来自哪里？
+          A1: 小明来自北京。
+       </history>
+       <current_query>他在美团工作吗</current_query>
+       <rewritten_query>小明在美团工作吗</rewritten_query>
+    </example>
+    
+    <example>
+       <history>
+          Q1: Python和Java哪个更高效？
+          A1: 在不同场景下各有优势，Python开发效率高，Java运行效率好。
+       </history>
+       <current_query>它的内存管理怎么样？</current_query>
+       <rewritten_query>它的内存管理怎么样？</rewritten_query>
+    </example>
+    
+    <example>
+       <history>
+          Q1: 我们企业想要部署5G专网，中国移动有哪些解决方案？
+          A1: 中国移动提供多种5G专网解决方案，包括独立专网、共享专网和混合专网。可根据企业需求选择不同的网络切片服务，支持工业互联网、智慧园区、远程医疗等应用场景。
+       </history>
+       <current_query>网络切片技术是怎么工作的？</current_query>
+       <rewritten_query>中国移动5G专网中的网络切片技术是怎么工作的？</rewritten_query>
+    </example>
+</examples>
+
+<history>
+Q1: 基因编辑技术在治疗遗传疾病方面有什么进展？
+A1: 基因编辑技术在遗传疾病治疗方面取得重大进展，CRISPR-Cas9、碱基编辑、引导编辑等技术日趋成熟。已有多个临床试验针对镰状细胞病、β地中海贫血等疾病。但脱靶效应、递送效率、免疫反应等安全性问题仍需解决。
+Q2: 不同基因编辑技术的精确度如何比较？
+A2: CRISPR-Cas9适合大片段删除插入，但可能产生不可预测的插入缺失。碱基编辑器能实现单碱基替换，精确度更高但编辑范围有限。引导编辑结合了两者优势，能进行精确的小片段编辑。新一代工具如Cas12、CasX等也在不断改进精确度。
+Q3: 如何提高基因编辑的递送效率？
+A3: 递送效率提升主要依靠载体优化和递送方法改进。腺相关病毒(AAV)载体具有良好的组织特异性，脂质纳米颗粒(LNP)适合mRNA递送。体内直接注射、电穿孔、超声介导等物理方法也在发展。组织特异性启动子能提高靶向性。
+Q4: 腺相关病毒载体有什么局限性？
+A4: AAV载体的主要局限包括载荷容量小(约4.7kb)、免疫原性、生产成本高等。重复给药可能引起免疫反应，影响治疗效果。不同血清型的AAV对不同组织有偏好性，需要针对性选择。载荷限制使得大基因难以递送。
+Q5: 如何克服AAV载荷容量的限制？
+A5: 克服载荷限制的策略包括双载体系统、蛋白质分割、内含肽技术等。双AAV系统将大基因分成两部分，通过同源重组或转座子重组。蛋白质分割技术将大蛋白分成功能域，分别表达后重组。内含肽能在翻译后自动剪接。CRISPR系统的小型化也是重要方向，如开发更紧凑的Cas蛋白变体。
+</history>
+
+<current_query>CRISPR-Cas9系统的脱靶效应如何检测？</current_query>
+
+<output_instruction>
+只输出最终改写后的查询文本，不包含任何解释。
+</output_instruction>
+
+<rewritten_query>|
+2025-09-23 02:15:30.905|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||改写模型 - LLM原始输出|requestId=gene_editing_011|raw_output=CRISPR-Cas9系统的脱靶效应如何检测？|
+2025-09-23 02:15:30.905|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||改写模型 - 后处理结果 (strip)|requestId=gene_editing_011|processed_output=CRISPR-Cas9系统的脱靶效应如何检测？|
+2025-09-23 02:15:30.906|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tMainThreadd|INFO|API|||正常响应（查询改写完成）|requestId=gene_editing_011|query=CRISPR-Cas9系统的脱靶效应如何检测？|result=CRISPR-Cas9系统的脱靶效应如何检测？|needRewrite=True|historyList=['user: 基因编辑技术在治疗遗传疾病方面有什么进展？', 'assistant: 基因编辑技术在遗传疾病治疗方面取得重大进展，CRISPR-Cas9、碱基编辑、引导编辑等技术日趋成熟。已有多个临床试验针对镰状细胞病、β地中海贫血等疾病。但脱靶效应、递送效率、免疫反应等安全性问题仍需解决。', 'user: 不同基因编辑技术的精确度如何比较？', 'assistant: CRISPR-Cas9适合大片段删除插入，但可能产生不可预测的插入缺失。碱基编辑器能实现单碱基替换，精确度更高但编辑范围有限。引导编辑结合了两者优势，能进行精确的小片段编辑。新一代工具如Cas12、CasX等也在不断改进精确度。', 'user: 如何提高基因编辑的递送效率？', 'assistant: 递送效率提升主要依靠载体优化和递送方法改进。腺相关病毒(AAV)载体具有良好的组织特异性，脂质纳米颗粒(LNP)适合mRNA递送。体内直接注射、电穿孔、超声介导等物理方法也在发展。组织特异性启动子能提高靶向性。', 'user: 腺相关病毒载体有什么局限性？', 'assistant: AAV载体的主要局限包括载荷容量小(约4.7kb)、免疫原性、生产成本高等。重复给药可能引起免疫反应，影响治疗效果。不同血清型的AAV对不同组织有偏好性，需要针对性选择。载荷限制使得大基因难以递送。', 'user: 如何克服AAV载荷容量的限制？', 'assistant: 克服载荷限制的策略包括双载体系统、蛋白质分割、内含肽技术等。双AAV系统将大基因分成两部分，通过同源重组或转座子重组。蛋白质分割技术将大蛋白分成功能域，分别表达后重组。内含肽能在翻译后自动剪接。CRISPR系统的小型化也是重要方向，如开发更紧凑的Cas蛋白变体。']|processTime=1417|queryType=其他类|extractedInfo=[{'offTargetRate': -1}, {'detectionPrecision': -1}]|
+2025-09-23 02:17:04.529|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tMainThreadd|INFO|API|||接收请求|requestId=blockchain_finance_006|query=如何实现点对点转账?|historyList=['user: 区块链技术在金融领域的应用前景如何？', 'assistant: 区块链在金融领域前景广阔，主要应用包括数字货币、跨境支付、供应链金融、智能合约等。智能合约能够自动执行合约条款，减少中介成本，但也面临安全性挑战。', 'user: 跨境支付相比传统方式有什么优势？', 'assistant: 区块链跨境支付具有速度快、成本低、透明度高的优势。传统跨境支付需要经过多个中介银行，耗时3-5天，手续费高昂。区块链技术可以实现点对点转账，几分钟内完成，大幅降低手续费。', 'user: 监管机构对区块链金融的态度如何？', 'assistant: 各国监管态度不一，总体趋向谨慎开放。美国SEC、欧盟、中国央行都在制定相关法规。主要关注点包括反洗钱、消费者保护、金融稳定性等。监管沙盒机制为创新提供了试验空间。', 'user: 监管沙盒机制是如何运作的？', 'assistant: 监管沙盒允许金融科技公司在受控环境中测试创新产品，暂时豁免某些监管要求。参与者需要满足准入条件，接受监管机构监督，测试期间收集数据评估风险。成功的创新可以获得正式牌照推广。', 'user: 参与监管沙盒的准入条件通常包括哪些？', 'assistant: 准入条件通常包括：具备真正的金融创新、有明确的测试计划、拥有足够的技术和资金实力、能够识别和管控风险。申请者还需要证明创新对消费者有益，并承诺在测试期间保护消费者权益。智能合约的代码审计也是重要考量因素。']|enableExtraction=True|extractionRules=[{'desc': "提取安全风险等级，1-5级。例如：'高风险'、'中等风险'。", 'valueType': 'int', 'keyName': 'securityRiskLevel', 'defaultValue': -1}, {'desc': "提取漏洞修复时间，统一为天。例如：'7天'、'一周内'。", 'valueType': 'int', 'keyName': 'fixTimeDays', 'defaultValue': -1}]|
+2025-09-23 02:17:04.531|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - 构造的Prompt|requestId=blockchain_finance_006|prompt=你是一个专业的查询分类助手。请根据以下规则对用户的查询进行分类，并仅输出JSON结果，不要包含任何多余内容。
+
+分类规则：
+3. 发言稿（3）：请求撰写演讲稿、发言稿、致辞、演说稿等文稿的查询，关键词示例："演讲稿"、"发言稿"、"致辞"、"演说稿"。
+2. 建议类（2）：需要获得改进方向、解决方案或下一步行动举措的查询，包括但不限于："建议"、"推荐"、"如何"、"应该"、"方案"、"规划"、"差距"、"不足"、"需要完善"、"哪些方面需要提升"、"举措"、"可进步" 等表达。
+1. 总结类（1）：仅要求对信息进行现状"总结"、"概括"、"归纳"、"汇总"、"梳理"，且不涉及提出改进或下一步行动建议的查询。
+0. 其他类（0）：不属于以上任何一类的查询。
+
+识别要点：
+- 如果用户在对标某一标准或目标，并询问 "差距"、"不足"、"哪些方面需要提升"、"需要完善"、"可进步" 等，通常意味着希望获得改进建议，请归为建议类（2）。
+- 如果查询核心在于 "总结 / 概括 / 归纳" 现状，而未涉及提出改进或下一步行动，则归为总结类（1）。
+- 如果查询聚焦于现状描述、优势/劣势(差距)、资源投入或技术重点等信息的梳理，对未来措施仅作背景性提及，而未直接请求改进"方案/举措/对策"，亦归为总结类（1）。
+
+Few-shot 示例（仅用于理解，不要在最终回答中输出）：
+示例1：
+用户：在科技创新投入与成果转化方面，与中央强调的科技自立自强要求对标，我们在关键技术突破上还有哪些差距？
+期望输出：{"queryType": 2}
+
+示例2：
+用户：在推动数字经济与实体经济融合方面，和中央期望比，存在哪些可进步？
+期望输出：{"queryType": 2}
+
+示例3：
+用户：与中央改革要求相比，还存在哪些需要完善的地方？
+期望输出：{"queryType": 2}
+
+示例4：
+用户：从公司整体战略布局来看，这些完善工作会对各业务板块的协同发展产生怎样的影响，如何优化协同策略？
+期望输出：{"queryType": 2}
+
+示例5：
+用户：细化一下在服务集团公司主营主业方面的举措内容。
+期望输出：{"queryType": 2}
+
+示例6：
+用户：在科技创新方面，与集团公司要求相比，中移互联网公司有哪些成果，哪些方面需要进一步提升？
+期望输出：{"queryType": 2}
+
+示例7：
+用户：与党中央对国企高质量党建引领高质量发展要求相比，中移互联网公司以党建引领改革、促进发展还有哪些需进一步提升？
+期望输出：{"queryType": 2}
+
+示例8：
+用户：我们目前在AI领域的技术研发重点是什么？与世界一流信息服务企业的技术布局相比，我们的优势和差距在哪里？
+期望输出：{"queryType": 1}
+
+示例9：
+用户：可重点发展的技术有哪些，主要应用于哪些场景？
+期望输出：{"queryType": 1}
+
+示例10：
+用户：如何确保我们在AI应用开发方面保持领先地位？需要投入多少资源？
+期望输出：{"queryType": 1}
+
+用户查询为：如何实现点对点转账?
+
+如果无法根据上述分类规则进行明确判定，请归为其他类（0）。
+
+输出格式：
+{"queryType": 分类标识码}
+|
+2025-09-23 02:17:04.965|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - LLM原始输出|requestId=blockchain_finance_006|raw_output={"queryType": 0}|
+2025-09-23 02:17:04.965|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - 提取的JSON字符串|requestId=blockchain_finance_006|json_str={"queryType": 0}|
+2025-09-23 02:17:04.966|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||查询分类模型 - JSON解析结果|requestId=blockchain_finance_006|parsed_json={'queryType': 0}|
+2025-09-23 02:17:04.967|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 构造的Prompt|requestId=blockchain_finance_006|prompt=你是一个非常严谨、专业的信息抽取助手。你需要严格按照规则从查询文本中精确提取多项特定信息。
+
+# 核心原则
+你必须严格遵守以下原则：只提取查询中明确提及的信息。如果某项信息在查询中没有被提及，你必须使用为该项指定的默认值，绝对不允许自行推断、估算或根据常识转换（例如，根据字数估算演讲时间，或根据演讲时间估算字数）。
+
+# 抽取规则列表
+[
+  {
+    "desc": "提取安全风险等级，1-5级。例如：'高风险'、'中等风险'。",
+    "valueType": "int",
+    "keyName": "securityRiskLevel",
+    "defaultValue": -1
+  },
+  {
+    "desc": "提取漏洞修复时间，统一为天。例如：'7天'、'一周内'。",
+    "valueType": "int",
+    "keyName": "fixTimeDays",
+    "defaultValue": -1
+  }
+]
+
+# 抽取要求
+1. 必须精确识别并提取查询文本中明确提到的所有目标信息。
+2. 对于在查询文本中完全没有提及的信息，必须使用其默认值。
+3. 如果查询中有多个可能的值，选择最合理的一个（例如，对于范围"3000-5000字"，选择5000）。
+4. 对于数字信息，必须转换为阿拉伯数字格式。
+5. 对于文本信息，保留原始文本格式。
+6. 对于布尔信息，转换为true/false格式。
+7. 严格按照每项规则要求的数据类型返回。
+
+# 数字处理规则
+1. 中文数字转阿拉伯数字：如"一千五百"转为"1500"。
+2. 带单位的数字要去除单位：如"15万"转为"150000"。
+3. 数字范围取上限值：如"10-20分钟"取"20"，"5000字以上"取"5000"。
+4. "几十"、"几百"等模糊表达转为具体数字：如"几十"转为"50"，"几百"转为"500"。
+5. "多"字处理：如"5000多字"转为"5000"。
+6. 特殊表达转换：如"上千"转为"1000"，"数百"转为"500"。
+7. 区分"万"和"万字"：如"写一万字"中的"万"是数量单位。
+
+# 输出格式
+你必须只输出一个有效的JSON对象，包含所有需要提取的信息，每一项的键名必须严格按照抽取规则中指定的keyName。
+
+## 示例 1: 信息完整
+- 查询: "写一篇关于AI的报告，要求1500字，演讲时长10分钟。"
+- 输出:
+```
+{
+  "requireWordNums": 1500,
+  "durationMins": 10
+}
+```
+
+## 示例 2: 信息不完整
+- 查询: "写一篇关于中国移动5G建设成就的发言稿，5000字左右。"
+- 输出 (假设durationMins的默认值是-1):
+```
+{
+  "requireWordNums": 5000,
+  "durationMins": -1
+}
+```
+
+不要输出任何额外的解释或前后缀，只输出JSON对象本身。
+必须确保JSON对象有效且格式正确，所有键名必须使用双引号。
+
+# 查询内容
+如何实现点对点转账? |
+2025-09-23 02:17:04.967|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 请求体|requestId=blockchain_finance_006|url=http://192.168.32.115:12319/yun/ai/internal/llm/qwen/3b|payload={'request_id': 'blockchain_finance_006', 'input': '你是一个非常严谨、专业的信息抽取助手。你需要严格按照规则从查询文本中精确提取多项特定信息。\n\n# 核心原则\n你必须严格遵守以下原则：只提取查询中明确提及的信息。如果某项信息在查询中没有被提及，你必须使用为该项指定的默认值，绝对不允许自行推断、估算或根据常识转换（例如，根据字数估算演讲时间，或根据演讲时间估算字数）。\n\n# 抽取规则列表\n[\n  {\n    "desc": "提取安全风险等级，1-5级。例如：\'高风险\'、\'中等风险\'。",\n    "valueType": "int",\n    "keyName": "securityRiskLevel",\n    "defaultValue": -1\n  },\n  {\n    "desc": "提取漏洞修复时间，统一为天。例如：\'7天\'、\'一周内\'。",\n    "valueType": "int",\n    "keyName": "fixTimeDays",\n    "defaultValue": -1\n  }\n]\n\n# 抽取要求\n1. 必须精确识别并提取查询文本中明确提到的所有目标信息。\n2. 对于在查询文本中完全没有提及的信息，必须使用其默认值。\n3. 如果查询中有多个可能的值，选择最合理的一个（例如，对于范围"3000-5000字"，选择5000）。\n4. 对于数字信息，必须转换为阿拉伯数字格式。\n5. 对于文本信息，保留原始文本格式。\n6. 对于布尔信息，转换为true/false格式。\n7. 严格按照每项规则要求的数据类型返回。\n\n# 数字处理规则\n1. 中文数字转阿拉伯数字：如"一千五百"转为"1500"。\n2. 带单位的数字要去除单位：如"15万"转为"150000"。\n3. 数字范围取上限值：如"10-20分钟"取"20"，"5000字以上"取"5000"。\n4. "几十"、"几百"等模糊表达转为具体数字：如"几十"转为"50"，"几百"转为"500"。\n5. "多"字处理：如"5000多字"转为"5000"。\n6. 特殊表达转换：如"上千"转为"1000"，"数百"转为"500"。\n7. 区分"万"和"万字"：如"写一万字"中的"万"是数量单位。\n\n# 输出格式\n你必须只输出一个有效的JSON对象，包含所有需要提取的信息，每一项的键名必须严格按照抽取规则中指定的keyName。\n\n## 示例 1: 信息完整\n- 查询: "写一篇关于AI的报告，要求1500字，演讲时长10分钟。"\n- 输出:\n```\n{\n  "requireWordNums": 1500,\n  "durationMins": 10\n}\n```\n\n## 示例 2: 信息不完整\n- 查询: "写一篇关于中国移动5G建设成就的发言稿，5000字左右。"\n- 输出 (假设durationMins的默认值是-1):\n```\n{\n  "requireWordNums": 5000,\n  "durationMins": -1\n}\n```\n\n不要输出任何额外的解释或前后缀，只输出JSON对象本身。\n必须确保JSON对象有效且格式正确，所有键名必须使用双引号。\n\n# 查询内容\n如何实现点对点转账? ', 'max_new_token': 256, 'temperature': 0.01, 'top_p': 0.9, 'streaming': False}|
+2025-09-23 02:17:05.540|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - LLM响应|requestId=blockchain_finance_006|response={'success': True, 'code': '0000', 'message': 'success', 'data': {'request_id': 'blockchain_finance_006', 'result': '```json\n{\n  "securityRiskLevel": -1,\n  "fixTimeDays": -1\n}\n```'}}|
+2025-09-23 02:17:05.540|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - LLM原始输出|requestId=blockchain_finance_006|raw_output=```json
+{
+  "securityRiskLevel": -1,
+  "fixTimeDays": -1
+}
+```|
+2025-09-23 02:17:05.541|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||整个文本非有效JSON，尝试查找JSON部分|requestId=blockchain_finance_006|error=Expecting value: line 1 column 1 (char 0)|error_position=0|text_around_error=```json
+{
+  "securit|
+2025-09-23 02:17:05.542|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||批量信息抽取 - 子字符串JSON解析成功|requestId=blockchain_finance_006|parsed_json={'securityRiskLevel': -1, 'fixTimeDays': -1}|
+2025-09-23 02:17:05.543|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||历史查询格式化 - 原始数据|requestId=blockchain_finance_006|history_count=10|history_roles=['user', 'assistant', 'user', 'assistant', 'user', 'assistant', 'user', 'assistant', 'user', 'assistant']|first_message={'role': 'user', 'content': '区块链技术在金融领域的应用前景如何？', 'reasoningContent': None}|all_messages=[{'index': 0, 'role': 'user', 'content': '区块链技术在金融领域的应用前景如何？'}, {'index': 1, 'role': 'assistant', 'content': '区块链在金融领域前景广阔，主要应用包括数字货币、跨境支付、供...'}, {'index': 2, 'role': 'user', 'content': '跨境支付相比传统方式有什么优势？'}, {'index': 3, 'role': 'assistant', 'content': '区块链跨境支付具有速度快、成本低、透明度高的优势。传统跨境支...'}, {'index': 4, 'role': 'user', 'content': '监管机构对区块链金融的态度如何？'}, {'index': 5, 'role': 'assistant', 'content': '各国监管态度不一，总体趋向谨慎开放。美国SEC、欧盟、中国央...'}, {'index': 6, 'role': 'user', 'content': '监管沙盒机制是如何运作的？'}, {'index': 7, 'role': 'assistant', 'content': '监管沙盒允许金融科技公司在受控环境中测试创新产品，暂时豁免某...'}, {'index': 8, 'role': 'user', 'content': '参与监管沙盒的准入条件通常包括哪些？'}, {'index': 9, 'role': 'assistant', 'content': '准入条件通常包括：具备真正的金融创新、有明确的测试计划、拥有...'}]|
+2025-09-23 02:17:05.543|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 0|requestId=blockchain_finance_006|index=0|role=user|content_preview=区块链技术在金融领域的应用前景如何？|full_content=区块链技术在金融领域的应用前景如何？|msg_type=Message|
+2025-09-23 02:17:05.543|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=blockchain_finance_006|qa_pair_num=1|msg_idx=0|q_text=Q1: 区块链技术在金融领域的应用前景如何？|
+2025-09-23 02:17:05.544|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 1|requestId=blockchain_finance_006|index=1|role=assistant|content_preview=区块链在金融领域前景广阔，主要应用包括数字货币、跨境支付、供应链金融、智能合约等。智能合约能够自动执...|full_content=区块链在金融领域前景广阔，主要应用包括数字货币、跨境支付、供应链金融、智能合约等。智能合约能够自动执行合约条款，减少中介成本，但也面临安全性挑战。|msg_type=Message|
+2025-09-23 02:17:05.544|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=blockchain_finance_006|qa_pair_num=1|msg_idx=1|a_text=A1: 区块链在金融领域前景广阔，主要应用包括数字货币、跨境支付、供应链金融、智能合约等。智能合约能够自动执行合约条款，减少中介成本，但也面临安全性挑战。|
+2025-09-23 02:17:05.544|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 2|requestId=blockchain_finance_006|index=2|role=user|content_preview=跨境支付相比传统方式有什么优势？|full_content=跨境支付相比传统方式有什么优势？|msg_type=Message|
+2025-09-23 02:17:05.544|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=blockchain_finance_006|qa_pair_num=2|msg_idx=2|q_text=Q2: 跨境支付相比传统方式有什么优势？|
+2025-09-23 02:17:05.545|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 3|requestId=blockchain_finance_006|index=3|role=assistant|content_preview=区块链跨境支付具有速度快、成本低、透明度高的优势。传统跨境支付需要经过多个中介银行，耗时3-5天，手...|full_content=区块链跨境支付具有速度快、成本低、透明度高的优势。传统跨境支付需要经过多个中介银行，耗时3-5天，手续费高昂。区块链技术可以实现点对点转账，几分钟内完成，大幅降低手续费。|msg_type=Message|
+2025-09-23 02:17:05.545|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=blockchain_finance_006|qa_pair_num=2|msg_idx=3|a_text=A2: 区块链跨境支付具有速度快、成本低、透明度高的优势。传统跨境支付需要经过多个中介银行，耗时3-5天，手续费高昂。区块链技术可以实现点对点转账，几分钟内完成，大幅降低手续费。|
+2025-09-23 02:17:05.545|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 4|requestId=blockchain_finance_006|index=4|role=user|content_preview=监管机构对区块链金融的态度如何？|full_content=监管机构对区块链金融的态度如何？|msg_type=Message|
+2025-09-23 02:17:05.545|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=blockchain_finance_006|qa_pair_num=3|msg_idx=4|q_text=Q3: 监管机构对区块链金融的态度如何？|
+2025-09-23 02:17:05.545|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 5|requestId=blockchain_finance_006|index=5|role=assistant|content_preview=各国监管态度不一，总体趋向谨慎开放。美国SEC、欧盟、中国央行都在制定相关法规。主要关注点包括反洗钱...|full_content=各国监管态度不一，总体趋向谨慎开放。美国SEC、欧盟、中国央行都在制定相关法规。主要关注点包括反洗钱、消费者保护、金融稳定性等。监管沙盒机制为创新提供了试验空间。|msg_type=Message|
+2025-09-23 02:17:05.545|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=blockchain_finance_006|qa_pair_num=3|msg_idx=5|a_text=A3: 各国监管态度不一，总体趋向谨慎开放。美国SEC、欧盟、中国央行都在制定相关法规。主要关注点包括反洗钱、消费者保护、金融稳定性等。监管沙盒机制为创新提供了试验空间。|
+2025-09-23 02:17:05.545|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 6|requestId=blockchain_finance_006|index=6|role=user|content_preview=监管沙盒机制是如何运作的？|full_content=监管沙盒机制是如何运作的？|msg_type=Message|
+2025-09-23 02:17:05.545|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=blockchain_finance_006|qa_pair_num=4|msg_idx=6|q_text=Q4: 监管沙盒机制是如何运作的？|
+2025-09-23 02:17:05.546|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 7|requestId=blockchain_finance_006|index=7|role=assistant|content_preview=监管沙盒允许金融科技公司在受控环境中测试创新产品，暂时豁免某些监管要求。参与者需要满足准入条件，接受...|full_content=监管沙盒允许金融科技公司在受控环境中测试创新产品，暂时豁免某些监管要求。参与者需要满足准入条件，接受监管机构监督，测试期间收集数据评估风险。成功的创新可以获得正式牌照推广。|msg_type=Message|
+2025-09-23 02:17:05.547|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=blockchain_finance_006|qa_pair_num=4|msg_idx=7|a_text=A4: 监管沙盒允许金融科技公司在受控环境中测试创新产品，暂时豁免某些监管要求。参与者需要满足准入条件，接受监管机构监督，测试期间收集数据评估风险。成功的创新可以获得正式牌照推广。|
+2025-09-23 02:17:05.548|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 8|requestId=blockchain_finance_006|index=8|role=user|content_preview=参与监管沙盒的准入条件通常包括哪些？|full_content=参与监管沙盒的准入条件通常包括哪些？|msg_type=Message|
+2025-09-23 02:17:05.548|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加用户问题|requestId=blockchain_finance_006|qa_pair_num=5|msg_idx=8|q_text=Q5: 参与监管沙盒的准入条件通常包括哪些？|
+2025-09-23 02:17:05.548|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||处理消息 9|requestId=blockchain_finance_006|index=9|role=assistant|content_preview=准入条件通常包括：具备真正的金融创新、有明确的测试计划、拥有足够的技术和资金实力、能够识别和管控风险...|full_content=准入条件通常包括：具备真正的金融创新、有明确的测试计划、拥有足够的技术和资金实力、能够识别和管控风险。申请者还需要证明创新对消费者有益，并承诺在测试期间保护消费者权益。智能合约的代码审计也是重要考量因素。|msg_type=Message|
+2025-09-23 02:17:05.548|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||添加助手回答|requestId=blockchain_finance_006|qa_pair_num=5|msg_idx=9|a_text=A5: 准入条件通常包括：具备真正的金融创新、有明确的测试计划、拥有足够的技术和资金实力、能够识别和管控风险。申请者还需要证明创新对消费者有益，并承诺在测试期间保护消费者权益。智能合约的代码审计也是重要考量因素。|
+2025-09-23 02:17:05.549|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||历史查询格式化 - 最终结果|requestId=blockchain_finance_006|history_parts_count=10|history_text=Q1: 区块链技术在金融领域的应用前景如何？
+A1: 区块链在金融领域前景广阔，主要应用包括数字货币、跨境支付、供应链金融、智能合约等。智能合约能够自动执行合约条款，减少中介成本，但也面临安全性挑战。
+Q2: 跨境支付相比传统方式有什么优势？
+A2: 区块链跨境支付具有速度快、成本低、透明度高的优势。传统跨境支付需要经过多个中介银行，耗时3-5天，手续费高昂。区块链技术可以实现点对点转账，几分钟内完成，大幅降低手续费。
+Q3: 监管机构对区块链金融的态度如何？
+A3: 各国监管态度不一，总体趋向谨慎开放。美国SEC、欧盟、中国央行都在制定相关法规。主要关注点包括反洗钱、消费者保护、金融稳定性等。监管沙盒机制为创新提供了试验空间。
+Q4: 监管沙盒机制是如何运作的？
+A4: 监管沙盒允许金融科技公司在受控环境中测试创新产品，暂时豁免某些监管要求。参与者需要满足准入条件，接受监管机构监督，测试期间收集数据评估风险。成功的创新可以获得正式牌照推广。
+Q5: 参与监管沙盒的准入条件通常包括哪些？
+A5: 准入条件通常包括：具备真正的金融创新、有明确的测试计划、拥有足够的技术和资金实力、能够识别和管控风险。申请者还需要证明创新对消费者有益，并承诺在测试期间保护消费者权益。智能合约的代码审计也是重要考量因素。|
+2025-09-23 02:17:05.549|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - 构造的Prompt|requestId=blockchain_finance_006|prompt=判断查询是否需要改写。
+
+规则：
+1. 包含这些词必须改写 → 输出 true：
+   "这方面"、"那方面"、"这种"、"那种"、"他"、"她"、"它"、"这个"、"那个"、"此"、"该"、"其"
+
+2. 注意例外情况 → 输出 false：
+   - 查询和历史对话主题完全不同（如：历史谈手机，当前问米粉食品）
+   - 指代词指向的是回答内容而不是问题内容
+   - 查询很短（3个词以内）且没有明确指代词
+
+3. 其他情况：
+   - 查询缺少主语但历史有线索 → 输出 true
+   - 查询独立完整 → 输出 false
+
+历史对话：
+Q1: 区块链技术在金融领域的应用前景如何？
+A1: 区块链在金融领域前景广阔，主要应用包括数字货币、跨境支付、供应链金融、智能合约等。智能合约能够自动执行合约条款，减少中介成本，但也面临安全性挑战。
+Q2: 跨境支付相比传统方式有什么优势？
+A2: 区块链跨境支付具有速度快、成本低、透明度高的优势。传统跨境支付需要经过多个中介银行，耗时3-5天，手续费高昂。区块链技术可以实现点对点转账，几分钟内完成，大幅降低手续费。
+Q3: 监管机构对区块链金融的态度如何？
+A3: 各国监管态度不一，总体趋向谨慎开放。美国SEC、欧盟、中国央行都在制定相关法规。主要关注点包括反洗钱、消费者保护、金融稳定性等。监管沙盒机制为创新提供了试验空间。
+Q4: 监管沙盒机制是如何运作的？
+A4: 监管沙盒允许金融科技公司在受控环境中测试创新产品，暂时豁免某些监管要求。参与者需要满足准入条件，接受监管机构监督，测试期间收集数据评估风险。成功的创新可以获得正式牌照推广。
+Q5: 参与监管沙盒的准入条件通常包括哪些？
+A5: 准入条件通常包括：具备真正的金融创新、有明确的测试计划、拥有足够的技术和资金实力、能够识别和管控风险。申请者还需要证明创新对消费者有益，并承诺在测试期间保护消费者权益。智能合约的代码审计也是重要考量因素。
+
+当前查询：如何实现点对点转账?
+
+只输出：true 或 false
+
+<judgment>|
+2025-09-23 02:17:05.793|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - LLM原始输出|requestId=blockchain_finance_006|raw_output=false|
+2025-09-23 02:17:05.794|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tThreadPoolExecutor-0_0d|DEBUG|API|||判断模型 - 后处理结果|requestId=blockchain_finance_006|processed_output=false|
+2025-09-23 02:17:05.795|192.168.43.242|DamondeMacBook-Air.local|query-rewrite|p77994d|tMainThreadd|INFO|API|||正常响应（无需改写，返回原始查询）|requestId=blockchain_finance_006|query=如何实现点对点转账?|result=如何实现点对点转账?|needRewrite=False|historyList=['user: 区块链技术在金融领域的应用前景如何？', 'assistant: 区块链在金融领域前景广阔，主要应用包括数字货币、跨境支付、供应链金融、智能合约等。智能合约能够自动执行合约条款，减少中介成本，但也面临安全性挑战。', 'user: 跨境支付相比传统方式有什么优势？', 'assistant: 区块链跨境支付具有速度快、成本低、透明度高的优势。传统跨境支付需要经过多个中介银行，耗时3-5天，手续费高昂。区块链技术可以实现点对点转账，几分钟内完成，大幅降低手续费。', 'user: 监管机构对区块链金融的态度如何？', 'assistant: 各国监管态度不一，总体趋向谨慎开放。美国SEC、欧盟、中国央行都在制定相关法规。主要关注点包括反洗钱、消费者保护、金融稳定性等。监管沙盒机制为创新提供了试验空间。', 'user: 监管沙盒机制是如何运作的？', 'assistant: 监管沙盒允许金融科技公司在受控环境中测试创新产品，暂时豁免某些监管要求。参与者需要满足准入条件，接受监管机构监督，测试期间收集数据评估风险。成功的创新可以获得正式牌照推广。', 'user: 参与监管沙盒的准入条件通常包括哪些？', 'assistant: 准入条件通常包括：具备真正的金融创新、有明确的测试计划、拥有足够的技术和资金实力、能够识别和管控风险。申请者还需要证明创新对消费者有益，并承诺在测试期间保护消费者权益。智能合约的代码审计也是重要考量因素。']|processTime=1265|queryType=其他类|extractedInfo=[{'securityRiskLevel': -1}, {'fixTimeDays': -1}]|
