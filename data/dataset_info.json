@@ -38,12 +38,41 @@
       "assistant_tag": "assistant"
     }
   },
+  "mllm_audio_demo": {
+    "file_name": "mllm_audio_demo.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "audios": "audios"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
   "mllm_video_demo": {
     "file_name": "mllm_video_demo.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "messages",
       "videos": "videos"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "mllm_video_audio_demo": {
+    "file_name": "mllm_video_audio_demo.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "videos": "videos",
+      "audios": "audios"
     },
     "tags": {
       "role_tag": "role",
@@ -218,6 +247,7 @@
   "ultrachat_200k": {
     "hf_hub_url": "HuggingFaceH4/ultrachat_200k",
     "ms_hub_url": "AI-ModelScope/ultrachat_200k",
+    "split": "train_sft",
     "formatting": "sharegpt",
     "columns": {
       "messages": "messages"
@@ -244,7 +274,7 @@
     "tags": {
       "role_tag": "role",
       "content_tag": "content",
-      "user_tag": "human",
+      "user_tag": "user",
       "assistant_tag": "assistant"
     }
   },
@@ -295,6 +325,46 @@
       "prompt": "question",
       "response": "answer"
     }
+  },
+  "openo1_sft": {
+    "hf_hub_url": "llamafactory/OpenO1-SFT",
+    "ms_hub_url": "llamafactory/OpenO1-SFT",
+    "columns": {
+      "prompt": "prompt",
+      "response": "response"
+    }
+  },
+  "open_thoughts": {
+    "hf_hub_url": "llamafactory/OpenThoughts-114k",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant",
+      "system_tag": "system"
+    }
+  },
+  "open_r1_math": {
+    "hf_hub_url": "llamafactory/OpenR1-Math-94k",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant",
+      "system_tag": "system"
+    }
+  },
+  "chinese_r1_distill": {
+    "hf_hub_url": "Congliu/Chinese-DeepSeek-R1-Distill-data-110k-SFT",
+    "ms_hub_url": "liucong/Chinese-DeepSeek-R1-Distill-data-110k-SFT"
   },
   "llava_1k_en": {
     "hf_hub_url": "BUAADreamer/llava-en-zh-2k",
@@ -426,7 +496,7 @@
     }
   },
   "dpo_mix_en": {
-    "hf_hub_url": "hiyouga/DPO-En-Zh-20k",
+    "hf_hub_url": "llamafactory/DPO-En-Zh-20k",
     "subset": "en",
     "ranking": true,
     "formatting": "sharegpt",
@@ -437,7 +507,7 @@
     }
   },
   "dpo_mix_zh": {
-    "hf_hub_url": "hiyouga/DPO-En-Zh-20k",
+    "hf_hub_url": "llamafactory/DPO-En-Zh-20k",
     "subset": "zh",
     "ranking": true,
     "formatting": "sharegpt",
@@ -453,6 +523,16 @@
     "ranking": true,
     "columns": {
       "prompt": "instruction",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  },
+  "coig_p": {
+    "hf_hub_url": "m-a-p/COIG-P",
+    "ranking": true,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
       "chosen": "chosen",
       "rejected": "rejected"
     }
@@ -477,6 +557,16 @@
       "chosen": "chosen",
       "rejected": "rejected",
       "images": "images"
+    }
+  },
+  "rlaif_v": {
+    "hf_hub_url": "openbmb/RLAIF-V-Dataset",
+    "ranking": true,
+    "columns": {
+      "prompt": "question",
+      "chosen": "chosen",
+      "rejected": "rejected",
+      "images": "image"
     }
   },
   "orca_pairs": {
@@ -552,7 +642,7 @@
     }
   },
   "c4_demo": {
-    "file_name": "c4_demo.json",
+    "file_name": "c4_demo.jsonl",
     "columns": {
       "prompt": "text"
     }
@@ -625,77 +715,44 @@
     },
     "folder": "python"
   },
-  "intents_v14_20241105": {
-    "file_name": "intents_v14_20241105.json",
-    "file_sha1": "5ed6cac5155de45776437a62361bb2f067bfd6ec",
+  "gui_grounding_ocr":{
+    "file_name": "temp.jsonl",
+    "file_sha1": "17133ef3d14c69c697a7be1d6d10c6d812ad70d7",
+    "formatting": "sharegpt",
     "columns": {
-      "prompt": "instruction",
-      "query": "input",
-      "response": "output"
+      "messages": "conversations",
+      "images": "image"
+    },
+    "tags": {
+      "role_tag": "from",
+      "content_tag": "value",
+      "user_tag": "human",
+      "assistant_tag": "gpt"
     }
   },
-  "intents_v15_20241113": {
-    "file_name": "intents_v15_20241113.json",
-    "file_sha1": "270bfd496ce37ee5e28a16cc4278a0f0caeda438",
-    "columns": {
-      "prompt": "instruction",
-      "query": "input",
-      "response": "output"
-    }
-  },
-  "intents_v16_20241124": {
-    "file_name": "intents_v16_20241124.json",
-    "file_sha1": "310c8b5854e8b7d7fbdb796e6162bb9b1d029bf3",
-    "columns": {
-      "prompt": "instruction",
-      "query": "input",
-      "response": "output"
-    }
-  },
-  "qwen2_vl_2b_gpt4o_simplified": {
-    "file_name": "qwen2_vl_2b_gpt4o_simplified.json",
+  "gui_grounding_cap":{
+    "file_name": "train_data_cap.jsonl",
+    "file_sha1": "4ffab87c764806d2b4498aced15c006475633efc",
     "formatting": "sharegpt",
     "columns": {
       "messages": "messages",
-      "images": "images"
+      "images": "image"
     },
-    "tags": {
+    "tags":{
       "role_tag": "role",
       "content_tag": "content",
       "user_tag": "user",
       "assistant_tag": "assistant"
     }
   },
-  "manual_qwen2_vl_2b": {
-    "file_name": "manual_qwen2_vl_2b.json",
-    "formatting": "sharegpt",
-    "columns": {
-      "messages": "messages",
-      "images": "images"
-    },
-    "tags": {
-      "role_tag": "role",
-      "content_tag": "content",
-      "user_tag": "user",
-      "assistant_tag": "assistant"
+  "dpo_query_rewrite_dataset": {
+      "file_name": "dpo_query_rewrite_dataset.json",
+      "ranking": true,
+      "formatting": "sharegpt",
+      "columns": {
+        "messages": "conversations",
+        "chosen": "chosen",
+        "rejected": "rejected"
+      }
     }
-  },
-  "qo_train-20240424": {
-    "file_name": "qo_train-20240424.json",
-    "file_sha1": "2c0d283ad9d3a74a71090d9b29c0cac0702abd83",
-    "columns": {
-      "prompt": "instruction",
-      "query": "input",
-      "response": "output"
-    }
-  },
-  "qo_train-20240520": {
-    "file_name": "qo_train-20240520.json",
-    "file_sha1": "0919573743167ff1eb7c8faedb5c918d07469fa1",
-    "columns": {
-      "prompt": "instruction",
-      "query": "input",
-      "response": "output"
-    }
-  }
 }
